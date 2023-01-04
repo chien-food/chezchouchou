@@ -1,0 +1,179 @@
+@charset "UTF-8";
+
+//color
+$yellow: #f1a803;
+
+// brake-point
+$wrap: 1000px;
+$bp: 768px;
+$sp: $bp - 1;
+$spx: 375px;
+
+
+@mixin media($w, $name: max) {
+	$property: #{$name}-width;
+	@media screen and (#{$property}: $w + px) {
+		@content;
+	}
+}
+
+@mixin bp {
+	@media screen and (min-width: $bp) {
+		@content;
+	}
+}
+
+@mixin pc($w: $bp) {
+	@media only screen and (min-width: $w) {
+		@content;
+	}
+}
+
+@mixin sp($w: $sp) {
+	@media only screen and (max-width: $w) {
+		@content;
+	}
+}
+
+@mixin pcIE($w: $bp) {
+	@media only screen and (min-width: $w) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+		@content;
+	}
+}
+
+@mixin spIE($w: $sp) {
+	@media only screen and (max-width: $w) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+		@content;
+	}
+}
+
+@mixin centerX{
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+@mixin centerY{
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+@mixin center() {
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+@mixin ab($t:0, $r:0, $b:0, $l:0){
+	position: absolute;
+	@if($t != n){
+		top: $t;
+	}
+	@if($r != n){
+		right: $r;
+	}
+	@if($b != n){
+		bottom: $b;
+	}
+	@if($l != n){
+		left: $l;
+	}
+}
+
+@mixin circle($size) {
+	@include size($size);
+	border-radius: 50%;
+}
+
+@mixin size($w, $h:$w) {
+	width: #{$w};
+	height: #{$h};
+}
+
+@mixin text-overflow() {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+@mixin indent(){
+	text-indent: -1em;
+	margin-left: 1em;
+}
+
+@mixin stroke($size: 1px, $color: #fff) {
+	$value: unquote("");
+	@for $x from -$size through $size {
+		@for $y from -$size through $size {
+			$value: $value + $x $y $color;
+			@if( $x != $size or $y != $size ){
+				$value: $value + unquote(",");
+			}
+		}
+	}
+	text-shadow: #{$value};
+}
+
+@mixin hover-op(){
+	transition: ease 0.3s;
+  &:hover{
+    opacity: 0.8;
+    text-decoration: none;
+  }
+}
+
+// has slides key visual
+@mixin key-slide($num, $page: index, $format:jpg){
+	@for $i from 1 through $num {
+		.slide#{$i} {
+			background-image: url('../img/#{$page}/kv#{$i}.#{$format}');
+		}
+	}
+}
+
+
+@mixin clearfix(){
+	zoom: 1;
+	&:after{
+		content: ".";
+		clear: both;
+		display: block;
+		height: 0;
+		visibility: hidden;
+	}
+}
+
+@mixin flex{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+@mixin flexBox($position: jcsb){
+	@include flex;
+	@if $position == jcsb {
+		justify-content: space-between;
+	}
+	@else if $position == jcc {
+		justify-content: center;
+	}
+	@else if $position == middle {
+		justify-content: space-between;
+		align-items: center;
+	}
+	@else if $position == center {
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+@mixin forIE(){
+	@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+		@content;
+	}
+	@supports (-ms-accelerator:true) {
+		@content;
+	}
+}
+
+@function calc_vw($size, $winW:750){
+	@return ($size/$winW)*100;
+}

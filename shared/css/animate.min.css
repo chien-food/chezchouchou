@@ -1,0 +1,110 @@
+/*!
+ * animate.css - https://daneden.github.io/animate.css/
+ * Version - 3.7.0
+ * Licensed under the MIT license - http://opensource.org/licenses/MIT
+ *
+ * Copyright (c) 2018 Daniel Eden
+ */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -ms-filter: blur(6px);
+    filter: blur(6px);
+  }
+  to {
+    opacity: 1;
+    -ms-filter: blur(0px);
+    filter: blur(0px);
+  }
+}
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn
+}
+
+@-webkit-keyframes fadeInUp {
+  0% {
+    -webkit-transform: translate3d(0, 50px, 0);
+    opacity: 0;
+    transform: translate3d(0, 50px, 0)
+  }
+  to {
+    -webkit-transform: translateZ(0);
+    opacity: 1;
+    transform: translateZ(0)
+  }
+}
+@keyframes fadeInUp {
+  0% {
+    -webkit-transform: translate3d(0, 50px, 0);
+    opacity: 0;
+    transform: translate3d(0, 50px, 0)
+  }
+  to {
+    -webkit-transform: translateZ(0);
+    opacity: 1;
+    transform: translateZ(0)
+  }
+}
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s
+}
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite
+}
+.animated.delay-1s {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s
+}
+.animated.delay-2s {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s
+}
+.animated.delay-3s {
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s
+}
+.animated.delay-4s {
+  -webkit-animation-delay: 4s;
+  animation-delay: 4s
+}
+.animated.delay-5s {
+  -webkit-animation-delay: 5s;
+  animation-delay: 5s
+}
+.animated.fast {
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s
+}
+.animated.faster {
+  -webkit-animation-duration: .5s;
+  animation-duration: .5s
+}
+.animated.slow {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s
+}
+.animated.slower {
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s
+}
+@media (prefers-reduced-motion) {
+  .animated {
+    -webkit-animation: unset !important;
+    -webkit-transition: none !important;
+    animation: unset !important;
+    transition: none !important
+  }
+}
