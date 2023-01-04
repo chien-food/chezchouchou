@@ -1,0 +1,318 @@
+@import "global";
+.txt-f3 {
+	font-size: 4.5vw;
+	@include pc {
+		font-size: 30px;
+		line-height: 60px;
+		letter-spacing: 0.1em;
+	}
+}
+.txt-f4 {
+	font-size: 6vw;
+	@include pc {
+		font-size: 40px;
+		line-height: 70px;
+		letter-spacing: 0.1em;
+	}
+}
+.txt-center {
+	text-align: center;
+}
+.txt-left {
+	text-align: left;
+}
+.txt-right {
+	text-align: right;
+}
+.wrap {
+	@include pc {
+		border-left: 1px solid red;
+		border-right: 1px solid red;
+	}
+}
+header {
+	background: url(../img/about/key_img.jpg) no-repeat top center/100% auto;
+
+	@include pc {
+		background: url(../img/about/key_img.jpg) no-repeat top center/100% auto;
+	}
+}
+// .header-img{
+//     @include pc(){
+//       position: relative;
+//       top: 0;
+//       left: 50%;
+//       transform: translateX(-50%);
+//       width: 1652px;
+//     }
+//   }
+#sec1 {
+	padding: 6vw 1% 19vw;
+	position: relative;
+	&::after {
+		position: absolute;
+		content: "";
+		left: 0;
+		top: 0;
+		width: 87%;
+		height: 55vw;
+		background: url(../img/about/sec1_bg.jpg);
+		z-index: -1;
+		@include pc {
+			height: 394px;
+			width: 60%;
+			z-index: -4;
+		}
+	}
+	&::before {
+		content: "";
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		height: 67vw;
+		width: 70%;
+		z-index: -1;
+		background: url(../img/about/sec1_bg.jpg);
+		@include pc {
+			width: 60%;
+			z-index: -2;
+			height: 730px;
+		}
+	}
+	@include pc {
+		padding: 139px 0px 200px 0px;
+		margin-top: 0;
+	}
+	.wrap {
+		position: relative;
+		@include pc {
+			margin-bottom: 82px;
+		}
+		&::after {
+			position: absolute;
+			content: "";
+			width: 30%;
+			height: 30vw;
+			right: 0;
+			bottom: -61vw;
+			background: url(../img/about/sec1_deco.png) no-repeat bottom center/100% 100%;
+			z-index: 1;
+			@include pc {
+				background: unset;
+				content: url(../img/about/sec1_deco.png);
+				right: 0;
+				bottom: 0;
+			}
+		}
+		.group1 {
+			h2 {
+				margin-bottom: 4vw;
+				@include pc {
+					margin-bottom: 64px;
+					width: 578px;
+					position: relative;
+					&::after {
+						position: absolute;
+						content: "";
+						bottom: -23px;
+						left: 0;
+						right: 0;
+						height: 137%;
+						background: url(../img/about/sec1_bg.jpg);
+						z-index: -1;
+					}
+				}
+			}
+			.sec1-img {
+				margin-bottom: 5vw;
+				@include pc {
+					position: absolute;
+					margin-bottom: 0;
+					right: -251px;
+					top: -24px;
+					z-index: -2;
+				}
+			}
+			.sec2-txt {
+				margin-bottom: 5vw;
+				@include pc {
+					margin: 0px 0px 0px 0px;
+					width: 438px;
+				}
+			}
+			.p1.txt-f3 {
+			}
+			.p2.txt-f4 {
+			}
+			.pc {
+			}
+		}
+	}
+	.sec1-slider {
+		.slide-item {
+			img {
+				height: 40vw;
+				@include pc {
+					height: auto;
+				}
+			}
+		}
+	}
+}
+
+#sec2 {
+	margin: 6vw 0 0;
+	color: white;
+	@include pc {
+		margin: 0px 0px 0px 0px;
+	}
+	.wrap {
+		.group1 {
+			position: relative;
+			@include pc {
+				height: 730px;
+				&::after {
+					position: absolute;
+					content: "";
+					right: 256px;
+					top: 0;
+					bottom: 0;
+					width: 200%;
+					background: url(../img/about/sec2_bg.jpg);
+					z-index: -1;
+				}
+			}
+			h2 {
+				transform: rotate(-90deg);
+				width: 18%;
+				height: 31vw;
+				margin: 0 0 0 10%;
+				@include pc {
+					transform: rotate(0);
+					width: auto;
+					height: auto;
+					margin: 0px 0px 0px 0px;
+					position: absolute;
+					left: -188px;
+				}
+			}
+			.sec2-img {
+				width: 90%;
+				margin: 0 auto;
+				@include pc {
+					width: auto;
+					position: absolute;
+					left: 562px;
+					right: -562px;
+					top: 34px;
+				}
+			}
+			.sec2-content {
+				@include pc {
+					width: auto;
+					padding-top: 106px;
+				}
+			}
+			h3 {
+				margin: 5vw auto;
+				font-size: 6vw;
+				text-align: center;
+				@include pc {
+					margin: 0px 0px 24px 0px;
+					font-size: 30px;
+					text-align: left;
+				}
+			}
+			.sec2-txt {
+				margin: 0 0 6vw 0;
+				position: relative;
+				padding: 0 5% 5vw;
+				@include pc {
+					margin: 0px 0px 0px 0px;
+					padding: 0px 0px 0px 0px;
+					width: 506px;
+				}
+				&::after {
+					position: absolute;
+					content: "";
+					left: 0;
+					right: 0;
+					bottom: 0;
+					height: 120vw;
+					background: url(../img/about/sec2_bg.jpg);
+					z-index: -1;
+					@include pc {
+						display: none;
+					}
+				}
+				.p1 {
+					margin-bottom: 4vw;
+					@include pc {
+						margin: 0px 0px 20px 0px;
+						width: 486px;
+					}
+				}
+				.p2 {
+					@include pc {
+						width: 488px;
+					}
+				}
+			}
+		}
+		.group2 {
+			margin-top: 26vw;
+			position: relative;
+			@include pc {
+				margin: 0px 0px 0px 0px;
+			}
+			&::after {
+				position: absolute;
+				content: "";
+				left: 0;
+				top: -33vw;
+				width: 35%;
+				height: 40vw;
+				background: url(../img/about/sec2_deco.png) no-repeat top center/100% auto;
+				z-index: 0;
+			}
+			.sec2-txt2 {
+				background: url(../img/about/sec2_bg.jpg);
+				padding: 6vw 5%;
+				position: relative;
+				@include pc {
+					padding: 80px 0;
+					background: unset;
+					width: 847px;
+					margin-left: auto;
+					&::after {
+						position: absolute;
+						content: "";
+                        top: 0;
+                        bottom: 0;
+                        right: 0;
+                        width: 100%;
+                        background: url(../img/about/sec2_bg.jpg);
+                        z-index: -1;
+
+					}
+				}
+			}
+			.p1 {
+				@include pc {
+					width: auto;
+				}
+			}
+			.p2 {
+				margin: 6vw 0 0;
+				@include pc {
+					margin: 0px 0px 0px 0px;
+				}
+			}
+			.p3 {
+				@include pc {
+					width: auto;
+				}
+			}
+		}
+	}
+}
