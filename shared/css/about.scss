@@ -1,4 +1,7 @@
 @import "global";
+footer {
+	margin-top: 300px;
+}
 .txt-f3 {
 	font-size: 4.5vw;
 	@include pc {
@@ -24,6 +27,11 @@
 .txt-right {
 	text-align: right;
 }
+.flex-pc { 
+	@include pc { 
+		display: flex;
+	}
+}
 .wrap {
 	@include pc {
 		border-left: 1px solid red;
@@ -37,15 +45,7 @@ header {
 		background: url(../img/about/key_img.jpg) no-repeat top center/100% auto;
 	}
 }
-// .header-img{
-//     @include pc(){
-//       position: relative;
-//       top: 0;
-//       left: 50%;
-//       transform: translateX(-50%);
-//       width: 1652px;
-//     }
-//   }
+
 #sec1 {
 	padding: 6vw 1% 19vw;
 	position: relative;
@@ -139,12 +139,6 @@ header {
 					margin: 0px 0px 0px 0px;
 					width: 438px;
 				}
-			}
-			.p1.txt-f3 {
-			}
-			.p2.txt-f4 {
-			}
-			.pc {
 			}
 		}
 	}
@@ -264,6 +258,12 @@ header {
 			position: relative;
 			@include pc {
 				margin: 0px 0px 0px 0px;
+				&::before {
+					position: absolute;
+					content: url(../img/about/sec2_deco.png);
+					left: -303px;
+					top: -153px;
+				}
 			}
 			&::after {
 				position: absolute;
@@ -274,38 +274,42 @@ header {
 				height: 40vw;
 				background: url(../img/about/sec2_deco.png) no-repeat top center/100% auto;
 				z-index: 0;
+				@include pc {
+					display: none;
+				}
 			}
 			.sec2-txt2 {
 				background: url(../img/about/sec2_bg.jpg);
 				padding: 6vw 5%;
 				position: relative;
 				@include pc {
-					padding: 80px 0;
+					padding: 62px 0 44px;
 					background: unset;
-					width: 847px;
+					width: 822px;
 					margin-left: auto;
+					margin-top: 42px;
 					&::after {
 						position: absolute;
 						content: "";
-                        top: 0;
-                        bottom: 0;
-                        right: 0;
-                        width: 100%;
-                        background: url(../img/about/sec2_bg.jpg);
-                        z-index: -1;
-
+						top: 0;
+						bottom: 0;
+						left: -108px;
+						width: 1183px;
+						background: url(../img/about/sec2_bg.jpg);
+						z-index: -1;
 					}
 				}
 			}
 			.p1 {
 				@include pc {
 					width: auto;
+					margin-bottom: 24px;
 				}
 			}
 			.p2 {
 				margin: 6vw 0 0;
 				@include pc {
-					margin: 0px 0px 0px 0px;
+					margin: 0px 0px -7px 0px;
 				}
 			}
 			.p3 {
@@ -315,4 +319,262 @@ header {
 			}
 		}
 	}
+}
+#sec3 {
+	padding: 11vw 1% 4vw;
+	@include pc {
+		padding: 20px 0px 0px 0px;
+		margin-top: 96px;
+	}
+	h2 {
+		width: 80%;
+		margin: 6vw auto 11vw;
+		@include pc {
+			width: auto;
+			margin: -5px 0px 59px 0px;
+		}
+	}
+	.sec3-btn-popup {
+		width: 47%;
+		display: inline-block;
+		text-align: center;
+		margin-bottom: 6vw;
+		@include pc {
+			width: auto;
+			margin-bottom: 35px;
+		}
+		.name {
+			padding: 4vw 0 0;
+			font-size: 3.5vw;
+			@include pc {
+				padding: 6px 0px 0px 0px;
+				font-size: 19px;
+				line-height: 27px;
+			}
+		}
+	}
+	.sec3-btn-popup:nth-child(1) {
+		@include pc {
+			margin-left: 146px;
+		}
+	}
+	.sec3-btn-popup:nth-child(3) {
+		@include pc {
+			margin-right: 146px;
+		}
+	}
+	.sec3-btn-popup:nth-child(2) {
+		@include pc {
+			margin: 0 20px;
+		}
+	}
+
+	.group1 {
+		padding: 8vw 2% 3vw;
+		margin: 0 -3%;
+		background: url(../img/about/sec3_bg.jpg);
+		@include pc {
+			padding: 0px 0px 0px 0px;
+			margin: 0 -60px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			background: unset;
+			position: relative;
+			&:after {
+				position: absolute;
+				content: "";
+				left: -500px;
+				right: -500px;
+				top: 64px;
+				bottom: 135px;
+				background: url(../img/about/sec3_bg.jpg);
+				z-index: -1;
+			}
+		}
+	}
+
+	.group2 {
+		padding: 0 5%;
+		margin: 6vw 0 0 0;
+		@include pc {
+			padding: 0 1%;
+			margin-top: 125px;
+		}
+		.banner {
+			// border: 1px solid #aa7b60;
+			margin-bottom: 6vw;
+			@include pc {
+				margin-bottom: 0;
+				width: 32.2%;
+			}
+			a {
+				.sec3-img {
+					img {
+						width: 100%;
+					}
+				}
+				.name {
+					background: #9f5026;
+					color: #fff;
+					@include pc {
+						padding: 24px 0 22px 0;
+					}
+					strong {
+						font-size: 5vw;
+						@include pc {
+							font-size: 33px;
+						}
+					}
+					span:nth-child(2) {
+					}
+				}
+				img {
+				}
+				&:hover {
+				}
+				&:active {
+				}
+				&:focus {
+				}
+			}
+		}
+		.banner:nth-child(2) {
+			@include pc {
+				width: 33%;
+			}
+		}
+	}
+}
+
+#sec4 {
+	@include pc {
+		margin-top: 92px;
+	}
+	.wrap {
+		.group {
+			padding: 5vw 4% 10vw;
+			background: url(../img/about/sec4_bg.jpg);
+			position: relative;
+			@include pc {
+				padding: 0;
+				background: unset;
+			}
+			&:after {
+				content: "";
+				position: absolute;
+				left: 2%;
+				top: 2vw;
+				bottom: 2vw;
+				right: 2%;
+				border: 1px solid #c1b4a2;
+				@include pc {
+					left: -62px;
+					top: 27px;
+					bottom: -57px;
+					right: -259px;
+				}
+			}
+		}
+		&::before {
+			@include pc {
+				content: "";
+				position: absolute;
+				left: -90px;
+				top: -1px;
+				bottom: -83px;
+				right: -26%;
+				background: url(../img/about/sec4_bg.jpg);
+			}
+		}
+		h2 {
+			width: 80%;
+			margin: 4vw auto 8vw;
+			@include pc {
+				width: auto;
+				margin: 0 0 40px 0;
+				padding: 99px 0 0 96px;
+			}
+			img {
+			}
+		}
+		.sec4-img {
+			margin-bottom: 6vw;
+			@include pc {
+				margin: 0px 0px 0px 0px;
+				position: absolute;
+				right: -260px;
+				top: 68px;
+			}
+			img {
+			}
+		}
+		.sec4-txt {
+			@include pc {
+				width: 544px;
+			}
+			.p1 {
+				margin-bottom: 5vw;
+				@include pc {
+					margin: 0px 0px 20px 0px;
+				}
+			}
+			.p2 {
+				margin-bottom: 5vw;
+				@include pc {
+					margin: 0px 0px 44px 0px;
+				}
+			}
+		}
+		.sec4-tel {
+			img {
+			}
+		}
+	}
+}
+#popup-sec3 {
+	.remodal { 
+		
+	}
+	
+}
+.popup-item { 
+	border: 1px solid #342513;
+	.title-item { 
+		position: relative;
+			@include pc {
+				font-size: 24px;
+				line-height: 36px;
+				color: #342513;
+				padding-left: 60px;
+				&:after {
+					content: "";
+					position: absolute;
+					left: 0;
+					top: 50%;
+					transform: translateY(-50%);
+					width: 40px;
+					height: 2px;
+					background: #342513;
+				}
+			}
+	}
+}
+.popup1-2 {
+	.group1 {
+		justify-content: space-between;
+		.sec3-popup-img1 { 
+			@include pc {
+				width: 50%;
+				margin-left: -30px;
+			}
+		}
+		.content { 
+			@include pc {
+				width: 50%;
+			}
+		}
+	}
+
+	
 }
