@@ -210,9 +210,46 @@ header {
 				}
 			}
 			.sec2-content {
+				position: relative;
+				&::after {
+					position: absolute;
+					content: "";
+					left: 21%;
+					width: 68%;
+					bottom: 5vw;
+					height: 2px;
+					background: #b06e4a;
+				}
+				&::before {
+					position: absolute;
+					content: "";
+					left: 19%;
+					width: 68%;
+					bottom: 4vw;
+					height: 2px;
+					background: #b06e4a;
+				}
 				@include pc {
 					width: auto;
 					padding-top: 106px;
+					&::after {
+						position: absolute;
+						content: "";
+						left: 0;
+						width: 521px;
+						bottom: -95px;
+						height: 2px;
+						background: #b06e4a;
+					}
+					&::before {
+						position: absolute;
+						content: "";
+						left: -10px;
+						width: 521px;
+						bottom: -99px;
+						height: 2px;
+						background: #b06e4a;
+					}
 				}
 			}
 			h3 {
@@ -454,6 +491,7 @@ header {
 #sec4 {
 	@include pc {
 		margin-top: 92px;
+		margin-bottom: 284px;
 	}
 	.wrap {
 		.group {

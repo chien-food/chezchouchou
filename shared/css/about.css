@@ -241,10 +241,49 @@ header {
     top: 34px;
   }
 }
+#sec2 .wrap .group1 .sec2-content {
+  position: relative;
+}
+#sec2 .wrap .group1 .sec2-content::after {
+  position: absolute;
+  content: "";
+  left: 21%;
+  width: 68%;
+  bottom: 5vw;
+  height: 2px;
+  background: #b06e4a;
+}
+#sec2 .wrap .group1 .sec2-content::before {
+  position: absolute;
+  content: "";
+  left: 19%;
+  width: 68%;
+  bottom: 4vw;
+  height: 2px;
+  background: #b06e4a;
+}
 @media only screen and (min-width: 768px) {
   #sec2 .wrap .group1 .sec2-content {
     width: auto;
     padding-top: 106px;
+  }
+  #sec2 .wrap .group1 .sec2-content::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    width: 521px;
+    bottom: -95px;
+    height: 2px;
+    background: #b06e4a;
+  }
+  #sec2 .wrap .group1 .sec2-content::before {
+    position: absolute;
+    content: "";
+    left: -10px;
+    width: 521px;
+    bottom: -99px;
+    height: 2px;
+    background: #b06e4a;
   }
 }
 #sec2 .wrap .group1 h3 {
@@ -499,6 +538,7 @@ header {
 @media only screen and (min-width: 768px) {
   #sec4 {
     margin-top: 92px;
+    margin-bottom: 284px;
   }
 }
 #sec4 .wrap .group {
