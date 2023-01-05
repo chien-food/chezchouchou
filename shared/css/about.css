@@ -96,7 +96,7 @@ header {
 }
 @media only screen and (min-width: 768px) {
   #sec1 {
-    padding: 139px 0px 200px 0px;
+    padding: 132px 0px 200px 0px;
     margin-top: 0;
   }
 }
@@ -113,7 +113,7 @@ header {
   content: "";
   width: 30%;
   height: 30vw;
-  right: 0;
+  right: -18px;
   bottom: -61vw;
   background: url(../img/about/sec1_deco.png) no-repeat bottom center/100% 100%;
   z-index: 1;
@@ -199,7 +199,7 @@ header {
 }
 @media only screen and (min-width: 768px) {
   #sec2 .wrap .group1 {
-    height: 730px;
+    height: 723px;
   }
   #sec2 .wrap .group1::after {
     position: absolute;
@@ -385,8 +385,8 @@ header {
   #sec2 .wrap .group2 .sec2-txt2::after {
     position: absolute;
     content: "";
-    top: 0;
-    bottom: 0;
+    top: 6px;
+    bottom: 16px;
     left: -108px;
     width: 1183px;
     background: url(../img/about/sec2_bg.jpg);
@@ -412,7 +412,7 @@ header {
 }
 @media only screen and (min-width: 768px) {
   #sec3 {
-    padding: 20px 0px 0px 0px;
+    padding: 6px 0px 0px 0px;
     margin-top: 96px;
   }
 }
@@ -497,7 +497,7 @@ header {
 @media only screen and (min-width: 768px) {
   #sec3 .group2 {
     padding: 0 1%;
-    margin-top: 125px;
+    margin-top: 123px;
   }
 }
 #sec3 .group2 .banner {
@@ -518,7 +518,7 @@ header {
 }
 @media only screen and (min-width: 768px) {
   #sec3 .group2 .banner a .name {
-    padding: 24px 0 22px 0;
+    padding: 20px 0 22px 0;
   }
 }
 #sec3 .group2 .banner a .name strong {

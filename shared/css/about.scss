@@ -81,7 +81,7 @@ header {
 		}
 	}
 	@include pc {
-		padding: 139px 0px 200px 0px;
+		padding: 132px 0px 200px 0px;
 		margin-top: 0;
 	}
 	.wrap {
@@ -94,7 +94,7 @@ header {
 			content: "";
 			width: 30%;
 			height: 30vw;
-			right: 0;
+			right: -18px;
 			bottom: -61vw;
 			background: url(../img/about/sec1_deco.png) no-repeat bottom center/100% 100%;
 			z-index: 1;
@@ -172,7 +172,7 @@ header {
 		.group1 {
 			position: relative;
 			@include pc {
-				height: 730px;
+				height: 723px;
 				&::after {
 					position: absolute;
 					content: "";
@@ -338,8 +338,8 @@ header {
 					&::after {
 						position: absolute;
 						content: "";
-						top: 0;
-						bottom: 0;
+						top: 6px;
+						bottom: 16px;
 						left: -108px;
 						width: 1183px;
 						background: url(../img/about/sec2_bg.jpg);
@@ -364,7 +364,7 @@ header {
 #sec3 {
 	padding: 11vw 1% 4vw;
 	@include pc {
-		padding: 20px 0px 0px 0px;
+		padding: 6px 0px 0px 0px;
 		margin-top: 96px;
 	}
 	h2 {
@@ -440,7 +440,7 @@ header {
 		margin: 6vw 0 0 0;
 		@include pc {
 			padding: 0 1%;
-			margin-top: 125px;
+			margin-top: 123px;
 		}
 		.banner {
 			// border: 1px solid #aa7b60;
@@ -459,7 +459,7 @@ header {
 					background: #9f5026;
 					color: #fff;
 					@include pc {
-						padding: 24px 0 22px 0;
+						padding: 20px 0 22px 0;
 					}
 					strong {
 						font-size: 5vw;
