@@ -1,7 +1,4 @@
 @import "global";
-footer {
-	margin-top: 300px;
-}
 .txt-f3 {
 	font-size: 4.5vw;
 	@include pc {
@@ -32,18 +29,19 @@ footer {
 		display: flex;
 	}
 }
+.remodal {
+	background: transparent;
+}
 .wrap {
 	@include pc {
-		border-left: 1px solid red;
-		border-right: 1px solid red;
+		// border-left: 1px solid red;
+		// border-right: 1px solid red;
+		max-width: 1000px;
+		box-sizing: border-box;
 	}
 }
 header {
 	background: url(../img/about/key_img.jpg) no-repeat top center/100% auto;
-
-	@include pc {
-		background: url(../img/about/key_img.jpg) no-repeat top center/100% auto;
-	}
 }
 
 #sec1 {
@@ -59,7 +57,7 @@ header {
 		background: url(../img/about/sec1_bg.jpg);
 		z-index: -1;
 		@include pc {
-			height: 394px;
+			height: 395px;
 			width: 60%;
 			z-index: -4;
 		}
@@ -74,9 +72,12 @@ header {
 		z-index: -1;
 		background: url(../img/about/sec1_bg.jpg);
 		@include pc {
+			content: "";
 			width: 60%;
 			z-index: -2;
-			height: 730px;
+			height: 790px;
+			bottom: -50px;
+			background: url(../img/about/sec1_bg.jpg);
 		}
 	}
 	@include pc {
@@ -101,14 +102,17 @@ header {
 				background: unset;
 				content: url(../img/about/sec1_deco.png);
 				right: 0;
-				bottom: 0;
+				bottom: -640px;
+				height: auto;
+				width: auto;
 			}
 		}
 		.group1 {
 			h2 {
 				margin-bottom: 4vw;
+				color: #441e0a;
 				@include pc {
-					margin-bottom: 64px;
+					margin-bottom: 31px;
 					width: 578px;
 					position: relative;
 					&::after {
@@ -143,9 +147,13 @@ header {
 		}
 	}
 	.sec1-slider {
+		@include pc {
+			margin-top: 40px;
+		}
 		.slide-item {
 			img {
 				height: 40vw;
+				width: auto;
 				@include pc {
 					height: auto;
 				}
@@ -239,14 +247,16 @@ header {
 						display: none;
 					}
 				}
-				.p1 {
+				p {
 					margin-bottom: 4vw;
+				}
+				p:nth-child(1) {
 					@include pc {
 						margin: 0px 0px 20px 0px;
 						width: 486px;
 					}
 				}
-				.p2 {
+				p:nth-child(2) {
 					@include pc {
 						width: 488px;
 					}
@@ -300,9 +310,8 @@ header {
 					}
 				}
 			}
-			.p1 {
+			p {
 				@include pc {
-					width: auto;
 					margin-bottom: 24px;
 				}
 			}
@@ -310,11 +319,6 @@ header {
 				margin: 6vw 0 0;
 				@include pc {
 					margin: 0px 0px -7px 0px;
-				}
-			}
-			.p3 {
-				@include pc {
-					width: auto;
 				}
 			}
 		}
@@ -495,8 +499,6 @@ header {
 				margin: 0 0 40px 0;
 				padding: 99px 0 0 96px;
 			}
-			img {
-			}
 		}
 		.sec4-img {
 			margin-bottom: 6vw;
@@ -505,8 +507,6 @@ header {
 				position: absolute;
 				right: -260px;
 				top: 68px;
-			}
-			img {
 			}
 		}
 		.sec4-txt {
@@ -526,13 +526,8 @@ header {
 				}
 			}
 		}
-		.sec4-tel {
-			img {
-			}
-		}
 	}
 }
-
 
 .popup-item {
 	border: 1px solid #441e0a;
@@ -842,7 +837,6 @@ header {
 			// 	}
 			// }
 			.content {
-				
 				.title-item {
 					margin-top: 3vw;
 					@include pc {
@@ -851,20 +845,174 @@ header {
 				}
 			}
 		}
-		
 	}
 }
-#sec3-popup3 { 
+#sec3-popup3 {
 	&::before {
-		height: 51%;
+		height: 57%;
 		@include pc {
-			height: 33%;
+			height: 64%;
 		}
 	}
 	&::after {
-		height: 49%;
+		height: 43%;
 		@include pc {
-			height: 67%;
+			height: 36%;
+		}
+	}
+	.group1 {
+		.sec3-popup-img1 {
+			@include pc {
+				margin-top: -25px;
+				margin-left: -132px;
+				width: 65%;
+			}
+		}
+		.content {
+			@include pc {
+				line-height: 37px;
+				padding-right: 15px;
+			}
+		}
+	}
+	.group2 {
+		@include pc {
+			display: flex;
+			justify-content: space-between;
+			align-items: flex-end;
+			margin-top: -169px;
+		}
+		.sec3-popup-img2 {
+			@include pc {
+				margin-left: -18px;
+			}
+		}
+		.content {
+			@include pc {
+				width: 50%;
+			}
+			.txt p {
+				@include pc {
+					// width: 50%;
+					padding-right: 12px;
+				}
+			}
+		}
+	}
+}
+#sec3-popup4 {
+	&::before {
+		height: 63.2%;
+		@include pc {
+			height: 56.6%;
+		}
+	}
+	&::after {
+		height: 36.8%;
+		@include pc {
+			height: 43.4%;
+		}
+	}
+	.group1 {
+		margin-top: -6vw;
+		@include pc {
+			margin: 0px 0px 0px 0px;
+			.sec3-popup-img1 {
+				width: auto;
+				margin-left: -65px;
+				margin-top: -30px;
+			}
+			.content {
+				.txt {
+					padding-right: 10px;
+				}
+			}
+		}
+	}
+	.group2 {
+		padding-top: 12vw;
+		@include pc {
+			display: flex;
+			padding-top: 0;
+			flex-direction: row-reverse;
+			justify-content: space-between;
+			align-items: center;
+			.sec3-popup-img2 {
+				margin-right: -22px;
+			}
+			.content {
+				width: 50%;
+				.txt {
+					padding-right: 13px;
+				}
+			}
+		}
+	}
+	.group3 {
+		position: relative;
+		padding: 0vw 7%;
+		color: #fff;
+		@include pc {
+			padding: 0px 0px 0px 0px;
+			justify-content: space-between;
+			position: relative;
+			top: -73px;
+			z-index: 1;
+		}
+		&::after {
+			position: absolute;
+			content: "";
+			left: 3%;
+			right: 3%;
+			top: -1vw;
+			bottom: -1vw;
+			background: url(../img/about/sec3_bg_popup4.jpg);
+			z-index: -1;
+			@include pc {
+				left: -20px;
+				right: -20px;
+				top: 0px;
+				bottom: 0px;
+			}
+		}
+		.item {
+			padding: 5vw 0;
+			position: relative;
+			@include pc {
+				padding: 20px 0;
+			}
+			&::after {
+				position: absolute;
+				content: "";
+				bottom: 0;
+				left: 15%;
+				right: 15%;
+				height: 1px;
+				background: #fff;
+			}
+			@include pc {
+				margin: 0px 0px 0px 0px;
+				width: 30%;
+				&::after {
+					right: -17px;
+					left: auto;
+					top: 20px;
+					bottom: 20px;
+					width: 1px;
+					height: auto;
+				}
+			}
+		}
+		.item:last-child {
+			&::after {
+				display: none;
+			}
+		}
+		.content {
+			margin-top: 2vw;
+			@include pc {
+				margin-top: 12px;
+			}
 		}
 	}
 }

@@ -15,7 +15,7 @@
 }
 /* Default theme styles of the overlay */
 .remodal-overlay {
-  background: #fff
+  background: transparent;
 }
 .remodal-overlay.remodal-is-opening, .remodal-overlay.remodal-is-closing {
   -webkit-animation-duration: 0.3s;
@@ -33,7 +33,7 @@
 }
 /* Default theme styles of the wrapper */
 .remodal-wrapper {
-  padding: 10px 10px 0
+  padding: 9px -4px 0;
 }
 /* Default theme styles of the modal dialog */
 .remodal {
