@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .txt-f3 {
   font-size: 4.5vw;
 }
@@ -140,14 +141,14 @@ header {
     content: "";
     width: 60%;
     z-index: -2;
-    height: 790px;
+    height: 752px;
     bottom: -50px;
     background: url(../img/about/sec1_bg.jpg);
   }
 }
 @media only screen and (min-width: 768px) {
   #sec2 {
-    padding: 117px 0px 200px 0px;
+    padding: 117px 0px 160px 0px;
     margin-top: 0;
   }
 }
@@ -223,5 +224,254 @@ header {
 @media only screen and (min-width: 768px) {
   #sec2 .sec2-slider .slide-item img {
     height: auto;
+  }
+}
+
+.party-group1 h2 {
+  position: relative;
+  font-size: 6vw;
+  align-items: flex-start;
+  padding-right: 5vw;
+  display: inline-flex;
+  margin-bottom: 5vw;
+  letter-spacing: 0.09em;
+}
+.party-group1 h2:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 200%;
+  height: 2px;
+  right: 0;
+  background: #91887e;
+}
+.party-group1 h2 i {
+  width: 30px;
+  margin-right: 5px;
+}
+.party-group1 .sec3-txt1 {
+  font-size: 110%;
+}
+@media only screen and (min-width: 768px) {
+  .party-group1 h2 {
+    font-size: 30px;
+    padding-right: 0;
+    display: flex;
+    padding-bottom: 13px;
+    margin-bottom: 18px;
+  }
+  .party-group1 h2 i {
+    width: 50px;
+    margin-right: 10px;
+  }
+}
+
+.party-list {
+  position: relative;
+  padding: 5vw 0 5vw 5%;
+}
+.party-list:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  border-width: 1px;
+  border-style: solid;
+}
+@media only screen and (min-width: 768px) {
+  .party-list {
+    padding: 20px 0 18px 35px;
+    letter-spacing: 1.5px;
+  }
+}
+
+#sec3 {
+  background: url("../img/anniversary/sec3_bg.jpg") repeat top center;
+  color: #fff;
+  position: relative;
+  z-index: 0;
+  padding: 13vw 0;
+  margin-top: 12vw;
+}
+#sec3:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 62%;
+  height: 67%;
+  background: url("../img/anniversary/sec3_bg_item.jpg");
+}
+#sec3 .wrap {
+  position: relative;
+}
+#sec3 .wrap::before {
+  position: absolute;
+  content: "※価格は全て税込みです。※コース写真はイメージです。";
+  top: -19vw;
+  left: 5%;
+  font-size: 3vw;
+  color: #000;
+}
+#sec3 .party-list {
+  margin-top: 5vw;
+}
+#sec3 h2 {
+  color: #ffe4c3;
+}
+#sec3 h2 i {
+  top: 5px;
+}
+#sec3 .price {
+  margin-top: 6vw;
+  margin-bottom: 6vw;
+  position: relative;
+}
+#sec3 .price:after {
+  content: "";
+  position: absolute;
+  left: -5%;
+  top: -1vw;
+  bottom: -1vw;
+  width: 67%;
+  background: url(../img/anniversary/sec3_bg_item.jpg);
+  z-index: -1;
+}
+#sec3 .price .title {
+  position: relative;
+  margin-bottom: 2vw;
+}
+#sec3 .price .title:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  right: 0;
+  width: 200%;
+  background: #b88e75;
+}
+#sec3 .price .title span {
+  margin-right: 5%;
+}
+#sec3 .price .title .name {
+  font-size: 5vw;
+}
+#sec3 .price .title .sub-name {
+  font-size: 4vw;
+}
+#sec3 .price .title .price-number {
+  font-size: 4.8vw;
+}
+#sec3 .price .group {
+  justify-content: space-between;
+}
+#sec3 .sec3-txt1 {
+  font-size: 7vw;
+}
+#sec3 .sec3-img {
+  margin: 5vw 0;
+}
+
+@media only screen and (min-width: 768px) {
+  #sec3 {
+    padding: 63px 0 79px;
+    margin-top: 0;
+  }
+  #sec3 .wrap::before {
+    top: -109px;
+    left: 3px;
+    font-size: 16px;
+  }
+  #sec3 .price {
+    margin: 89px 0 0 5px;
+    position: relative;
+  }
+  #sec3 .price:after {
+    left: auto;
+    top: -33px;
+    bottom: -19px;
+    width: 400%;
+    right: -90px;
+  }
+  #sec3 .price .title {
+    margin-bottom: 28px;
+  }
+  #sec3 .price .title:after {
+    bottom: -8px;
+    right: -15px;
+  }
+  #sec3 .price .title span {
+    margin-right: 40px;
+  }
+  #sec3 .price .title .name {
+    font-size: 25px;
+  }
+  #sec3 .price .title .sub-name {
+    font-size: 17px;
+    margin-right: 10px;
+  }
+  #sec3 .price .title .price-number {
+    font-size: 24px;
+  }
+  #sec3 .price .list {
+    letter-spacing: 6px;
+    font-size: 18px;
+  }
+  #sec3 .price .group {
+    margin-right: 50px;
+    font-size: 18px;
+  }
+  #sec3:before {
+    left: 0;
+    width: 62.3%;
+    height: calc(100% - 398px);
+  }
+  #sec3 h2 {
+    margin-left: -60px;
+    font-size: 22px;
+    margin-bottom: 5px;
+  }
+  #sec3 h2::before {
+    margin-bottom: 7px;
+    background: #a26c4d;
+  }
+  #sec3 .sec3-txt1 {
+    font-size: 30px;
+    margin-bottom: -6px;
+  }
+  #sec3 .party-group1 {
+    float: left;
+    margin-top: 35px;
+    width: 480px;
+  }
+  #sec3 .sec3-img {
+    margin: 45px -250px 0 0;
+    float: right;
+    width: 757px;
+  }
+  #sec3 .sec3-group2 {
+    float: left;
+    width: 471px;
+    margin-top: 27px;
+  }
+  #sec3 .party-price {
+    width: 376px;
+  }
+  #sec3 .party-list {
+    float: right;
+    width: 528px;
+    margin-top: 23px;
+    margin-right: -24px;
+  }
+  #sec3 .party-list::before {
+    background: url(../img/anniversary/sec3_bg.jpg);
+    z-index: -1;
+  }
+  #sec3 .party-txt {
+    margin-left: 5px;
   }
 }/*# sourceMappingURL=anniversary.css.map */

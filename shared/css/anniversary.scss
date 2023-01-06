@@ -33,64 +33,63 @@ header {
 	background: url(../img/anniversary/kv_img.jpg) no-repeat top center/100% 100%;
 }
 @-webkit-keyframes imgSlide {
-    0% {
-      opacity: 0;
-      -webkit-clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
-              clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
-    }
-    100% {
-      opacity: 1;
-      -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-              clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-    }
-  }
-  
-  @keyframes imgSlide {
-    0% {
-      opacity: 0;
-      -webkit-clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
-              clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
-    }
-    100% {
-      opacity: 1;
-      -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-              clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-    }
-  }
+	0% {
+		opacity: 0;
+		-webkit-clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
+		clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
+	}
+	100% {
+		opacity: 1;
+		-webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+		clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+	}
+}
 
-  #sec1 { 
-    background: url(../img/anniversary/sec1_bg.jpg) no-repeat top center/100% 100%;
-    @include pc { 
-        min-height: 677px;
-        text-align: center;
-    }
-    .imgSlide { 
-        -webkit-animation-name: imgSlide;
-        animation-name: imgSlide;
-        -webkit-animation-duration: 2s;
-        animation-duration: 2s;
-    }
-  
-    .sec1-content { 
-        background: url(../img/anniversary/sec1_bg_opacity.png) no-repeat top center;
-        padding: 12vw 5%;
-        @include pc { 
-            padding: 96px 0 92px; 
-            background-size: 100% 100%;
-            margin-left: 54px;
-            margin-right: 54px;
-        }
-        h2 {	
-            width: 80%;
-            margin: 0 auto 6vw;
-            @include pc { 
-                width: auto;
-                margin: 0px 0px 41px 0px; 
-            }
-        }
-    }
-   
-  }
+@keyframes imgSlide {
+	0% {
+		opacity: 0;
+		-webkit-clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
+		clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
+	}
+	100% {
+		opacity: 1;
+		-webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+		clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+	}
+}
+
+#sec1 {
+	background: url(../img/anniversary/sec1_bg.jpg) no-repeat top center/100% 100%;
+	@include pc {
+		min-height: 677px;
+		text-align: center;
+	}
+	.imgSlide {
+		-webkit-animation-name: imgSlide;
+		animation-name: imgSlide;
+		-webkit-animation-duration: 2s;
+		animation-duration: 2s;
+	}
+
+	.sec1-content {
+		background: url(../img/anniversary/sec1_bg_opacity.png) no-repeat top center;
+		padding: 12vw 5%;
+		@include pc {
+			padding: 96px 0 92px;
+			background-size: 100% 100%;
+			margin-left: 54px;
+			margin-right: 54px;
+		}
+		h2 {
+			width: 80%;
+			margin: 0 auto 6vw;
+			@include pc {
+				width: auto;
+				margin: 0px 0px 41px 0px;
+			}
+		}
+	}
+}
 #sec2 {
 	padding: 6vw 1% 19vw;
 	position: relative;
@@ -122,13 +121,13 @@ header {
 			content: "";
 			width: 60%;
 			z-index: -2;
-			height: 790px;
+			height: 752px;
 			bottom: -50px;
 			background: url(../img/about/sec1_bg.jpg);
 		}
 	}
 	@include pc {
-		padding: 117px 0px 200px 0px;
+		padding: 117px 0px 160px 0px;
 		margin-top: 0;
 	}
 	.wrap {
@@ -136,7 +135,7 @@ header {
 		@include pc {
 			margin-bottom: 70px;
 		}
-        &::after {
+		&::after {
 			position: absolute;
 			content: "";
 			width: 30%;
@@ -146,12 +145,12 @@ header {
 			background: url(../img/anniversary/sec2_deco.png) no-repeat bottom center/100% 100%;
 			z-index: 1;
 			@include pc {
-                background: unset;
-                content: url(../img/anniversary/sec2_deco.png);
-                right: -33px;
-                bottom: -605px;
-                height: auto;
-                width: auto;
+				background: unset;
+				content: url(../img/anniversary/sec2_deco.png);
+				right: -33px;
+				bottom: -605px;
+				height: auto;
+				width: auto;
 			}
 		}
 		.group1 {
@@ -162,17 +161,16 @@ header {
 					margin-bottom: 19px;
 					width: 578px;
 					position: relative;
-					
 				}
 			}
 			.sec2-img {
 				margin-bottom: 5vw;
 				@include pc {
-                    position: absolute;
-                    margin-bottom: 0;
-                    right: -253px;
-                    top: -23px;
-                    z-index: -2;
+					position: absolute;
+					margin-bottom: 0;
+					right: -253px;
+					top: -23px;
+					z-index: -2;
 				}
 			}
 			.sec2-txt {
@@ -196,6 +194,256 @@ header {
 					height: auto;
 				}
 			}
+		}
+	}
+}
+.party-group1 {
+	h2 {
+		position: relative;
+		font-size: 6vw;
+		align-items: flex-start;
+		padding-right: 5vw;
+		display: inline-flex;
+		margin-bottom: 5vw;
+		letter-spacing: 0.09em;
+		&:before {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			width: 200%;
+			height: 2px;
+			right: 0;
+			background: #91887e;
+		}
+		i {
+			width: 30px;
+			margin-right: 5px;
+		}
+	}
+	.sec3-txt1 {
+		font-size: 110%;
+	}
+	@include pc() {
+		h2 {
+			font-size: 30px;
+			padding-right: 0;
+			display: flex;
+			padding-bottom: 13px;
+			margin-bottom: 18px;
+			i {
+				width: 50px;
+				margin-right: 10px;
+			}
+		}
+	}
+}
+.party-list {
+	position: relative;
+	padding: 5vw 0 5vw 5%;
+	&:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 200%;
+		height: 100%;
+		border-width: 1px;
+		border-style: solid;
+	}
+	@include pc() {
+		padding: 20px 0 18px 35px;
+		letter-spacing: 1.5px;
+	}
+}
+
+#sec3 {
+	background: url("../img/anniversary/sec3_bg.jpg") repeat top center;
+	color: #fff;
+	position: relative;
+	z-index: 0;
+	padding: 13vw 0;
+	margin-top: 12vw;
+	&:before {
+		content: "";
+		position: absolute;
+		z-index: -1;
+		top: 0;
+		left: 0;
+		width: 62%;
+		height: 67%;
+		background: url("../img/anniversary/sec3_bg_item.jpg");
+	}
+
+	.wrap {
+		position: relative;
+		&::before {
+			position: absolute;
+			content: "※価格は全て税込みです。※コース写真はイメージです。";
+			top: -19vw;
+			left: 5%;
+			font-size: 3vw;
+			color: #000;
+		}
+	}
+	.party-list {
+		margin-top: 5vw;
+	}
+	h2 {
+		color: #ffe4c3;
+		i {
+			top: 5px;
+		}
+	}
+	.price {
+		margin-top: 6vw;
+		margin-bottom: 6vw;
+		position: relative;
+		&:after {
+			content: "";
+			position: absolute;
+			left: -5%;
+			top: -1vw;
+			bottom: -1vw;
+			width: 67%;
+			background: url(../img/anniversary/sec3_bg_item.jpg);
+			z-index: -1;
+		}
+		.title {
+			position: relative;
+			margin-bottom: 2vw;
+			&:after {
+				content: "";
+				position: absolute;
+				bottom: 0;
+				height: 2px;
+				right: 0;
+				width: 200%;
+				background: #b88e75;
+			}
+			span {
+				margin-right: 5%;
+			}
+			.name {
+				font-size: 5vw;
+			}
+			.sub-name {
+				font-size: 4vw;
+			}
+			.price-number {
+				font-size: 4.8vw;
+			}
+		}
+		.group {
+			justify-content: space-between;
+		}
+	}
+	.sec3-txt1 {
+		font-size: 7vw;
+	}
+	.sec3-img {
+		margin: 5vw 0;
+	}
+}
+@include pc {
+	#sec3 {
+		padding: 63px 0 79px;
+		margin-top: 0;
+		.wrap {
+			&::before {
+				top: -109px;
+				left: 3px;
+				font-size: 16px;
+			}
+		}
+		.price {
+			margin: 89px 0 0 5px;
+			position: relative;
+			&:after {
+				left: auto;
+				top: -33px;
+				bottom: -19px;
+				width: 400%;
+				right: -90px;
+			}
+
+			.title {
+				margin-bottom: 28px;
+				&:after {
+					bottom: -8px;
+					right: -15px;
+				}
+				span {
+					margin-right: 40px;
+				}
+				.name {
+					font-size: 25px;
+				}
+				.sub-name {
+					font-size: 17px;
+					margin-right: 10px;
+				}
+				.price-number {
+					font-size: 24px;
+				}
+			}
+			.list {
+				letter-spacing: 6px;
+				font-size: 18px;
+			}
+			.group {
+				margin-right: 50px;
+				font-size: 18px;
+			}
+		}
+		&:before {
+			left: 0;
+			width: 62.3%;
+			height: calc(100% - 398px);
+		}
+		h2 {
+			margin-left: -60px;
+			font-size: 22px;
+			margin-bottom: 5px;
+			&::before {
+				margin-bottom: 7px;
+				background: #a26c4d;
+			}
+		}
+		.sec3-txt1 {
+			font-size: 30px;
+			margin-bottom: -6px;
+		}
+		.party-group1 {
+			float: left;
+			margin-top: 35px;
+			width: 480px;
+		}
+		.sec3-img {
+			margin: 45px -250px 0 0;
+			float: right;
+			width: 757px;
+		}
+		.sec3-group2 {
+			float: left;
+			width: 471px;
+			margin-top: 27px;
+		}
+		.party-price {
+			width: 376px;
+		}
+		.party-list {
+			float: right;
+			width: 528px;
+			margin-top: 23px;
+			margin-right: -24px;
+			&::before {
+				background: url(../img/anniversary/sec3_bg.jpg);
+				z-index: -1;
+			}
+		}
+		.party-txt {
+			margin-left: 5px;
 		}
 	}
 }
