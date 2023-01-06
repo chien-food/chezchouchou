@@ -1,0 +1,201 @@
+@import "global";
+.txt-f3 {
+	font-size: 4.5vw;
+	@include pc {
+		font-size: 30px;
+		line-height: 60px;
+		letter-spacing: 0.1em;
+	}
+}
+.txt-f4 {
+	font-size: 6vw;
+	@include pc {
+		font-size: 40px;
+		line-height: 70px;
+		letter-spacing: 0.1em;
+	}
+}
+.txt-center {
+	text-align: center;
+}
+.txt-left {
+	text-align: left;
+}
+.txt-right {
+	text-align: right;
+}
+.flex-pc {
+	@include pc {
+		display: flex;
+	}
+}
+header {
+	background: url(../img/anniversary/kv_img.jpg) no-repeat top center/100% 100%;
+}
+@-webkit-keyframes imgSlide {
+    0% {
+      opacity: 0;
+      -webkit-clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
+              clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
+    }
+    100% {
+      opacity: 1;
+      -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+              clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    }
+  }
+  
+  @keyframes imgSlide {
+    0% {
+      opacity: 0;
+      -webkit-clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
+              clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
+    }
+    100% {
+      opacity: 1;
+      -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+              clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    }
+  }
+
+  #sec1 { 
+    background: url(../img/anniversary/sec1_bg.jpg) no-repeat top center/100% 100%;
+    @include pc { 
+        min-height: 677px;
+        text-align: center;
+    }
+    .imgSlide { 
+        -webkit-animation-name: imgSlide;
+        animation-name: imgSlide;
+        -webkit-animation-duration: 2s;
+        animation-duration: 2s;
+    }
+  
+    .sec1-content { 
+        background: url(../img/anniversary/sec1_bg_opacity.png) no-repeat top center;
+        padding: 12vw 5%;
+        @include pc { 
+            padding: 96px 0 92px; 
+            background-size: 100% 100%;
+            margin-left: 54px;
+            margin-right: 54px;
+        }
+        h2 {	
+            width: 80%;
+            margin: 0 auto 6vw;
+            @include pc { 
+                width: auto;
+                margin: 0px 0px 41px 0px; 
+            }
+        }
+    }
+   
+  }
+#sec2 {
+	padding: 6vw 1% 19vw;
+	position: relative;
+	&::after {
+		position: absolute;
+		content: "";
+		left: 0;
+		top: 0;
+		width: 87%;
+		height: 55vw;
+		background: url(../img/about/sec1_bg.jpg);
+		z-index: -1;
+		@include pc {
+			height: 373px;
+			width: 60.2%;
+			z-index: -4;
+		}
+	}
+	&::before {
+		content: "";
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		height: 67vw;
+		width: 70%;
+		z-index: -1;
+		background: url(../img/about/sec1_bg.jpg);
+		@include pc {
+			content: "";
+			width: 60%;
+			z-index: -2;
+			height: 790px;
+			bottom: -50px;
+			background: url(../img/about/sec1_bg.jpg);
+		}
+	}
+	@include pc {
+		padding: 117px 0px 200px 0px;
+		margin-top: 0;
+	}
+	.wrap {
+		position: relative;
+		@include pc {
+			margin-bottom: 70px;
+		}
+        &::after {
+			position: absolute;
+			content: "";
+			width: 30%;
+			height: 30vw;
+			right: -18px;
+			bottom: -61vw;
+			background: url(../img/anniversary/sec2_deco.png) no-repeat bottom center/100% 100%;
+			z-index: 1;
+			@include pc {
+                background: unset;
+                content: url(../img/anniversary/sec2_deco.png);
+                right: -33px;
+                bottom: -605px;
+                height: auto;
+                width: auto;
+			}
+		}
+		.group1 {
+			h2 {
+				margin-bottom: 4vw;
+				color: #441e0a;
+				@include pc {
+					margin-bottom: 19px;
+					width: 578px;
+					position: relative;
+					
+				}
+			}
+			.sec2-img {
+				margin-bottom: 5vw;
+				@include pc {
+                    position: absolute;
+                    margin-bottom: 0;
+                    right: -253px;
+                    top: -23px;
+                    z-index: -2;
+				}
+			}
+			.sec2-txt {
+				margin-bottom: 5vw;
+				@include pc {
+					margin: 0px 0px 0px 0px;
+					width: 419px;
+				}
+			}
+		}
+	}
+	.sec2-slider {
+		@include pc {
+			margin-top: 40px;
+		}
+		.slide-item {
+			img {
+				height: 40vw;
+				width: auto;
+				@include pc {
+					height: auto;
+				}
+			}
+		}
+	}
+}

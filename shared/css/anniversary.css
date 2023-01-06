@@ -1,0 +1,227 @@
+.txt-f3 {
+  font-size: 4.5vw;
+}
+@media only screen and (min-width: 768px) {
+  .txt-f3 {
+    font-size: 30px;
+    line-height: 60px;
+    letter-spacing: 0.1em;
+  }
+}
+
+.txt-f4 {
+  font-size: 6vw;
+}
+@media only screen and (min-width: 768px) {
+  .txt-f4 {
+    font-size: 40px;
+    line-height: 70px;
+    letter-spacing: 0.1em;
+  }
+}
+
+.txt-center {
+  text-align: center;
+}
+
+.txt-left {
+  text-align: left;
+}
+
+.txt-right {
+  text-align: right;
+}
+
+@media only screen and (min-width: 768px) {
+  .flex-pc {
+    display: flex;
+  }
+}
+
+header {
+  background: url(../img/anniversary/kv_img.jpg) no-repeat top center/100% 100%;
+}
+
+@-webkit-keyframes imgSlide {
+  0% {
+    opacity: 0;
+    -webkit-clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
+    clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
+}
+@keyframes imgSlide {
+  0% {
+    opacity: 0;
+    -webkit-clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
+    clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
+}
+#sec1 {
+  background: url(../img/anniversary/sec1_bg.jpg) no-repeat top center/100% 100%;
+}
+@media only screen and (min-width: 768px) {
+  #sec1 {
+    min-height: 677px;
+    text-align: center;
+  }
+}
+#sec1 .imgSlide {
+  -webkit-animation-name: imgSlide;
+  animation-name: imgSlide;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+#sec1 .sec1-content {
+  background: url(../img/anniversary/sec1_bg_opacity.png) no-repeat top center;
+  padding: 12vw 5%;
+}
+@media only screen and (min-width: 768px) {
+  #sec1 .sec1-content {
+    padding: 96px 0 92px;
+    background-size: 100% 100%;
+    margin-left: 54px;
+    margin-right: 54px;
+  }
+}
+#sec1 .sec1-content h2 {
+  width: 80%;
+  margin: 0 auto 6vw;
+}
+@media only screen and (min-width: 768px) {
+  #sec1 .sec1-content h2 {
+    width: auto;
+    margin: 0px 0px 41px 0px;
+  }
+}
+
+#sec2 {
+  padding: 6vw 1% 19vw;
+  position: relative;
+}
+#sec2::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 87%;
+  height: 55vw;
+  background: url(../img/about/sec1_bg.jpg);
+  z-index: -1;
+}
+@media only screen and (min-width: 768px) {
+  #sec2::after {
+    height: 373px;
+    width: 60.2%;
+    z-index: -4;
+  }
+}
+#sec2::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 67vw;
+  width: 70%;
+  z-index: -1;
+  background: url(../img/about/sec1_bg.jpg);
+}
+@media only screen and (min-width: 768px) {
+  #sec2::before {
+    content: "";
+    width: 60%;
+    z-index: -2;
+    height: 790px;
+    bottom: -50px;
+    background: url(../img/about/sec1_bg.jpg);
+  }
+}
+@media only screen and (min-width: 768px) {
+  #sec2 {
+    padding: 117px 0px 200px 0px;
+    margin-top: 0;
+  }
+}
+#sec2 .wrap {
+  position: relative;
+}
+@media only screen and (min-width: 768px) {
+  #sec2 .wrap {
+    margin-bottom: 70px;
+  }
+}
+#sec2 .wrap::after {
+  position: absolute;
+  content: "";
+  width: 30%;
+  height: 30vw;
+  right: -18px;
+  bottom: -61vw;
+  background: url(../img/anniversary/sec2_deco.png) no-repeat bottom center/100% 100%;
+  z-index: 1;
+}
+@media only screen and (min-width: 768px) {
+  #sec2 .wrap::after {
+    background: unset;
+    content: url(../img/anniversary/sec2_deco.png);
+    right: -33px;
+    bottom: -605px;
+    height: auto;
+    width: auto;
+  }
+}
+#sec2 .wrap .group1 h2 {
+  margin-bottom: 4vw;
+  color: #441e0a;
+}
+@media only screen and (min-width: 768px) {
+  #sec2 .wrap .group1 h2 {
+    margin-bottom: 19px;
+    width: 578px;
+    position: relative;
+  }
+}
+#sec2 .wrap .group1 .sec2-img {
+  margin-bottom: 5vw;
+}
+@media only screen and (min-width: 768px) {
+  #sec2 .wrap .group1 .sec2-img {
+    position: absolute;
+    margin-bottom: 0;
+    right: -253px;
+    top: -23px;
+    z-index: -2;
+  }
+}
+#sec2 .wrap .group1 .sec2-txt {
+  margin-bottom: 5vw;
+}
+@media only screen and (min-width: 768px) {
+  #sec2 .wrap .group1 .sec2-txt {
+    margin: 0px 0px 0px 0px;
+    width: 419px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #sec2 .sec2-slider {
+    margin-top: 40px;
+  }
+}
+#sec2 .sec2-slider .slide-item img {
+  height: 40vw;
+  width: auto;
+}
+@media only screen and (min-width: 768px) {
+  #sec2 .sec2-slider .slide-item img {
+    height: auto;
+  }
+}/*# sourceMappingURL=anniversary.css.map */

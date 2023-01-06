@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="sec2">
+        <div class="wrap">
+          <div class="group1">
+            <h2>
+              <p class=" txt-f3">素材から調味料まで本物志向</p>
+              <p class=" txt-f4">生産者の想いを紡ぐ一皿を</p>
+            </h2>
+            <p class="sec2-img"><img src="./shared/img/anniversary/sec2_img.jpg" alt="調味料" width="751" height="629"></p>
+            <p class="sec2-txt">愛知県小牧市に店を構えるフレンチレストラン「Chez Chouchou（シェ シュシュ）」。<br class="pc">当店がお届けする料理は、化学調味料や添加物を一切使わない、身体と心に優しい一皿です。<br class="pc">お肉・海鮮・野菜・調味料…。すべて天然ものや農薬不使用のものを中心とした、生産者さんの顔や想いの分かるものばかり。<br class="pc">お客様の口に入るものだからこそ、当たり前のこととして安全性の高い素材を追求しております。<br class="pc">フランスで学んだ技術や感性を駆使して、シェフのみならず造り手の想いも込めて作り上げる渾身の一皿を、どうぞランチからディナーまでご堪能ください。 </p>
+          </div>
+        </div>
+        <div class="sec2-slider">
+          <div class="slide-item"><img src="./shared/img/anniversary/sec2_slide1.jpg" alt="料理" width="399" height="404"></div>
+          <div class="slide-item"><img src="./shared/img/anniversary/sec2_slide2.jpg" alt="料理" width="399" height="404"></div>
+          <div class="slide-item"><img src="./shared/img/anniversary/sec2_slide3.jpg" alt="料理" width="401" height="404"></div>
+          <div class="slide-item"><img src="./shared/img/anniversary/sec2_slide4.jpg" alt="料理" width="403" height="404"></div>
+          <div class="slide-item"><img src="./shared/img/anniversary/sec2_slide5.jpg" alt="料理" width="403" height="404"></div>
+        </div>
+      </div>
+      <script> 
+        window.onload = () => {
+            let img1 = document.getElementsByTagName("img");
+            for (let i = 0; i < img1.length; i++) {
+                img1[i].setAttribute("width", img1[i].width);
+                img1[i].setAttribute("height", img1[i].height);
+            }
+        };
+    </script>
+</body>
+</html>
