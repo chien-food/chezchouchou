@@ -41,7 +41,7 @@
 	}
 }
 header {
-	background: url(../img/about/key_img.jpg) no-repeat top center/100% auto;
+	background: url(../img/about/key_img.jpg) no-repeat top center/100% 100%;
 }
 
 #sec1 {
@@ -87,7 +87,7 @@ header {
 	.wrap {
 		position: relative;
 		@include pc {
-			margin-bottom: 82px;
+			margin-bottom: 75px;
 		}
 		&::after {
 			position: absolute;
@@ -101,7 +101,7 @@ header {
 			@include pc {
 				background: unset;
 				content: url(../img/about/sec1_deco.png);
-				right: 0;
+				right: -14px;
 				bottom: -640px;
 				height: auto;
 				width: auto;
@@ -232,6 +232,7 @@ header {
 				@include pc {
 					width: auto;
 					padding-top: 106px;
+					padding-left: 14px;
 					&::after {
 						position: absolute;
 						content: "";
@@ -330,17 +331,17 @@ header {
 				padding: 6vw 5%;
 				position: relative;
 				@include pc {
-					padding: 62px 0 44px;
+					padding: 74px 0 44px;
 					background: unset;
-					width: 822px;
+					width: 796px;
 					margin-left: auto;
 					margin-top: 42px;
 					&::after {
 						position: absolute;
 						content: "";
-						top: 6px;
-						bottom: 16px;
-						left: -108px;
+						top: 7px;
+						bottom: 28px;
+						left: -137px;
 						width: 1183px;
 						background: url(../img/about/sec2_bg.jpg);
 						z-index: -1;
@@ -350,12 +351,16 @@ header {
 			p {
 				@include pc {
 					margin-bottom: 24px;
+					margin-left: -26px;
+					transform: translateX(-26px);
 				}
 			}
 			.p2 {
 				margin: 6vw 0 0;
 				@include pc {
-					margin: 0px 0px -7px 0px;
+					margin-bottom: -7px;
+					margin-top: 0;
+					margin-left: -26px;
 				}
 			}
 		}
@@ -364,8 +369,8 @@ header {
 #sec3 {
 	padding: 11vw 1% 4vw;
 	@include pc {
-		padding: 6px 0px 0px 0px;
-		margin-top: 96px;
+		padding: 0px 0px 0px 0px;
+		margin-top: 91px;
 	}
 	h2 {
 		width: 80%;
@@ -443,7 +448,6 @@ header {
 			margin-top: 123px;
 		}
 		.banner {
-			// border: 1px solid #aa7b60;
 			margin-bottom: 6vw;
 			@include pc {
 				margin-bottom: 0;
@@ -465,19 +469,12 @@ header {
 						font-size: 5vw;
 						@include pc {
 							font-size: 33px;
+							letter-spacing: 2.2px;
 						}
 					}
-					span:nth-child(2) {
-					}
+				
 				}
-				img {
-				}
-				&:hover {
-				}
-				&:active {
-				}
-				&:focus {
-				}
+			
 			}
 		}
 		.banner:nth-child(2) {

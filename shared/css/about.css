@@ -50,7 +50,7 @@
 }
 
 header {
-  background: url(../img/about/key_img.jpg) no-repeat top center/100% auto;
+  background: url(../img/about/key_img.jpg) no-repeat top center/100% 100%;
 }
 
 #sec1 {
@@ -105,7 +105,7 @@ header {
 }
 @media only screen and (min-width: 768px) {
   #sec1 .wrap {
-    margin-bottom: 82px;
+    margin-bottom: 75px;
   }
 }
 #sec1 .wrap::after {
@@ -122,7 +122,7 @@ header {
   #sec1 .wrap::after {
     background: unset;
     content: url(../img/about/sec1_deco.png);
-    right: 0;
+    right: -14px;
     bottom: -640px;
     height: auto;
     width: auto;
@@ -266,6 +266,7 @@ header {
   #sec2 .wrap .group1 .sec2-content {
     width: auto;
     padding-top: 106px;
+    padding-left: 14px;
   }
   #sec2 .wrap .group1 .sec2-content::after {
     position: absolute;
@@ -376,18 +377,18 @@ header {
 }
 @media only screen and (min-width: 768px) {
   #sec2 .wrap .group2 .sec2-txt2 {
-    padding: 62px 0 44px;
+    padding: 74px 0 44px;
     background: unset;
-    width: 822px;
+    width: 796px;
     margin-left: auto;
     margin-top: 42px;
   }
   #sec2 .wrap .group2 .sec2-txt2::after {
     position: absolute;
     content: "";
-    top: 6px;
-    bottom: 16px;
-    left: -108px;
+    top: 7px;
+    bottom: 28px;
+    left: -137px;
     width: 1183px;
     background: url(../img/about/sec2_bg.jpg);
     z-index: -1;
@@ -396,6 +397,8 @@ header {
 @media only screen and (min-width: 768px) {
   #sec2 .wrap .group2 p {
     margin-bottom: 24px;
+    margin-left: -26px;
+    transform: translateX(-26px);
   }
 }
 #sec2 .wrap .group2 .p2 {
@@ -403,7 +406,9 @@ header {
 }
 @media only screen and (min-width: 768px) {
   #sec2 .wrap .group2 .p2 {
-    margin: 0px 0px -7px 0px;
+    margin-bottom: -7px;
+    margin-top: 0;
+    margin-left: -26px;
   }
 }
 
@@ -412,8 +417,8 @@ header {
 }
 @media only screen and (min-width: 768px) {
   #sec3 {
-    padding: 6px 0px 0px 0px;
-    margin-top: 96px;
+    padding: 0px 0px 0px 0px;
+    margin-top: 91px;
   }
 }
 #sec3 h2 {
@@ -527,6 +532,7 @@ header {
 @media only screen and (min-width: 768px) {
   #sec3 .group2 .banner a .name strong {
     font-size: 33px;
+    letter-spacing: 2.2px;
   }
 }
 @media only screen and (min-width: 768px) {
