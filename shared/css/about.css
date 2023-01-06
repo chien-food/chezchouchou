@@ -41,6 +41,11 @@
 .remodal {
   background: transparent;
 }
+@media only screen and (max-width: 767px) {
+  .remodal {
+    padding: 5vw 3%;
+  }
+}
 
 @media only screen and (min-width: 768px) {
   .wrap {
@@ -186,7 +191,7 @@ header {
 }
 
 #sec2 {
-  margin: 6vw 0 0;
+  margin: 0 0 0;
   color: white;
 }
 @media only screen and (min-width: 768px) {
@@ -317,7 +322,7 @@ header {
   left: 0;
   right: 0;
   bottom: 0;
-  height: 120vw;
+  height: 134vw;
   background: url(../img/about/sec2_bg.jpg);
   z-index: -1;
 }
@@ -520,20 +525,28 @@ header {
 #sec3 .group2 .banner a .name {
   background: #9f5026;
   color: #fff;
+  padding: 3vw 0;
+  display: flex;
+  flex-direction: column;
 }
 @media only screen and (min-width: 768px) {
   #sec3 .group2 .banner a .name {
-    padding: 20px 0 22px 0;
+    padding: 0px 0 22px 0;
   }
 }
 #sec3 .group2 .banner a .name strong {
   font-size: 5vw;
+  line-height: 1;
 }
 @media only screen and (min-width: 768px) {
   #sec3 .group2 .banner a .name strong {
     font-size: 33px;
     letter-spacing: 2.2px;
+    line-height: 2.4;
   }
+}
+#sec3 .group2 .banner a .name span {
+  line-height: 1;
 }
 @media only screen and (min-width: 768px) {
   #sec3 .group2 .banner:nth-child(2) {
@@ -541,6 +554,9 @@ header {
   }
 }
 
+#sec4 {
+  margin-bottom: 6vw;
+}
 @media only screen and (min-width: 768px) {
   #sec4 {
     margin-top: 92px;

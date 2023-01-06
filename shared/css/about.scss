@@ -31,6 +31,9 @@
 }
 .remodal {
 	background: transparent;
+	@include sp {
+		padding: 5vw 3%;
+	}
 }
 .wrap {
 	@include pc {
@@ -163,7 +166,7 @@ header {
 }
 
 #sec2 {
-	margin: 6vw 0 0;
+	margin: 0 0 0;
 	color: white;
 	@include pc {
 		margin: 0px 0px 0px 0px;
@@ -278,7 +281,7 @@ header {
 					left: 0;
 					right: 0;
 					bottom: 0;
-					height: 120vw;
+					height: 134vw;
 					background: url(../img/about/sec2_bg.jpg);
 					z-index: -1;
 					@include pc {
@@ -462,19 +465,25 @@ header {
 				.name {
 					background: #9f5026;
 					color: #fff;
+					padding: 3vw 0;
+					display: flex;
+					flex-direction: column;
 					@include pc {
-						padding: 20px 0 22px 0;
+						padding: 0px 0 22px 0;
 					}
 					strong {
 						font-size: 5vw;
+						line-height: 1;
 						@include pc {
 							font-size: 33px;
 							letter-spacing: 2.2px;
+							line-height: 2.4;
 						}
 					}
-				
+					span {
+						line-height: 1;
+					}
 				}
-			
 			}
 		}
 		.banner:nth-child(2) {
@@ -486,6 +495,7 @@ header {
 }
 
 #sec4 {
+	margin-bottom: 6vw;
 	@include pc {
 		margin-top: 92px;
 		margin-bottom: 284px;
