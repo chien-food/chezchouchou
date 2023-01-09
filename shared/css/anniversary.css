@@ -510,7 +510,7 @@ header {
   content: "";
   position: absolute;
   z-index: -1;
-  background: url("../img/anniversary/sec4_bg_item.jpg") repeat top center;
+  background: url("../img/anniversary/sec4_bg_item.jpg") repeat top left;
   right: 0;
   top: 0;
   width: 47%;
@@ -530,7 +530,7 @@ header {
 #sec4 .party-list {
   margin-top: 5vw;
   padding: 5vw 5% 5vw 0;
-  background: url("../img/anniversary/sec4_bg.jpg");
+  background: url("../img/anniversary/sec4_bg.jpg") no-repeat top right/75% 100%;
 }
 #sec4 .party-list:before {
   right: 0;
@@ -722,6 +722,8 @@ header {
   #sec5 .sec5-1 .sec5-txt {
     margin-left: 5px;
     text-align: left;
+    letter-spacing: 1.5px;
+    width: 370px;
   }
   #sec5 .sec5-2 {
     max-width: 1000px;
@@ -779,9 +781,101 @@ header {
   }
   #sec5 .sec5-4 {
     padding: 25px 0;
-    margin-bottom: 158px;
+    margin-bottom: 80px;
     font-size: 17px;
     text-align: center;
     letter-spacing: 0.1em;
+  }
+}
+
+#sec6 {
+  border-top: 2px solid #b1a9a3;
+  padding-top: 8vw;
+  padding-bottom: 8vw;
+}
+@media only screen and (min-width: 768px) {
+  #sec6 {
+    padding-top: 56px;
+    padding-bottom: 110px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #sec6 .wrap {
+    padding: 0 105px;
+  }
+}
+#sec6 .wrap h2 {
+  width: 80%;
+  margin: 0 auto 6vw;
+}
+@media only screen and (min-width: 768px) {
+  #sec6 .wrap h2 {
+    margin-bottom: 41px;
+  }
+}
+#sec6 .wrap .telhref {
+  display: block;
+  width: 90%;
+  margin: 0 auto 10vw;
+}
+@media only screen and (min-width: 768px) {
+  #sec6 .wrap .sec6-tel {
+    margin-bottom: 46px;
+  }
+}
+#sec6 .wrap .sec6-txt {
+  margin-bottom: 7vw;
+}
+@media only screen and (min-width: 768px) {
+  #sec6 .wrap .sec6-txt {
+    margin: 0;
+  }
+}
+#sec6 .wrap .sec6-txt dl {
+  justify-content: space-between;
+  margin-bottom: 3vw;
+}
+@media only screen and (min-width: 768px) {
+  #sec6 .wrap .sec6-txt dl {
+    margin: 0px 0px 17px 0px;
+    text-align: left;
+  }
+}
+#sec6 .wrap .sec6-txt dt {
+  width: 15%;
+}
+@media only screen and (min-width: 768px) {
+  #sec6 .wrap .sec6-txt dt {
+    width: 128px;
+    padding-left: 60px;
+  }
+}
+#sec6 .wrap .sec6-txt dd {
+  width: 80%;
+}
+@media only screen and (min-width: 768px) {
+  #sec6 .wrap .sec6-txt dd {
+    width: calc(100% - 163px);
+    letter-spacing: 2px;
+  }
+}
+#sec6 .wrap .sec6-txt .border {
+  border-top: 1px solid #8c7e6f;
+  border-bottom: 1px solid #8c7e6f;
+  padding: 2vw 0;
+}
+@media only screen and (min-width: 768px) {
+  #sec6 .wrap .sec6-txt .border {
+    padding: 17px 0;
+    border-width: 2px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #sec6 .wrap .btn-link {
+    margin-top: 47px;
+    width: 313px;
+  }
+  #sec6 .wrap .btn-link:after {
+    right: 16.9%;
   }
 }/*# sourceMappingURL=anniversary.css.map */

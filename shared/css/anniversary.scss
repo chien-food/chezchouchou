@@ -476,7 +476,7 @@ header {
 		content: "";
 		position: absolute;
 		z-index: -1;
-		background: url("../img/anniversary/sec4_bg_item.jpg") repeat top center;
+		background: url("../img/anniversary/sec4_bg_item.jpg") repeat top left;
 		right: 0;
 		top: 0;
 		width: 47%;
@@ -496,7 +496,7 @@ header {
 	.party-list {
 		margin-top: 5vw;
 		padding: 5vw 5% 5vw 0;
-		background: url("../img/anniversary/sec4_bg.jpg");
+		background: url("../img/anniversary/sec4_bg.jpg") no-repeat top right/75% 100%;
 		&:before {
 			right: 0;
 			left: auto;
@@ -685,8 +685,10 @@ header {
 		  margin-top: 43px;
 		}
 		.sec5-txt{
-		  margin-left: 5px;
-		  text-align: left;
+			margin-left: 5px;
+			text-align: left;
+			letter-spacing: 1.5px;
+			width: 370px;
 		}
 	  }
 	  .sec5-2{
@@ -745,10 +747,87 @@ header {
 	  }
 	  .sec5-4{
 		padding: 25px 0;
-		margin-bottom: 158px;
+		margin-bottom: 80px;
 		font-size: 17px;
 		text-align: center;
 		letter-spacing: 0.1em;
 	  }
 	}
+  }
+
+  #sec6 {
+	border-top: 2px solid #b1a9a3;
+	padding-top: 8vw;
+	padding-bottom: 8vw;
+	@include pc { 
+		padding-top: 56px;
+		padding-bottom: 110px;
+	}
+    .wrap {
+		@include pc { 
+			padding: 0 105px ;
+		}
+      h2 {
+      width: 80%;
+	  margin: 0 auto 6vw;
+	  @include pc { 
+		margin-bottom: 41px;
+	  }
+      }
+        .telhref {
+			display: block;
+          width: 90%;
+		  margin: 0 auto 10vw;
+        }
+		@include pc { 
+			.sec6-tel { 
+				margin-bottom: 46px;
+			}
+		  }
+      .sec6-txt {
+		margin-bottom: 7vw;
+		@include pc { 
+			margin: 0;
+		}
+        dl {
+			justify-content: space-between;
+			margin-bottom: 3vw;
+			@include pc { 
+				 margin: 0px 0px 17px 0px ; 
+				 text-align: left;
+			}
+        }
+		dt { 
+			width: 15%;
+			@include pc { 
+				width: 128px;padding-left: 60px;
+			}
+		}
+        dd {
+			width: 80%;
+			@include pc { 
+				width: calc(100% - 163px);
+				letter-spacing: 2px;
+			}
+        }
+		.border { 
+			border-top: 1px solid #8c7e6f;
+			border-bottom: 1px solid #8c7e6f;
+			padding: 2vw 0;
+			@include pc { 
+				padding: 17px 0;
+				border-width: 2px;
+			}
+		}
+      }
+	  .btn-link { 
+		@include pc { 
+			margin-top: 47px;
+			width: 313px;
+			&:after { 
+				right: 16.9%;
+			}
+		}
+	  }
+    }
   }

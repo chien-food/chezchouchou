@@ -663,7 +663,8 @@ header {
   right: 0;
   left: 0;
   background: url(../img/about/sec3_bg_popup_bottom.jpg) repeat bottom center;
-  z-index: -1;
+  z-index: -3;
+  height: 100%;
 }
 .popup-item::before {
   content: "";
@@ -737,48 +738,48 @@ header {
   background: url(../img/shared/close_on.png);
 }
 
-.popup1-2 .group1 {
+.popup-item .group1 {
   justify-content: space-between;
   padding: 0 4% 5vw;
 }
 @media only screen and (min-width: 768px) {
-  .popup1-2 .group1 {
+  .popup-item .group1 {
     padding: 0px 0px 0px 0px;
   }
 }
 @media only screen and (min-width: 768px) {
-  .popup1-2 .group1 .sec3-popup-img1 {
+  .popup-item .group1 .sec3-popup-img1 {
     width: 50%;
     margin-left: -30px;
   }
 }
 @media only screen and (min-width: 768px) {
-  .popup1-2 .group1 .content {
+  .popup-item .group1 .content {
     width: 50%;
     padding: 30px 0 0 0;
   }
 }
-.popup1-2 .group1 .content .txt p + p {
+.popup-item .group1 .content .txt p + p {
   margin-top: 5vw;
 }
 @media only screen and (min-width: 768px) {
-  .popup1-2 .group1 .content .txt p + p {
+  .popup-item .group1 .content .txt p + p {
     margin-top: 20px;
   }
 }
-.popup1-2 .group2 {
+.popup-item .group2 {
   padding: 6vw 4% 0;
 }
 @media only screen and (min-width: 768px) {
-  .popup1-2 .group2 {
+  .popup-item .group2 {
     padding: 0px 0px 0px 0px;
   }
 }
-.popup1-2 .group2 .sec3-popup-img2 {
+.popup-item .group2 .sec3-popup-img2 {
   margin-bottom: 5vw;
 }
 @media only screen and (min-width: 768px) {
-  .popup1-2 .group2 .sec3-popup-img2 {
+  .popup-item .group2 .sec3-popup-img2 {
     margin: 0px 0px 0px 0px;
   }
 }
@@ -789,14 +790,6 @@ header {
 @media only screen and (min-width: 768px) {
   #sec3-popup1::before {
     height: 33%;
-  }
-}
-#sec3-popup1::after {
-  height: 58%;
-}
-@media only screen and (min-width: 768px) {
-  #sec3-popup1::after {
-    height: 67%;
   }
 }
 #sec3-popup1 .group2 {
@@ -826,14 +819,6 @@ header {
 @media only screen and (min-width: 768px) {
   #sec3-popup2::before {
     height: 35%;
-  }
-}
-#sec3-popup2::after {
-  height: 52%;
-}
-@media only screen and (min-width: 768px) {
-  #sec3-popup2::after {
-    height: 65%;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -868,14 +853,6 @@ header {
 @media only screen and (min-width: 768px) {
   #sec3-popup5::before {
     height: 35%;
-  }
-}
-#sec3-popup5::after {
-  height: 52%;
-}
-@media only screen and (min-width: 768px) {
-  #sec3-popup5::after {
-    height: 65%;
   }
 }
 #sec3-popup5 .wrap .group2 {
@@ -959,14 +936,6 @@ header {
     height: 64%;
   }
 }
-#sec3-popup3::after {
-  height: 43%;
-}
-@media only screen and (min-width: 768px) {
-  #sec3-popup3::after {
-    height: 36%;
-  }
-}
 @media only screen and (min-width: 768px) {
   #sec3-popup3 .group1 .sec3-popup-img1 {
     margin-top: -25px;
@@ -1010,14 +979,6 @@ header {
 @media only screen and (min-width: 768px) {
   #sec3-popup4::before {
     height: 56.6%;
-  }
-}
-#sec3-popup4::after {
-  height: 36.8%;
-}
-@media only screen and (min-width: 768px) {
-  #sec3-popup4::after {
-    height: 43.4%;
   }
 }
 #sec3-popup4 .group1 {
