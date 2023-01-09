@@ -209,7 +209,7 @@ header {
   #sec2 .wrap .group1::after {
     position: absolute;
     content: "";
-    right: 256px;
+    right: calc(50% - 240px);
     top: 0;
     bottom: 0;
     width: 200%;
@@ -393,7 +393,7 @@ header {
     content: "";
     top: 7px;
     bottom: 28px;
-    left: -137px;
+    left: calc(50% - 535px);
     width: 1183px;
     background: url(../img/about/sec2_bg.jpg);
     z-index: -1;
@@ -418,7 +418,7 @@ header {
 }
 
 #sec3 {
-  padding: 11vw 1% 4vw;
+  padding: 5vw 1% 4vw;
 }
 @media only screen and (min-width: 768px) {
   #sec3 {

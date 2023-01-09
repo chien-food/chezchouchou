@@ -477,7 +477,7 @@ header {
   }
   #sec3 .sec3-group2 {
     float: left;
-    width: 471px;
+    width: 450px;
     margin-top: 27px;
   }
   #sec3 .party-price {
@@ -577,6 +577,7 @@ header {
   }
   #sec4 .party-txt {
     margin-left: 14px;
+    line-height: 34px;
   }
   #sec4 .party-list {
     float: left;
@@ -694,7 +695,7 @@ header {
     width: 1px;
     height: 410px;
     right: auto;
-    left: 0;
+    left: 4px;
   }
   #sec5 .sec5-img {
     margin-bottom: 0;

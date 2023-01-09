@@ -179,14 +179,14 @@ header {
 				&::after {
 					position: absolute;
 					content: "";
-					right: 256px;
+					right: calc(50% - 240px);
 					top: 0;
 					bottom: 0;
 					width: 200%;
 					background: url(../img/about/sec2_bg.jpg);
 					z-index: -1;
 				}
-			}
+			} 
 			h2 {
 				transform: rotate(-90deg);
 				width: 18%;
@@ -344,7 +344,7 @@ header {
 						content: "";
 						top: 7px;
 						bottom: 28px;
-						left: -137px;
+						left: calc(50% - 535px);
 						width: 1183px;
 						background: url(../img/about/sec2_bg.jpg);
 						z-index: -1;
@@ -370,7 +370,7 @@ header {
 	}
 }
 #sec3 {
-	padding: 11vw 1% 4vw;
+	padding: 5vw 1% 4vw;
 	@include pc {
 		padding: 0px 0px 0px 0px;
 		margin-top: 91px;
