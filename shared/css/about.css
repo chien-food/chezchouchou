@@ -1,5 +1,7 @@
-body.modal-open {
-  overflow: hidden;
+body.nav--opened.modal-second *,
+body.nav--opened.modal-second *:focus {
+  pointer-events: visible !important;
+  touch-action: auto !important;
 }
 
 .txt-f3 {

@@ -1,7 +1,13 @@
 @import "global";
-body.modal-open {
-    overflow: hidden;
+
+body.nav--opened.modal-second *,
+body.nav--opened.modal-second *:focus {
+	pointer-events: visible !important;
+	touch-action: auto !important;
 }
+// body.nav--opened.modal-second #menu_toggle { 
+// 	background: rgba(255,255,255,0.3);
+// }
 .txt-f3 {
 	font-size: 4.5vw;
 	@include pc {
@@ -122,8 +128,6 @@ header {
 					top: -30px;
 					position: relative;
 					background: url(../img/about/sec1_bg.jpg);
-
-	
 				}
 			}
 			.sec1-img {
@@ -237,7 +241,6 @@ header {
 					padding-top: 106px;
 					padding-left: 14px;
 					width: 506px;
-
 				}
 			}
 			h3 {
@@ -503,7 +506,7 @@ header {
 					}
 				}
 			}
-			a:hover .name { 
+			a:hover .name {
 				opacity: 0.8;
 			}
 		}
@@ -578,7 +581,7 @@ header {
 			}
 			span {
 				font-size: 5vw;
-				@include pc { 
+				@include pc {
 					font-size: 22px;
 				}
 			}

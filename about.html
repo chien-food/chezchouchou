@@ -83,7 +83,7 @@
           <li><a href="https://www.facebook.com/chezchouchou.jp/" target="_blank" rel="nofollow" onClick="gtag('event','click',{'event_category':'Links','event_label':'menu_btn_fb'});"><img src="shared/img/shared/icon_fb.png" width="66" height="62" alt="facebook" /></a></li>
           <li><a href="https://page.line.me/zfu9479t?openQrModal=true" target="_blank" rel="nofollow" onClick="gtag('event','click',{'event_category':'Links','event_label':'menu_btn_line'});"><img src="shared/img/shared/icon_line.png" width="66" height="62" alt="line" /></a></li>
         </ul>
-        <p class="popup-link"><a href="#popup1"  class="unsmooth btn-popup hvr-radial-out">コロナウイルス予防対策について</a></p>
+        <p class="popup-link"><a href="#popup1" class="unsmooth hvr-radial-out">コロナウイルス予防対策について</a></p>
       </div>
     </nav>
     <header id="header">
@@ -113,7 +113,7 @@
       </div>
 
     </header>
-    <div class="remodal" data-remodal-id="popup1" role="dialog">
+    <div class="remodal remodal-in-toggle" data-remodal-id="popup1" role="dialog">
       <div class="wrap">
         <button data-remodal-action="close" class="remodal-close" aria-label="Close"><img src="shared/img/shared/close.png" width="46" height="48" alt="close" /> </button>
         <p class="popup-ttl">新型コロナウイルス<br class="sp" />
@@ -286,7 +286,7 @@
                   </div>
                 </div>
               </div>
-              <a href="#" class="btn-link hvr-radial-out" data-remodal-action="close" >閉じる</a>
+              <a href="#" class="btn-link hvr-radial-out" data-remodal-action="close">閉じる</a>
             </div>
           </div>
         </div>
@@ -312,7 +312,7 @@
                   </div>
                 </div>
               </div>
-              <a href="#" class="btn-link hvr-radial-out" data-remodal-action="close" >閉じる</a>
+              <a href="#" class="btn-link hvr-radial-out" data-remodal-action="close">閉じる</a>
             </div>
           </div>
         </div>
@@ -339,7 +339,7 @@
                   </div>
                 </div>
               </div>
-              <a href="#" class="btn-link hvr-radial-out" data-remodal-action="close" >閉じる</a>
+              <a href="#" class="btn-link hvr-radial-out" data-remodal-action="close">閉じる</a>
             </div>
           </div>
         </div>
@@ -381,7 +381,7 @@
                   </div>
                 </div>
               </div>
-              <a href="#" class="btn-link hvr-radial-out" data-remodal-action="close" >閉じる</a>
+              <a href="#" class="btn-link hvr-radial-out" data-remodal-action="close">閉じる</a>
             </div>
           </div>
         </div>
@@ -407,7 +407,7 @@
                   </div>
                 </div>
               </div>
-              <a href="#" class="btn-link hvr-radial-out" data-remodal-action="close" >閉じる</a>
+              <a href="#" class="btn-link hvr-radial-out" data-remodal-action="close">閉じる</a>
             </div>
           </div>
         </div>
@@ -425,7 +425,7 @@
                   </div>
                 </div>
               </div>
-              <a href="#" class="btn-link hvr-radial-out" data-remodal-action="close" >閉じる</a>
+              <a href="#" class="btn-link hvr-radial-out" data-remodal-action="close">閉じる</a>
             </div>
           </div>
         </div>
@@ -443,7 +443,7 @@
                   </div>
                 </div>
               </div>
-              <a href="#" class="btn-link hvr-radial-out" data-remodal-action="close" >閉じる</a>
+              <a href="#" class="btn-link hvr-radial-out" data-remodal-action="close">閉じる</a>
             </div>
           </div>
         </div>
@@ -538,19 +538,36 @@
       });
     });
 
-  
+
 
     // Fix remodal overlay
     $(document)
-     .on('opening', '.remodal-shared', function () {
-        $(this).css('background','transparent')
+      .on('opening', '.remodal-shared', function () {
+        $(this).css('background', 'transparent')
         $('.remodal-overlay').css('background', 'none')
-     })
-     .on('closing', '.remodal-shared', function () {
-      $(this).removeAttr('style')
+      })
+      .on('closing', '.remodal-shared', function () {
+        $(this).removeAttr('style')
         $('.remodal-overlay').removeAttr('style')
-     });
- 
+      });
+
+    $(document)
+      .on('opening', '.remodal-in-toggle', function () {
+        $('.hamburger.pc').addClass('is-active')
+        $('body').addClass('navOpen nav--opened')
+        $('body').removeClass('navClose')
+        $('body').addClass('modal-second')
+      })
+      .on('closing', '.remodal-in-toggle', function () {
+        $('body').removeClass('modal-second')
+        $('.hamburger').addClass('is-active')
+
+
+      });
+    window.addEventListener('resize', function (event) {
+      $('.hamburger').removeClass('is-active')
+    }, true);
+
 
   </script>
 </body>
