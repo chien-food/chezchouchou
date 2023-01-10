@@ -30,62 +30,75 @@
 	}
 }
 header {
-	background: url(../img/anniversary/kv_img.jpg) no-repeat top center/100% 100%;
-}
-@-webkit-keyframes imgSlide {
-	0% {
-		opacity: 0;
-		-webkit-clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
-		clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
+	background: url(../img/anniversary/kv_img.jpg) no-repeat top center/cover;
+	height: 120vw;
+	@include pc { 
+		height: 900px;
 	}
-	100% {
-		opacity: 1;
-		-webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-		clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+	.gnav2 { 
+		border-color: #603b1f;
 	}
 }
+// @-webkit-keyframes imgSlide {
+// 	0% {
+// 		opacity: 0;
+// 		-webkit-clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
+// 		clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
+// 	}
+// 	100% {
+// 		opacity: 1;
+// 		-webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+// 		clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+// 	}
+// }
 
-@keyframes imgSlide {
-	0% {
-		opacity: 0;
-		-webkit-clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
-		clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
-	}
-	100% {
-		opacity: 1;
-		-webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-		clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-	}
-}
+// @keyframes imgSlide {
+// 	0% {
+// 		opacity: 0;
+// 		-webkit-clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
+// 		clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
+// 	}
+// 	100% {
+// 		opacity: 1;
+// 		-webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+// 		clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+// 	}
+// }
 
 #sec1 {
-	background: url(../img/anniversary/sec1_bg.jpg) no-repeat top center/100% 100%;
+	background: url(../img/anniversary/sec1_bg.jpg) no-repeat top center/auto 100%;
 	@include pc {
 		min-height: 677px;
 		text-align: center;
+		background-size: 100% 100%;
 	}
-	.imgSlide {
-		-webkit-animation-name: imgSlide;
-		animation-name: imgSlide;
-		-webkit-animation-duration: 2s;
-		animation-duration: 2s;
-	}
+	// .imgSlide {
+	// 	-webkit-animation-name: imgSlide;
+	// 	animation-name: imgSlide;
+	// 	-webkit-animation-duration: 2s;
+	// 	animation-duration: 2s;
+	// }
 
 	.sec1-content {
 		background: url(../img/anniversary/sec1_bg_opacity.png) no-repeat top center;
 		padding: 12vw 5%;
 		@include pc {
-			padding: 96px 0 92px;
+			padding: 96px 0 78px;
 			background-size: 100% 100%;
 			margin-left: 54px;
 			margin-right: 54px;
 		}
 		h2 {
 			width: 80%;
-			margin: 0 auto 6vw;
+			margin: 0 auto 3vw;
 			@include pc {
 				width: auto;
 				margin: 0px 0px 41px 0px;
+			}
+			i { 
+				width: 15%;
+			margin: 0 auto;
+				@include pc { width: auto;}
 			}
 		}
 	}
@@ -214,10 +227,9 @@ header {
 			width: 200%;
 			height: 2px;
 			right: 0;
-			background: #91887e;
+			background: #aea7a0;
 		}
 		i {
-			width: 30px;
 			margin-right: 5px;
 		}
 	}
@@ -289,7 +301,7 @@ header {
 		top: 0;
 		left: 0;
 		width: 62%;
-		height: 67%;
+		height: 60.5%;
 		background: url("../img/anniversary/sec3_bg_item.jpg");
 	}
 
@@ -309,8 +321,26 @@ header {
 	}
 	h2 {
 		color: #ffe4c3;
+		&::before { 
+			background: url(../img/anniversary/sec3_line.jpg);
+		}
 		i {
 			top: 5px;
+		}
+	}
+	.sec3-group2 { 
+		.party-txt { 
+			position: relative;
+			&:after { 
+				content: '';
+				position: absolute;
+		z-index: -1;
+		top: 0;
+		left: -6%;
+		width: 68.9%;
+		height: 101%;
+		background: url("../img/anniversary/sec3_bg_item.jpg");
+			}
 		}
 	}
 	.price {
@@ -323,7 +353,7 @@ header {
 			left: -5%;
 			top: -1vw;
 			bottom: -1vw;
-			width: 45%;
+			width: 100%;
 			background: url(../img/anniversary/sec3_bg_item.jpg);
 			z-index: -1;
 		}
@@ -335,9 +365,12 @@ header {
 				position: absolute;
 				bottom: 0;
 				height: 2px;
-				right: 0;
-				width: 200%;
-				background: #b88e75;
+				right: 9%;
+				width: 100%;
+				background: #b88e76;
+				@include pc { 
+					width: 300%;
+				}
 			}
 			span {
 				margin-right: 5%;
@@ -382,7 +415,7 @@ header {
 				top: -33px;
 				bottom: -19px;
 				width: 400%;
-				right: -90px;
+				right: -111px;
 			}
 
 			.title {
@@ -425,7 +458,6 @@ header {
 			margin-bottom: 5px;
 			&::before {
 				margin-bottom: 7px;
-				background: #a26c4d;
 			}
 		}
 		.sec3-txt1 {
@@ -465,14 +497,13 @@ header {
 		}
 	}
 }
-.sec4-bg {
-	background: url(../img/anniversary/sec4_bg.jpg);
-}
+
 #sec4 {
 	z-index: 0;
 	color: #fff;
 	padding: 11vw 3.5%;
-	&:before {
+	background: url(../img/anniversary/sec4_bg.jpg);
+	 .wrap:before {
 		content: "";
 		position: absolute;
 		z-index: -1;
@@ -488,6 +519,12 @@ header {
 		&:before {
 			right: auto;
 			left: 0;
+		}
+		i { 
+			width: 15%;
+			@include pc { 
+				width: auto;
+			}
 		}
 	}
 	.sec4-img {
@@ -770,21 +807,58 @@ header {
 		}
       h2 {
       width: 80%;
-	  margin: 0 auto 6vw;
+	  margin: 0 auto 3vw;
 	  @include pc { 
-		margin-bottom: 41px;
+		margin-bottom: 27px;
+		
 	  }
+	  i { 
+		width: 15%;
+		margin: 0	auto;
+		@include pc { 
+			width: auto;
+			margin-bottom: 21px;
+			position: relative;
+			left: -8px;
+		}
+	  }
+	  p { 
+		margin-top: 3vw;
+		@include pc { 
+			margin-top: 0;
+		}
+	  }
+	  
       }
         .telhref {
 			display: block;
           width: 90%;
-		  margin: 0 auto 10vw;
+		  margin: 0 auto 5vw;
         }
-		@include pc { 
-			.sec6-tel { 
-				margin-bottom: 46px;
-			}
-		  }
+		.sec6-tel { 
+			align-items: center;
+			justify-content: center;
+			font-size: 7.5vw;
+			font-weight: 600;
+			background: #ffffff;
+			color: #342513;
+			@include pc { 
+				font-size: 39px;
+				width: 380px;
+				height: 73px;
+				margin: 0 auto 46px;
+			  }
+			  i { 
+				margin-right: 1%;
+				img { 
+					width: 4vw;
+					@include pc { 
+						width: auto;
+					}
+				  }
+			  }
+		}
+		
       .sec6-txt {
 		margin-bottom: 7vw;
 		@include pc { 
@@ -799,13 +873,13 @@ header {
 			}
         }
 		dt { 
-			width: 15%;
+			width: 22%;
 			@include pc { 
 				width: 128px;padding-left: 60px;
 			}
 		}
         dd {
-			width: 80%;
+			width: 76%;
 			@include pc { 
 				width: calc(100% - 163px);
 				letter-spacing: 2px;

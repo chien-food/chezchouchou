@@ -46,6 +46,7 @@
   <link rel="stylesheet" href="shared/css/common.css">
   <link rel="stylesheet" href="shared/css/slick.min.css">
   <link rel="stylesheet" href="shared/css/remodal.css">
+  <!-- <link rel="stylesheet" href="shared/css/popup.css"> -->
   <link rel="stylesheet" href="shared/css/shared.css">
   <link rel="stylesheet" href="shared/css/about.css">
 
@@ -62,7 +63,7 @@
       <div class="inner">
         <ul class="menu1 dis-flex-pc">
           <ul>
-            <li><a href="index.html" ><span class="fnt-montserrat">HOME</span><span>ホーム</span></a></li>
+            <li><a href="index.html"><span class="fnt-montserrat">HOME</span><span>ホーム</span></a></li>
             <li><a href="about.html" class="active"><span class="fnt-montserrat">CONCEPT</span><span>初めての方へ</span></a></li>
             <li><a href="lunch.html"><span class="fnt-montserrat">LUNCH</span><span>ランチ</span></a></li>
             <li><a href="menu.html"><span class="fnt-montserrat">A LA CARTE</span><span>アラカルト</span></a></li>
@@ -82,12 +83,12 @@
           <li><a href="https://www.facebook.com/chezchouchou.jp/" target="_blank" rel="nofollow" onClick="gtag('event','click',{'event_category':'Links','event_label':'menu_btn_fb'});"><img src="shared/img/shared/icon_fb.png" width="66" height="62" alt="facebook" /></a></li>
           <li><a href="https://page.line.me/zfu9479t?openQrModal=true" target="_blank" rel="nofollow" onClick="gtag('event','click',{'event_category':'Links','event_label':'menu_btn_line'});"><img src="shared/img/shared/icon_line.png" width="66" height="62" alt="line" /></a></li>
         </ul>
-        <p class="popup-link"><a href="#popup1" data-remodal-target="popup1" class="unsmooth hvr-radial-out">コロナウイルス予防対策について</a></p>
+        <p class="popup-link"><a href="#popup1"  class="unsmooth btn-popup hvr-radial-out">コロナウイルス予防対策について</a></p>
       </div>
     </nav>
     <header id="header">
       <div class="header-info">
-        <p class="logo pc"><a href="./"><img src="shared/img/shared/logo.png" width="352" height="80" alt="Chez Chouchou" class="non-over" /></a></p>
+        <p class="logo"><a href="./"><img src="shared/img/shared/logo.png" width="352" height="80" alt="Chez Chouchou" class="non-over" /></a></p>
         <h1>小牧のフレンチレストラン、シェシュシュ ランチ、ディナー、テイクアウトも</h1>
         <ul class="gnav pc">
           <li><a href="index.html"><span class="fnt-montserrat">HOME</span><span>ホーム</span></a></li>
@@ -110,13 +111,31 @@
           </a></div>
         <a href="#" target="_blank" class="hvr-radial-out header-btn"><i><img src="shared/img/shared/icon_mail.png" width="15" height="10" alt="email" /></i>お問い合わせ</a>
       </div>
-      <p class="header-img sp">
-        <picture>
-          <source media="(min-width:768px)" srcset="./shared/img/about/key_img.jpg">
-          <img src="./shared/img/about/key_img.jpg" alt="シェフ" />
-        </picture>
-      </p>
+
     </header>
+    <div class="remodal" data-remodal-id="popup1" role="dialog">
+      <div class="wrap">
+        <button data-remodal-action="close" class="remodal-close" aria-label="Close"><img src="shared/img/shared/close.png" width="46" height="48" alt="close" /> </button>
+        <p class="popup-ttl">新型コロナウイルス<br class="sp" />
+          感染予防対策について</p>
+        <div class="popup-txt">
+          <p>いつもご愛顧いただき誠にありがとうございます。<br />当店では、次の対策を行っております。</p>
+          <p>今後も引き続き感染症対策に取り組みながら、<br class="sp" />お客様とスタッフの健康と安全を第一に<br />営業してまいります。<br class="sp" />お客様にはご不便をおかけいたしますが、<br />何卒ご理解、ご協力のほどお願い申し上げます。</p>
+        </div>
+        <div class="dis-flex-pc">
+          <ul>
+            <li>□店内アルコール消毒</li>
+            <li>□店内の換気</li>
+            <li>□店内に消毒アルコールの設置</li>
+          </ul>
+          <ul>
+            <li>□スタッフのマスク着用</li>
+            <li>□うがい手洗い徹底</li>
+            <li>□周りの方との距離の確保</li>
+          </ul>
+        </div>
+      </div>
+    </div>
     <section class="nav-target block">
       <div id="sec1">
         <div class="wrap">
@@ -126,7 +145,7 @@
               <p class=" txt-f4">生産者の想いを紡ぐ一皿を</p>
             </h2>
             <p class="sec1-img"><img src="./shared/img/about/sec1_img1.jpg" alt="調味料" width="751" height="629"></p>
-            <p class="sec2-txt">愛知県小牧市に店を構えるフレンチレストラン「Chez Chouchou（シェ シュシュ）」。<br class="pc">当店がお届けする料理は、化学調味料や添加物を一切使わない、身体と心に優しい一皿です。<br class="pc">お肉・海鮮・野菜・調味料…。すべて天然ものや農薬不使用のものを中心とした、生産者さんの顔や想いの分かるものばかり。<br class="pc">お客様の口に入るものだからこそ、当たり前のこととして安全性の高い素材を追求しております。<br class="pc">フランスで学んだ技術や感性を駆使して、シェフのみならず造り手の想いも込めて作り上げる渾身の一皿を、どうぞランチからディナーまでご堪能ください。 </p>
+            <p class="sec1-txt">愛知県小牧市に店を構えるフレンチレストラン「Chez Chouchou（シェ シュシュ）」。<br class="pc">当店がお届けする料理は、化学調味料や添加物を一切使わない、身体と心に優しい一皿です。<br class="pc">お肉・海鮮・野菜・調味料…。すべて天然ものや農薬不使用のものを中心とした、生産者さんの顔や想いの分かるものばかり。<br class="pc">お客様の口に入るものだからこそ、当たり前のこととして安全性の高い素材を追求しております。<br class="pc">フランスで学んだ技術や感性を駆使して、シェフのみならず造り手の想いも込めて作り上げる渾身の一皿を、どうぞランチからディナーまでご堪能ください。 </p>
           </div>
         </div>
         <div class="sec1-slider">
@@ -140,7 +159,7 @@
       <div id="sec2">
         <div class="wrap">
           <div class="group1">
-            <h2><img src="./shared/img/about/sec2_h2.png" alt="Message" width="129" height="615"></h2>
+            <h2 class="txt-vertical-pc fnt-cormorant"><span class="txt-latin">Message</span></h2>
             <p class="sec2-img"><img src="./shared/img/about/sec2_img.jpg" alt="店主" width="687" height="653"></p>
             <div class="sec2-content">
               <h3 class="txt-f3">きっかけは亡き父への後悔</h3>
@@ -161,7 +180,11 @@
       </div>
       <div id="sec3">
         <div class="wrap">
-          <h2 class="txt-center"><img src="./shared/img/about/sec3_h2.png" alt="SELECTED INGREDIENTS" width="677" height="232"></h2>
+          <h2 class="txt-center">
+            <i><img src="./shared/img/about/sec3_h2_icon.png" alt="icon" width="62" height="34"></i>
+            <p class="title fnt-montserrat">SELECTED INGREDIENTS</p>
+            <p class="name">Chez Chouchouを構成する<br>厳選素材</p>
+          </h2>
           <div class="group1">
             <div class="sec3-btn-popup"><a class="btn unsmooth" href="#sec3-popup1">
                 <p class="sec3-button-popup"><img src="./shared/img/about/sec3_btn1_popup.png" alt="見島牛" width="254" height="253"></p>
@@ -219,14 +242,22 @@
       <div id="sec4">
         <div class="wrap">
           <div class="group">
-            <h2><img src="./shared/img/about/sec4_h2.png" alt="食育 料理教室" width="339" height="92"></h2>
+            <!-- <h2><img src="./shared/img/about/sec4_h2.png" alt="食育 料理教室" width="339" height="92"></h2> -->
+            <h2 class="txt-center">
+              <p class="txt-f4">食育 料理教室</p>
+              <span>～食の安全と大切さを伝える～</span>
+            </h2>
             <p class="sec4-img"><img src="./shared/img/about/sec4_img.jpg" alt="教室" width="668" height="651"></p>
             <div class="sec4-txt">
               <p class="p1">食の多様化、グローバル化が進んだことでより重要性が高まってきた食の安全とその大切さ。</p>
               <p class="p2">当店では、食育の観点から、未来を担う子供達のためにそういった想いを少しでも広められたらと思い、月に一度料理教室を開催しております。料理の仕方だけでなく、農家の方にもお越しいただき、野菜づくりの話もしてもらっています。ご家庭でも作れる料理にプロの技を加えた料理紹介もしておりますので、気軽にご参加くださ</p>
             </div>
-            <div class="tel">
-              <a href="tel:0568718444" class="sec4-tel telhref" onclick="gtag('event','click',{'event_category':'tel','event_label':'info_phone'});"><img src="./shared/img/about/sec4_tel.png" alt="0568-71-8444" width="549" height="158"></a>
+            <div class="tel txt-center">
+              <p class="top">ご予約・お問い合わせ</p>
+              <a href="tel:0568718444" class="sec4-tel telhref  dis-flex" onclick="gtag('event','click',{'event_category':'tel','event_label':'info_phone'});">
+                <p class="dis-flex number-tel fnt-montserrat"><i><img src="./shared/img/about/sec4_icon_tel.png" alt="icon" width="24" height="33"></i>0568-71-8444</p>
+              </a>
+              <p class="bottom">ホームページを見たとお伝えいただけるとスムーズです</p>
             </div>
           </div>
         </div>
@@ -255,7 +286,7 @@
                   </div>
                 </div>
               </div>
-              <a href="#" class="btn-link hvr-radial-out">閉じる</a>
+              <a href="#" class="btn-link hvr-radial-out" data-remodal-action="close" >閉じる</a>
             </div>
           </div>
         </div>
@@ -281,7 +312,7 @@
                   </div>
                 </div>
               </div>
-              <a href="#" class="btn-link hvr-radial-out">閉じる</a>
+              <a href="#" class="btn-link hvr-radial-out" data-remodal-action="close" >閉じる</a>
             </div>
           </div>
         </div>
@@ -308,7 +339,7 @@
                   </div>
                 </div>
               </div>
-              <a href="#" class="btn-link hvr-radial-out">閉じる</a>
+              <a href="#" class="btn-link hvr-radial-out" data-remodal-action="close" >閉じる</a>
             </div>
           </div>
         </div>
@@ -327,7 +358,7 @@
               <div class="group3 flex-pc">
                 <div class="item txt-center">
                   <i><img src="./shared/img/about/sec3_icon.png" alt="icon" width="36" height="19"></i>
-                  <p class="title">岐阜 <br> 【まめな農園】</p>
+                  <p class="title">岐阜<br>【まめな農園】</p>
                   <p class="content txt-left">野菜を決める中で、基準としている生産者の方。月に一度、勉強会も開催していただけ、農業のすべてについて学んでいます。</p>
                 </div>
                 <div class="item txt-center">
@@ -350,7 +381,7 @@
                   </div>
                 </div>
               </div>
-              <a href="#" class="btn-link hvr-radial-out">閉じる</a>
+              <a href="#" class="btn-link hvr-radial-out" data-remodal-action="close" >閉じる</a>
             </div>
           </div>
         </div>
@@ -376,7 +407,7 @@
                   </div>
                 </div>
               </div>
-              <a href="#" class="btn-link hvr-radial-out">閉じる</a>
+              <a href="#" class="btn-link hvr-radial-out" data-remodal-action="close" >閉じる</a>
             </div>
           </div>
         </div>
@@ -394,7 +425,7 @@
                   </div>
                 </div>
               </div>
-              <a href="#" class="btn-link hvr-radial-out">閉じる</a>
+              <a href="#" class="btn-link hvr-radial-out" data-remodal-action="close" >閉じる</a>
             </div>
           </div>
         </div>
@@ -412,7 +443,7 @@
                   </div>
                 </div>
               </div>
-              <a href="#" class="btn-link hvr-radial-out">閉じる</a>
+              <a href="#" class="btn-link hvr-radial-out" data-remodal-action="close" >閉じる</a>
             </div>
           </div>
         </div>
@@ -491,6 +522,7 @@
   <script src="shared/js/jquery.min.js"></script>
   <script type="text/javascript" src="shared/js/remodal.js"></script>
   <script src="shared/js/common.js"></script>
+  <script src="shared/js/remodal.js"></script>
   <script src="shared/js/slick.js"></script>
   <script src="./shared/js/infiniteslidev2.js"></script>
   <script src="shared/js/shared.js"></script>
@@ -498,24 +530,27 @@
   <script>
     $(function () {
       $('.sec1-slider').infiniteslide({
-        'speed': 100, //speed this is px/min
-        'direction': 'left', //choose  up/down/left/right
-        'pauseonhover': false, //if true,stop onmouseover
-        'responsive': false, //width/height recalculation on window resize. child element's width/height define %/vw/vh,this set true.
-        'clone': 2//if child elements are too few (elements can't "infinite"), set 2 or over.
+        'speed': 50,
+        'direction': 'left',
+        'pauseonhover': false,
+        'responsive': false,
+        'clone': 2
       });
     });
 
-        // Fix remodal overlay
-        // $(document)
-        //  .on('opening', '.remodal-shared', function () {
-        //     $(this).css('background','transparent')
-        //     $('.remodal-overlay').css('background', 'none')
-        //  })
-        //  .on('closing', '.remodal-shared', function () {
-        //   $(this).removeAttr('style')
-        //     $('.remodal-overlay').removeAttr('style')
-        //  });
+  
+
+    // Fix remodal overlay
+    $(document)
+     .on('opening', '.remodal-shared', function () {
+        $(this).css('background','transparent')
+        $('.remodal-overlay').css('background', 'none')
+     })
+     .on('closing', '.remodal-shared', function () {
+      $(this).removeAttr('style')
+        $('.remodal-overlay').removeAttr('style')
+     });
+ 
 
   </script>
 </body>

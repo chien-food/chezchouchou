@@ -1,4 +1,7 @@
 @import "global";
+body.modal-open {
+    overflow: hidden;
+}
 .txt-f3 {
 	font-size: 4.5vw;
 	@include pc {
@@ -29,12 +32,7 @@
 		display: flex;
 	}
 }
-.remodal {
-	background: transparent;
-	@include sp {
-		padding: 5vw 3%;
-	}
-}
+
 .wrap {
 	@include pc {
 		// border-left: 1px solid red;
@@ -44,7 +42,11 @@
 	}
 }
 header {
-	background: url(../img/about/key_img.jpg) no-repeat top center/100% 100%;
+	background: url(../img/about/key_img.jpg) no-repeat top center/cover;
+	height: 120vw;
+	@include pc {
+		height: 900px;
+	}
 }
 
 #sec1 {
@@ -75,12 +77,10 @@ header {
 		z-index: -1;
 		background: url(../img/about/sec1_bg.jpg);
 		@include pc {
-			content: "";
 			width: 60%;
 			z-index: -2;
 			height: 790px;
 			bottom: -50px;
-			background: url(../img/about/sec1_bg.jpg);
 		}
 	}
 	@include pc {
@@ -115,19 +115,15 @@ header {
 				margin-bottom: 4vw;
 				color: #441e0a;
 				@include pc {
-					margin-bottom: 31px;
+					margin-bottom: -21px;
 					width: 578px;
+					padding-top: 30px;
+					padding-bottom: 22px;
+					top: -30px;
 					position: relative;
-					&::after {
-						position: absolute;
-						content: "";
-						bottom: -23px;
-						left: 0;
-						right: 0;
-						height: 137%;
-						background: url(../img/about/sec1_bg.jpg);
-						z-index: -1;
-					}
+					background: url(../img/about/sec1_bg.jpg);
+
+	
 				}
 			}
 			.sec1-img {
@@ -140,7 +136,7 @@ header {
 					z-index: -2;
 				}
 			}
-			.sec2-txt {
+			.sec1-txt {
 				margin-bottom: 5vw;
 				@include pc {
 					margin: 0px 0px 0px 0px;
@@ -166,7 +162,7 @@ header {
 }
 
 #sec2 {
-	margin: 0 0 0;
+	margin: 0vw 0 0;
 	color: white;
 	@include pc {
 		margin: 0px 0px 0px 0px;
@@ -174,8 +170,11 @@ header {
 	.wrap {
 		.group1 {
 			position: relative;
+			background: url(../img/about/sec2_bg.jpg);
+
 			@include pc {
 				height: 723px;
+				background: unset;
 				&::after {
 					position: absolute;
 					content: "";
@@ -186,19 +185,38 @@ header {
 					background: url(../img/about/sec2_bg.jpg);
 					z-index: -1;
 				}
-			} 
+			}
 			h2 {
-				transform: rotate(-90deg);
-				width: 18%;
-				height: 31vw;
-				margin: 0 0 0 10%;
+				color: #d2bbaf;
+				font-size: 18vw;
+				font-weight: 600;
+				position: relative;
+				line-height: 1.5;
+				margin-bottom: 4vw;
 				@include pc {
-					transform: rotate(0);
-					width: auto;
-					height: auto;
 					margin: 0px 0px 0px 0px;
 					position: absolute;
-					left: -188px;
+					left: -298px;
+					top: 79px;
+					font-size: 140px;
+					line-height: 392px;
+					letter-spacing: 9px;
+				}
+				&:before {
+					content: "";
+					position: absolute;
+					right: 38%;
+					left: 0;
+					height: 1px;
+					bottom: 1vw;
+					background: #ba896f;
+					@include pc {
+						left: 111px;
+						right: auto;
+						height: 615px;
+						top: -79px;
+						width: 2px;
+					}
 				}
 			}
 			.sec2-img {
@@ -214,52 +232,18 @@ header {
 			}
 			.sec2-content {
 				position: relative;
-				&::after {
-					position: absolute;
-					content: "";
-					left: 21%;
-					width: 68%;
-					bottom: 5vw;
-					height: 2px;
-					background: #b06e4a;
-				}
-				&::before {
-					position: absolute;
-					content: "";
-					left: 19%;
-					width: 68%;
-					bottom: 4vw;
-					height: 2px;
-					background: #b06e4a;
-				}
 				@include pc {
 					width: auto;
 					padding-top: 106px;
 					padding-left: 14px;
-					&::after {
-						position: absolute;
-						content: "";
-						left: 0;
-						width: 521px;
-						bottom: -95px;
-						height: 2px;
-						background: #b06e4a;
-					}
-					&::before {
-						position: absolute;
-						content: "";
-						left: -10px;
-						width: 521px;
-						bottom: -99px;
-						height: 2px;
-						background: #b06e4a;
-					}
+					width: 506px;
+
 				}
 			}
 			h3 {
 				margin: 5vw auto;
 				font-size: 6vw;
-				text-align: center;
+				margin-left: 4%;
 				@include pc {
 					margin: 0px 0px 24px 0px;
 					font-size: 30px;
@@ -273,21 +257,20 @@ header {
 				@include pc {
 					margin: 0px 0px 0px 0px;
 					padding: 0px 0px 0px 0px;
-					width: 506px;
 				}
-				&::after {
-					position: absolute;
-					content: "";
-					left: 0;
-					right: 0;
-					bottom: 0;
-					height: 134vw;
-					background: url(../img/about/sec2_bg.jpg);
-					z-index: -1;
-					@include pc {
-						display: none;
-					}
-				}
+				// &::after {
+				// 	position: absolute;
+				// 	content: "";
+				// 	left: 0;
+				// 	right: 0;
+				// 	bottom: 0;
+				// 	height: 134vw;
+				// 	background: url(../img/about/sec2_bg.jpg);
+				// 	z-index: -1;
+				// 	@include pc {
+				// 		display: none;
+				// 	}
+				// }
 				p {
 					margin-bottom: 4vw;
 				}
@@ -331,12 +314,12 @@ header {
 			}
 			.sec2-txt2 {
 				background: url(../img/about/sec2_bg.jpg);
-				padding: 6vw 5%;
+				padding: 12vw 5% 9vw;
 				position: relative;
 				@include pc {
 					padding: 74px 0 44px;
 					background: unset;
-					width: 796px;
+					width: 848px;
 					margin-left: auto;
 					margin-top: 42px;
 					&::after {
@@ -344,8 +327,8 @@ header {
 						content: "";
 						top: 7px;
 						bottom: 28px;
-						left: calc(50% - 535px);
-						width: 1183px;
+						left: calc(50% - 509px);
+						width: 300%;
 						background: url(../img/about/sec2_bg.jpg);
 						z-index: -1;
 					}
@@ -354,8 +337,6 @@ header {
 			p {
 				@include pc {
 					margin-bottom: 24px;
-					margin-left: -26px;
-					transform: translateX(-26px);
 				}
 			}
 			.p2 {
@@ -363,7 +344,6 @@ header {
 				@include pc {
 					margin-bottom: -7px;
 					margin-top: 0;
-					margin-left: -26px;
 				}
 			}
 		}
@@ -371,16 +351,51 @@ header {
 }
 #sec3 {
 	padding: 5vw 1% 4vw;
+	margin-top: 9vw;
 	@include pc {
 		padding: 0px 0px 0px 0px;
 		margin-top: 91px;
 	}
 	h2 {
-		width: 80%;
-		margin: 6vw auto 11vw;
+		margin-bottom: 5vw;
 		@include pc {
 			width: auto;
-			margin: -5px 0px 59px 0px;
+			margin: -5px 0px 53px 0px;
+		}
+		i {
+			margin-bottom: 4vw;
+			@include pc {
+				margin-right: 20px;
+				margin-bottom: 0;
+			}
+			img {
+				width: 15%;
+				@include pc {
+					width: auto;
+				}
+			}
+		}
+		.title {
+			font-size: 6vw;
+			font-weight: 600;
+			color: #342513;
+			margin-bottom: 2vw;
+			@include pc {
+				font-size: 50px;
+				line-height: 58px;
+				letter-spacing: 2px;
+				margin-top: 39px;
+				margin-right: -1px;
+				margin-bottom: 20px;
+			}
+		}
+		.name {
+			@include pc {
+				font-size: 22px;
+				letter-spacing: 4px;
+				margin-bottom: 10px;
+				line-height: 2;
+			}
 		}
 	}
 	.sec3-btn-popup {
@@ -445,7 +460,7 @@ header {
 
 	.group2 {
 		padding: 0 5%;
-		margin: 6vw 0 0 0;
+		margin: 10vw 0 0 0;
 		@include pc {
 			padding: 0 1%;
 			margin-top: 123px;
@@ -468,22 +483,28 @@ header {
 					padding: 3vw 0;
 					display: flex;
 					flex-direction: column;
+					transition: 0.2s;
 					@include pc {
 						padding: 0px 0 22px 0;
 					}
 					strong {
 						font-size: 5vw;
 						line-height: 1;
+						margin-bottom: 2vw;
 						@include pc {
 							font-size: 33px;
 							letter-spacing: 2.2px;
 							line-height: 2.4;
+							margin-bottom: 0;
 						}
 					}
 					span {
 						line-height: 1;
 					}
 				}
+			}
+			a:hover .name { 
+				opacity: 0.8;
 			}
 		}
 		.banner:nth-child(2) {
@@ -495,7 +516,8 @@ header {
 }
 
 #sec4 {
-	margin-bottom: 6vw;
+	margin-bottom: 12vw;
+	margin-top: 4vw;
 	@include pc {
 		margin-top: 92px;
 		margin-bottom: 284px;
@@ -521,7 +543,7 @@ header {
 					left: -62px;
 					top: 27px;
 					bottom: -57px;
-					right: -259px;
+					right: -100%;
 				}
 			}
 		}
@@ -532,17 +554,33 @@ header {
 				left: -90px;
 				top: -1px;
 				bottom: -83px;
-				right: -26%;
+				right: -100%;
 				background: url(../img/about/sec4_bg.jpg);
 			}
 		}
 		h2 {
-			width: 80%;
-			margin: 4vw auto 8vw;
+			margin: 2vw auto 6vw;
 			@include pc {
 				width: auto;
-				margin: 0 0 40px 0;
-				padding: 99px 0 0 96px;
+				margin: 0 0 33px 90px;
+				width: 338px;
+				letter-spacing: 2px;
+				padding-top: 83px;
+			}
+			p {
+				font-size: 8vw;
+				@include pc {
+					font-size: 40px;
+					padding-left: 15px;
+					margin-bottom: 6px;
+					letter-spacing: 7px;
+				}
+			}
+			span {
+				font-size: 5vw;
+				@include pc { 
+					font-size: 22px;
+				}
 			}
 		}
 		.sec4-img {
@@ -567,7 +605,60 @@ header {
 			.p2 {
 				margin-bottom: 5vw;
 				@include pc {
-					margin: 0px 0px 44px 0px;
+					margin: 0px 0px 47px 0px;
+				}
+			}
+		}
+		.tel {
+			border-top: 1px solid #857664;
+			border-bottom: 1px solid #857664;
+			padding: 2vw 0;
+			color: #342513;
+
+			@include pc {
+				padding: 12px 36px 4px 0px;
+				display: block;
+				width: 550px;
+			}
+			.top {
+				font-size: 3.5vw;
+				@include pc {
+					font-size: 18px;
+				}
+			}
+			.number-tel {
+				align-items: center;
+				justify-content: center;
+				font-size: 8vw;
+				font-weight: 600;
+				line-height: 1.5;
+				margin: 0 auto;
+				@include pc {
+					font-size: 45px !important;
+					margin-right: -24px !important;
+				}
+				i {
+					@include pc {
+						top: -7px;
+						left: -6px;
+					}
+					img {
+						width: 70%;
+						@include pc {
+							width: auto;
+						}
+					}
+				}
+			}
+
+			.bottom {
+				font-size: 2.6vw;
+				@include pc {
+					font-size: 14px;
+					position: relative;
+					top: -9px;
+					left: 26px;
+					letter-spacing: 1px;
 				}
 			}
 		}

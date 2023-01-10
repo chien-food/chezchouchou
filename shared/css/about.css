@@ -1,3 +1,7 @@
+body.modal-open {
+  overflow: hidden;
+}
+
 .txt-f3 {
   font-size: 4.5vw;
 }
@@ -38,15 +42,6 @@
   }
 }
 
-.remodal {
-  background: transparent;
-}
-@media only screen and (max-width: 767px) {
-  .remodal {
-    padding: 5vw 3%;
-  }
-}
-
 @media only screen and (min-width: 768px) {
   .wrap {
     max-width: 1000px;
@@ -55,7 +50,13 @@
 }
 
 header {
-  background: url(../img/about/key_img.jpg) no-repeat top center/100% 100%;
+  background: url(../img/about/key_img.jpg) no-repeat top center/cover;
+  height: 120vw;
+}
+@media only screen and (min-width: 768px) {
+  header {
+    height: 900px;
+  }
 }
 
 #sec1 {
@@ -91,12 +92,10 @@ header {
 }
 @media only screen and (min-width: 768px) {
   #sec1::before {
-    content: "";
     width: 60%;
     z-index: -2;
     height: 790px;
     bottom: -50px;
-    background: url(../img/about/sec1_bg.jpg);
   }
 }
 @media only screen and (min-width: 768px) {
@@ -139,19 +138,13 @@ header {
 }
 @media only screen and (min-width: 768px) {
   #sec1 .wrap .group1 h2 {
-    margin-bottom: 31px;
+    margin-bottom: -21px;
     width: 578px;
+    padding-top: 30px;
+    padding-bottom: 22px;
+    top: -30px;
     position: relative;
-  }
-  #sec1 .wrap .group1 h2::after {
-    position: absolute;
-    content: "";
-    bottom: -23px;
-    left: 0;
-    right: 0;
-    height: 137%;
     background: url(../img/about/sec1_bg.jpg);
-    z-index: -1;
   }
 }
 #sec1 .wrap .group1 .sec1-img {
@@ -166,11 +159,11 @@ header {
     z-index: -2;
   }
 }
-#sec1 .wrap .group1 .sec2-txt {
+#sec1 .wrap .group1 .sec1-txt {
   margin-bottom: 5vw;
 }
 @media only screen and (min-width: 768px) {
-  #sec1 .wrap .group1 .sec2-txt {
+  #sec1 .wrap .group1 .sec1-txt {
     margin: 0px 0px 0px 0px;
     width: 438px;
   }
@@ -191,7 +184,7 @@ header {
 }
 
 #sec2 {
-  margin: 0 0 0;
+  margin: 0vw 0 0;
   color: white;
 }
 @media only screen and (min-width: 768px) {
@@ -201,10 +194,12 @@ header {
 }
 #sec2 .wrap .group1 {
   position: relative;
+  background: url(../img/about/sec2_bg.jpg);
 }
 @media only screen and (min-width: 768px) {
   #sec2 .wrap .group1 {
     height: 723px;
+    background: unset;
   }
   #sec2 .wrap .group1::after {
     position: absolute;
@@ -218,19 +213,40 @@ header {
   }
 }
 #sec2 .wrap .group1 h2 {
-  transform: rotate(-90deg);
-  width: 18%;
-  height: 31vw;
-  margin: 0 0 0 10%;
+  color: #d2bbaf;
+  font-size: 18vw;
+  font-weight: 600;
+  position: relative;
+  line-height: 1.5;
+  margin-bottom: 4vw;
 }
 @media only screen and (min-width: 768px) {
   #sec2 .wrap .group1 h2 {
-    transform: rotate(0);
-    width: auto;
-    height: auto;
     margin: 0px 0px 0px 0px;
     position: absolute;
-    left: -188px;
+    left: -298px;
+    top: 79px;
+    font-size: 140px;
+    line-height: 392px;
+    letter-spacing: 9px;
+  }
+}
+#sec2 .wrap .group1 h2:before {
+  content: "";
+  position: absolute;
+  right: 38%;
+  left: 0;
+  height: 1px;
+  bottom: 1vw;
+  background: #ba896f;
+}
+@media only screen and (min-width: 768px) {
+  #sec2 .wrap .group1 h2:before {
+    left: 111px;
+    right: auto;
+    height: 615px;
+    top: -79px;
+    width: 2px;
   }
 }
 #sec2 .wrap .group1 .sec2-img {
@@ -249,53 +265,18 @@ header {
 #sec2 .wrap .group1 .sec2-content {
   position: relative;
 }
-#sec2 .wrap .group1 .sec2-content::after {
-  position: absolute;
-  content: "";
-  left: 21%;
-  width: 68%;
-  bottom: 5vw;
-  height: 2px;
-  background: #b06e4a;
-}
-#sec2 .wrap .group1 .sec2-content::before {
-  position: absolute;
-  content: "";
-  left: 19%;
-  width: 68%;
-  bottom: 4vw;
-  height: 2px;
-  background: #b06e4a;
-}
 @media only screen and (min-width: 768px) {
   #sec2 .wrap .group1 .sec2-content {
     width: auto;
     padding-top: 106px;
     padding-left: 14px;
-  }
-  #sec2 .wrap .group1 .sec2-content::after {
-    position: absolute;
-    content: "";
-    left: 0;
-    width: 521px;
-    bottom: -95px;
-    height: 2px;
-    background: #b06e4a;
-  }
-  #sec2 .wrap .group1 .sec2-content::before {
-    position: absolute;
-    content: "";
-    left: -10px;
-    width: 521px;
-    bottom: -99px;
-    height: 2px;
-    background: #b06e4a;
+    width: 506px;
   }
 }
 #sec2 .wrap .group1 h3 {
   margin: 5vw auto;
   font-size: 6vw;
-  text-align: center;
+  margin-left: 4%;
 }
 @media only screen and (min-width: 768px) {
   #sec2 .wrap .group1 h3 {
@@ -313,22 +294,6 @@ header {
   #sec2 .wrap .group1 .sec2-txt {
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
-    width: 506px;
-  }
-}
-#sec2 .wrap .group1 .sec2-txt::after {
-  position: absolute;
-  content: "";
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 134vw;
-  background: url(../img/about/sec2_bg.jpg);
-  z-index: -1;
-}
-@media only screen and (min-width: 768px) {
-  #sec2 .wrap .group1 .sec2-txt::after {
-    display: none;
   }
 }
 #sec2 .wrap .group1 .sec2-txt p {
@@ -377,14 +342,14 @@ header {
 }
 #sec2 .wrap .group2 .sec2-txt2 {
   background: url(../img/about/sec2_bg.jpg);
-  padding: 6vw 5%;
+  padding: 12vw 5% 9vw;
   position: relative;
 }
 @media only screen and (min-width: 768px) {
   #sec2 .wrap .group2 .sec2-txt2 {
     padding: 74px 0 44px;
     background: unset;
-    width: 796px;
+    width: 848px;
     margin-left: auto;
     margin-top: 42px;
   }
@@ -393,8 +358,8 @@ header {
     content: "";
     top: 7px;
     bottom: 28px;
-    left: calc(50% - 535px);
-    width: 1183px;
+    left: calc(50% - 509px);
+    width: 300%;
     background: url(../img/about/sec2_bg.jpg);
     z-index: -1;
   }
@@ -402,8 +367,6 @@ header {
 @media only screen and (min-width: 768px) {
   #sec2 .wrap .group2 p {
     margin-bottom: 24px;
-    margin-left: -26px;
-    transform: translateX(-26px);
   }
 }
 #sec2 .wrap .group2 .p2 {
@@ -413,12 +376,12 @@ header {
   #sec2 .wrap .group2 .p2 {
     margin-bottom: -7px;
     margin-top: 0;
-    margin-left: -26px;
   }
 }
 
 #sec3 {
   padding: 5vw 1% 4vw;
+  margin-top: 9vw;
 }
 @media only screen and (min-width: 768px) {
   #sec3 {
@@ -427,13 +390,53 @@ header {
   }
 }
 #sec3 h2 {
-  width: 80%;
-  margin: 6vw auto 11vw;
+  margin-bottom: 5vw;
 }
 @media only screen and (min-width: 768px) {
   #sec3 h2 {
     width: auto;
-    margin: -5px 0px 59px 0px;
+    margin: -5px 0px 53px 0px;
+  }
+}
+#sec3 h2 i {
+  margin-bottom: 4vw;
+}
+@media only screen and (min-width: 768px) {
+  #sec3 h2 i {
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+}
+#sec3 h2 i img {
+  width: 15%;
+}
+@media only screen and (min-width: 768px) {
+  #sec3 h2 i img {
+    width: auto;
+  }
+}
+#sec3 h2 .title {
+  font-size: 6vw;
+  font-weight: 600;
+  color: #342513;
+  margin-bottom: 2vw;
+}
+@media only screen and (min-width: 768px) {
+  #sec3 h2 .title {
+    font-size: 50px;
+    line-height: 58px;
+    letter-spacing: 2px;
+    margin-top: 39px;
+    margin-right: -1px;
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #sec3 h2 .name {
+    font-size: 22px;
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+    line-height: 2;
   }
 }
 #sec3 .sec3-btn-popup {
@@ -502,7 +505,7 @@ header {
 }
 #sec3 .group2 {
   padding: 0 5%;
-  margin: 6vw 0 0 0;
+  margin: 10vw 0 0 0;
 }
 @media only screen and (min-width: 768px) {
   #sec3 .group2 {
@@ -528,6 +531,7 @@ header {
   padding: 3vw 0;
   display: flex;
   flex-direction: column;
+  transition: 0.2s;
 }
 @media only screen and (min-width: 768px) {
   #sec3 .group2 .banner a .name {
@@ -537,16 +541,21 @@ header {
 #sec3 .group2 .banner a .name strong {
   font-size: 5vw;
   line-height: 1;
+  margin-bottom: 2vw;
 }
 @media only screen and (min-width: 768px) {
   #sec3 .group2 .banner a .name strong {
     font-size: 33px;
     letter-spacing: 2.2px;
     line-height: 2.4;
+    margin-bottom: 0;
   }
 }
 #sec3 .group2 .banner a .name span {
   line-height: 1;
+}
+#sec3 .group2 .banner a:hover .name {
+  opacity: 0.8;
 }
 @media only screen and (min-width: 768px) {
   #sec3 .group2 .banner:nth-child(2) {
@@ -555,7 +564,8 @@ header {
 }
 
 #sec4 {
-  margin-bottom: 6vw;
+  margin-bottom: 12vw;
+  margin-top: 4vw;
 }
 @media only screen and (min-width: 768px) {
   #sec4 {
@@ -588,7 +598,7 @@ header {
     left: -62px;
     top: 27px;
     bottom: -57px;
-    right: -259px;
+    right: -100%;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -598,19 +608,39 @@ header {
     left: -90px;
     top: -1px;
     bottom: -83px;
-    right: -26%;
+    right: -100%;
     background: url(../img/about/sec4_bg.jpg);
   }
 }
 #sec4 .wrap h2 {
-  width: 80%;
-  margin: 4vw auto 8vw;
+  margin: 2vw auto 6vw;
 }
 @media only screen and (min-width: 768px) {
   #sec4 .wrap h2 {
     width: auto;
-    margin: 0 0 40px 0;
-    padding: 99px 0 0 96px;
+    margin: 0 0 33px 90px;
+    width: 338px;
+    letter-spacing: 2px;
+    padding-top: 83px;
+  }
+}
+#sec4 .wrap h2 p {
+  font-size: 8vw;
+}
+@media only screen and (min-width: 768px) {
+  #sec4 .wrap h2 p {
+    font-size: 40px;
+    padding-left: 15px;
+    margin-bottom: 6px;
+    letter-spacing: 7px;
+  }
+}
+#sec4 .wrap h2 span {
+  font-size: 5vw;
+}
+@media only screen and (min-width: 768px) {
+  #sec4 .wrap h2 span {
+    font-size: 22px;
   }
 }
 #sec4 .wrap .sec4-img {
@@ -642,7 +672,68 @@ header {
 }
 @media only screen and (min-width: 768px) {
   #sec4 .wrap .sec4-txt .p2 {
-    margin: 0px 0px 44px 0px;
+    margin: 0px 0px 47px 0px;
+  }
+}
+#sec4 .wrap .tel {
+  border-top: 1px solid #857664;
+  border-bottom: 1px solid #857664;
+  padding: 2vw 0;
+  color: #342513;
+}
+@media only screen and (min-width: 768px) {
+  #sec4 .wrap .tel {
+    padding: 12px 36px 4px 0px;
+    display: block;
+    width: 550px;
+  }
+}
+#sec4 .wrap .tel .top {
+  font-size: 3.5vw;
+}
+@media only screen and (min-width: 768px) {
+  #sec4 .wrap .tel .top {
+    font-size: 18px;
+  }
+}
+#sec4 .wrap .tel .number-tel {
+  align-items: center;
+  justify-content: center;
+  font-size: 8vw;
+  font-weight: 600;
+  line-height: 1.5;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 768px) {
+  #sec4 .wrap .tel .number-tel {
+    font-size: 45px !important;
+    margin-right: -24px !important;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #sec4 .wrap .tel .number-tel i {
+    top: -7px;
+    left: -6px;
+  }
+}
+#sec4 .wrap .tel .number-tel i img {
+  width: 70%;
+}
+@media only screen and (min-width: 768px) {
+  #sec4 .wrap .tel .number-tel i img {
+    width: auto;
+  }
+}
+#sec4 .wrap .tel .bottom {
+  font-size: 2.6vw;
+}
+@media only screen and (min-width: 768px) {
+  #sec4 .wrap .tel .bottom {
+    font-size: 14px;
+    position: relative;
+    top: -9px;
+    left: 26px;
+    letter-spacing: 1px;
   }
 }
 

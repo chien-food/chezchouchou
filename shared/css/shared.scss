@@ -213,6 +213,7 @@ h1 {
       font-size: 200%;
       font-weight: 600;      
       display: flex;
+      align-items: center;
       margin-left: 10px;
       letter-spacing: 0.5px;
     }
@@ -1348,3 +1349,6 @@ em {
   50%{ transform: rotate(180deg); }
   100% { transform: rotate(360deg); }
 }
+
+
+

@@ -40,47 +40,27 @@
 }
 
 header {
-  background: url(../img/anniversary/kv_img.jpg) no-repeat top center/100% 100%;
+  background: url(../img/anniversary/kv_img.jpg) no-repeat top center/cover;
+  height: 120vw;
+}
+@media only screen and (min-width: 768px) {
+  header {
+    height: 900px;
+  }
+}
+header .gnav2 {
+  border-color: #603b1f;
 }
 
-@-webkit-keyframes imgSlide {
-  0% {
-    opacity: 0;
-    -webkit-clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
-    clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
-  }
-  100% {
-    opacity: 1;
-    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-  }
-}
-@keyframes imgSlide {
-  0% {
-    opacity: 0;
-    -webkit-clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
-    clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
-  }
-  100% {
-    opacity: 1;
-    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-  }
-}
 #sec1 {
-  background: url(../img/anniversary/sec1_bg.jpg) no-repeat top center/100% 100%;
+  background: url(../img/anniversary/sec1_bg.jpg) no-repeat top center/auto 100%;
 }
 @media only screen and (min-width: 768px) {
   #sec1 {
     min-height: 677px;
     text-align: center;
+    background-size: 100% 100%;
   }
-}
-#sec1 .imgSlide {
-  -webkit-animation-name: imgSlide;
-  animation-name: imgSlide;
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
 }
 #sec1 .sec1-content {
   background: url(../img/anniversary/sec1_bg_opacity.png) no-repeat top center;
@@ -88,7 +68,7 @@ header {
 }
 @media only screen and (min-width: 768px) {
   #sec1 .sec1-content {
-    padding: 96px 0 92px;
+    padding: 96px 0 78px;
     background-size: 100% 100%;
     margin-left: 54px;
     margin-right: 54px;
@@ -96,12 +76,21 @@ header {
 }
 #sec1 .sec1-content h2 {
   width: 80%;
-  margin: 0 auto 6vw;
+  margin: 0 auto 3vw;
 }
 @media only screen and (min-width: 768px) {
   #sec1 .sec1-content h2 {
     width: auto;
     margin: 0px 0px 41px 0px;
+  }
+}
+#sec1 .sec1-content h2 i {
+  width: 15%;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 768px) {
+  #sec1 .sec1-content h2 i {
+    width: auto;
   }
 }
 
@@ -244,10 +233,9 @@ header {
   width: 200%;
   height: 2px;
   right: 0;
-  background: #91887e;
+  background: #aea7a0;
 }
 .party-group1 h2 i {
-  width: 30px;
   margin-right: 5px;
 }
 .party-group1 .sec3-txt1 {
@@ -325,7 +313,7 @@ header {
   top: 0;
   left: 0;
   width: 62%;
-  height: 67%;
+  height: 60.5%;
   background: url("../img/anniversary/sec3_bg_item.jpg");
 }
 #sec3 .wrap {
@@ -345,8 +333,24 @@ header {
 #sec3 h2 {
   color: #ffe4c3;
 }
+#sec3 h2::before {
+  background: url(../img/anniversary/sec3_line.jpg);
+}
 #sec3 h2 i {
   top: 5px;
+}
+#sec3 .sec3-group2 .party-txt {
+  position: relative;
+}
+#sec3 .sec3-group2 .party-txt:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: -6%;
+  width: 68.9%;
+  height: 101%;
+  background: url("../img/anniversary/sec3_bg_item.jpg");
 }
 #sec3 .price {
   margin-top: 6vw;
@@ -359,7 +363,7 @@ header {
   left: -5%;
   top: -1vw;
   bottom: -1vw;
-  width: 45%;
+  width: 100%;
   background: url(../img/anniversary/sec3_bg_item.jpg);
   z-index: -1;
 }
@@ -372,9 +376,14 @@ header {
   position: absolute;
   bottom: 0;
   height: 2px;
-  right: 0;
-  width: 200%;
-  background: #b88e75;
+  right: 9%;
+  width: 100%;
+  background: #b88e76;
+}
+@media only screen and (min-width: 768px) {
+  #sec3 .price .title:after {
+    width: 300%;
+  }
 }
 #sec3 .price .title span {
   margin-right: 5%;
@@ -417,7 +426,7 @@ header {
     top: -33px;
     bottom: -19px;
     width: 400%;
-    right: -90px;
+    right: -111px;
   }
   #sec3 .price .title {
     margin-bottom: 28px;
@@ -459,7 +468,6 @@ header {
   }
   #sec3 h2::before {
     margin-bottom: 7px;
-    background: #a26c4d;
   }
   #sec3 .sec3-txt1 {
     font-size: 30px;
@@ -497,16 +505,13 @@ header {
     margin-left: 5px;
   }
 }
-.sec4-bg {
-  background: url(../img/anniversary/sec4_bg.jpg);
-}
-
 #sec4 {
   z-index: 0;
   color: #fff;
   padding: 11vw 3.5%;
+  background: url(../img/anniversary/sec4_bg.jpg);
 }
-#sec4:before {
+#sec4 .wrap:before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -523,6 +528,14 @@ header {
 #sec4 h2:before {
   right: auto;
   left: 0;
+}
+#sec4 h2 i {
+  width: 15%;
+}
+@media only screen and (min-width: 768px) {
+  #sec4 h2 i {
+    width: auto;
+  }
 }
 #sec4 .sec4-img {
   margin: 5vw 0;
@@ -807,21 +820,63 @@ header {
 }
 #sec6 .wrap h2 {
   width: 80%;
-  margin: 0 auto 6vw;
+  margin: 0 auto 3vw;
 }
 @media only screen and (min-width: 768px) {
   #sec6 .wrap h2 {
-    margin-bottom: 41px;
+    margin-bottom: 27px;
+  }
+}
+#sec6 .wrap h2 i {
+  width: 15%;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 768px) {
+  #sec6 .wrap h2 i {
+    width: auto;
+    margin-bottom: 21px;
+    position: relative;
+    left: -8px;
+  }
+}
+#sec6 .wrap h2 p {
+  margin-top: 3vw;
+}
+@media only screen and (min-width: 768px) {
+  #sec6 .wrap h2 p {
+    margin-top: 0;
   }
 }
 #sec6 .wrap .telhref {
   display: block;
   width: 90%;
-  margin: 0 auto 10vw;
+  margin: 0 auto 5vw;
+}
+#sec6 .wrap .sec6-tel {
+  align-items: center;
+  justify-content: center;
+  font-size: 7.5vw;
+  font-weight: 600;
+  background: #ffffff;
+  color: #342513;
 }
 @media only screen and (min-width: 768px) {
   #sec6 .wrap .sec6-tel {
-    margin-bottom: 46px;
+    font-size: 39px;
+    width: 380px;
+    height: 73px;
+    margin: 0 auto 46px;
+  }
+}
+#sec6 .wrap .sec6-tel i {
+  margin-right: 1%;
+}
+#sec6 .wrap .sec6-tel i img {
+  width: 4vw;
+}
+@media only screen and (min-width: 768px) {
+  #sec6 .wrap .sec6-tel i img {
+    width: auto;
   }
 }
 #sec6 .wrap .sec6-txt {
@@ -843,7 +898,7 @@ header {
   }
 }
 #sec6 .wrap .sec6-txt dt {
-  width: 15%;
+  width: 22%;
 }
 @media only screen and (min-width: 768px) {
   #sec6 .wrap .sec6-txt dt {
@@ -852,7 +907,7 @@ header {
   }
 }
 #sec6 .wrap .sec6-txt dd {
-  width: 80%;
+  width: 76%;
 }
 @media only screen and (min-width: 768px) {
   #sec6 .wrap .sec6-txt dd {
