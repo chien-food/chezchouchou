@@ -119,7 +119,7 @@
       <p class="header-txt"><img src="shared/img/index/header_txt.png" width="411" height="126" alt="心と身体が喜ぶ自然派フレンチ" /></p>
     </header>
 
-    <div class="remodal" data-remodal-id="popup1" role="dialog">
+    <div class="remodal remodal-in-toggle" data-remodal-id="popup1" role="dialog">
       <div class="wrap">
         <button data-remodal-action="close" class="remodal-close" aria-label="Close"><img src="shared/img/shared/close.png" width="46" height="48" alt="close" /> </button>
         <p class="popup-ttl">新型コロナウイルス<br class="sp" />
@@ -536,6 +536,19 @@
       $(this).slick('slickPlay');
     });
 
+
+    $(document)
+      .on('opening', '.remodal-in-toggle', function () {
+        $('.hamburger').addClass('is-active')
+        $('body').addClass('navOpen nav--opened modal-second').removeClass('navClose')
+      })
+      .on('closing', '.remodal-in-toggle', function () {
+        $('body').removeClass('modal-second')
+        $('.hamburger').addClass('is-active')
+      });
+    window.addEventListener('resize', function (event) {
+      $('.hamburger').removeClass('is-active')
+    });
   </script>
 </body>
 

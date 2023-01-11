@@ -2,6 +2,7 @@ body.nav--opened.modal-second *,
 body.nav--opened.modal-second *:focus {
   pointer-events: visible !important;
   touch-action: auto !important;
+  background: #fff;
 }
 
 .txt-f3 {
@@ -196,7 +197,6 @@ header {
 }
 #sec2 .wrap .group1 {
   position: relative;
-  background: url(../img/about/sec2_bg.jpg);
 }
 @media only screen and (min-width: 768px) {
   #sec2 .wrap .group1 {
@@ -212,6 +212,23 @@ header {
     width: 200%;
     background: url(../img/about/sec2_bg.jpg);
     z-index: -1;
+  }
+}
+#sec2 .wrap .group1:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 105%;
+  background: url(../img/about/sec2_bg.jpg);
+  z-index: -1;
+}
+@media only screen and (min-width: 768px) {
+  #sec2 .wrap .group1:after {
+    right: 258px;
+    width: 200%;
+    left: auto;
   }
 }
 #sec2 .wrap .group1 h2 {
@@ -343,9 +360,18 @@ header {
   }
 }
 #sec2 .wrap .group2 .sec2-txt2 {
-  background: url(../img/about/sec2_bg.jpg);
   padding: 12vw 5% 9vw;
   position: relative;
+}
+#sec2 .wrap .group2 .sec2-txt2:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 110%;
+  background: url(../img/about/sec2_bg.jpg);
+  z-index: -1;
 }
 @media only screen and (min-width: 768px) {
   #sec2 .wrap .group2 .sec2-txt2 {
@@ -356,14 +382,10 @@ header {
     margin-top: 42px;
   }
   #sec2 .wrap .group2 .sec2-txt2::after {
-    position: absolute;
-    content: "";
     top: 7px;
     bottom: 28px;
     left: calc(50% - 509px);
     width: 300%;
-    background: url(../img/about/sec2_bg.jpg);
-    z-index: -1;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -1184,5 +1206,14 @@ header {
 @media only screen and (min-width: 768px) {
   #sec3-popup4 .group3 .content {
     margin-top: 12px;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 1000px) {
+  #sec2 .wrap .group2 .sec2-txt2 {
+    margin-right: 30px;
+  }
+  #sec3 .group1 {
+    width: 1094px;
   }
 }/*# sourceMappingURL=about.css.map */

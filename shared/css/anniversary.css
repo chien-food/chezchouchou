@@ -1,4 +1,11 @@
 @charset "UTF-8";
+body.nav--opened.modal-second *,
+body.nav--opened.modal-second *:focus {
+  pointer-events: visible !important;
+  touch-action: auto !important;
+  background: #fff;
+}
+
 .txt-f3 {
   font-size: 4.5vw;
 }
@@ -68,7 +75,7 @@ header .gnav2 {
 }
 @media only screen and (min-width: 768px) {
   #sec1 .sec1-content {
-    padding: 96px 0 78px;
+    padding: 96px 0 90px;
     background-size: 100% 100%;
     margin-left: 54px;
     margin-right: 54px;
@@ -81,7 +88,7 @@ header .gnav2 {
 @media only screen and (min-width: 768px) {
   #sec1 .sec1-content h2 {
     width: auto;
-    margin: 0px 0px 41px 0px;
+    margin: 0px 0px 28px 0px;
   }
 }
 #sec1 .sec1-content h2 i {

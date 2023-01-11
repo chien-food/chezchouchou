@@ -242,12 +242,11 @@
       <div id="sec4">
         <div class="wrap">
           <div class="group">
-            <!-- <h2><img src="./shared/img/about/sec4_h2.png" alt="食育 料理教室" width="339" height="92"></h2> -->
             <h2 class="txt-center">
               <p class="txt-f4">食育 料理教室</p>
               <span>～食の安全と大切さを伝える～</span>
             </h2>
-            <p class="sec4-img"><img src="./shared/img/about/sec4_img.jpg" alt="教室" width="668" height="651"></p>
+            <p class="sec4-img"><img src="./shared/img/about/sec4_img.jpg" alt="教室" width="667" height="651"></p>
             <div class="sec4-txt">
               <p class="p1">食の多様化、グローバル化が進んだことでより重要性が高まってきた食の安全とその大切さ。</p>
               <p class="p2">当店では、食育の観点から、未来を担う子供達のためにそういった想いを少しでも広められたらと思い、月に一度料理教室を開催しております。料理の仕方だけでなく、農家の方にもお越しいただき、野菜づくりの話もしてもらっています。ご家庭でも作れる料理にプロの技を加えた料理紹介もしておりますので、気軽にご参加くださ</p>
@@ -553,22 +552,16 @@
 
     $(document)
       .on('opening', '.remodal-in-toggle', function () {
-        $('.hamburger.pc').addClass('is-active')
-        $('body').addClass('navOpen nav--opened')
-        $('body').removeClass('navClose')
-        $('body').addClass('modal-second')
+        $('.hamburger').addClass('is-active')
+        $('body').addClass('navOpen nav--opened modal-second').removeClass('navClose')
       })
       .on('closing', '.remodal-in-toggle', function () {
         $('body').removeClass('modal-second')
         $('.hamburger').addClass('is-active')
-
-
       });
     window.addEventListener('resize', function (event) {
       $('.hamburger').removeClass('is-active')
-    }, true);
-
-
+    });
   </script>
 </body>
 

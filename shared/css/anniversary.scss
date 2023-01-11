@@ -1,4 +1,10 @@
 @import "global";
+body.nav--opened.modal-second *,
+body.nav--opened.modal-second *:focus {
+	pointer-events: visible !important;
+	touch-action: auto !important;
+	background: #fff;
+}
 .txt-f3 {
 	font-size: 4.5vw;
 	@include pc {
@@ -39,31 +45,7 @@ header {
 		border-color: #603b1f;
 	}
 }
-// @-webkit-keyframes imgSlide {
-// 	0% {
-// 		opacity: 0;
-// 		-webkit-clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
-// 		clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
-// 	}
-// 	100% {
-// 		opacity: 1;
-// 		-webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-// 		clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-// 	}
-// }
 
-// @keyframes imgSlide {
-// 	0% {
-// 		opacity: 0;
-// 		-webkit-clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
-// 		clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
-// 	}
-// 	100% {
-// 		opacity: 1;
-// 		-webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-// 		clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-// 	}
-// }
 
 #sec1 {
 	background: url(../img/anniversary/sec1_bg.jpg) no-repeat top center/auto 100%;
@@ -72,18 +54,13 @@ header {
 		text-align: center;
 		background-size: 100% 100%;
 	}
-	// .imgSlide {
-	// 	-webkit-animation-name: imgSlide;
-	// 	animation-name: imgSlide;
-	// 	-webkit-animation-duration: 2s;
-	// 	animation-duration: 2s;
-	// }
+
 
 	.sec1-content {
 		background: url(../img/anniversary/sec1_bg_opacity.png) no-repeat top center;
 		padding: 12vw 5%;
 		@include pc {
-			padding: 96px 0 78px;
+			padding: 96px 0 90px;
 			background-size: 100% 100%;
 			margin-left: 54px;
 			margin-right: 54px;
@@ -93,7 +70,7 @@ header {
 			margin: 0 auto 3vw;
 			@include pc {
 				width: auto;
-				margin: 0px 0px 41px 0px;
+				margin: 0px 0px 28px 0px;
 			}
 			i { 
 				width: 15%;

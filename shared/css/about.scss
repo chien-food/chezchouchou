@@ -4,10 +4,8 @@ body.nav--opened.modal-second *,
 body.nav--opened.modal-second *:focus {
 	pointer-events: visible !important;
 	touch-action: auto !important;
+	background: #fff;
 }
-// body.nav--opened.modal-second #menu_toggle { 
-// 	background: rgba(255,255,255,0.3);
-// }
 .txt-f3 {
 	font-size: 4.5vw;
 	@include pc {
@@ -174,7 +172,6 @@ header {
 	.wrap {
 		.group1 {
 			position: relative;
-			background: url(../img/about/sec2_bg.jpg);
 
 			@include pc {
 				height: 723px;
@@ -188,6 +185,21 @@ header {
 					width: 200%;
 					background: url(../img/about/sec2_bg.jpg);
 					z-index: -1;
+				}
+			}
+			&:after {
+				content: "";
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				width: 105%;
+				background: url(../img/about/sec2_bg.jpg);
+				z-index: -1;
+				@include pc {
+					right: 258px;
+					width: 200%;
+					left: auto;
 				}
 			}
 			h2 {
@@ -316,9 +328,19 @@ header {
 				}
 			}
 			.sec2-txt2 {
-				background: url(../img/about/sec2_bg.jpg);
+				// background: url(../img/about/sec2_bg.jpg);
 				padding: 12vw 5% 9vw;
 				position: relative;
+				&:after {
+					content: "";
+					position: absolute;
+					top: 0;
+					left: 0;
+					bottom: 0;
+					width: 110%;
+					background: url(../img/about/sec2_bg.jpg);
+					z-index: -1;
+				}
 				@include pc {
 					padding: 74px 0 44px;
 					background: unset;
@@ -326,16 +348,13 @@ header {
 					margin-left: auto;
 					margin-top: 42px;
 					&::after {
-						position: absolute;
-						content: "";
 						top: 7px;
 						bottom: 28px;
 						left: calc(50% - 509px);
 						width: 300%;
-						background: url(../img/about/sec2_bg.jpg);
-						z-index: -1;
 					}
 				}
+			
 			}
 			p {
 				@include pc {
@@ -1116,5 +1135,14 @@ header {
 				margin-top: 12px;
 			}
 		}
+	}
+}
+
+@media screen and (max-width:1024px) and (min-width: 1000px) {
+	#sec2 .wrap .group2 .sec2-txt2 { 
+		margin-right: 30px;
+	}
+	#sec3 .group1 { 
+		width: 1094px;
 	}
 }

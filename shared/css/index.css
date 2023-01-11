@@ -1,3 +1,10 @@
+body.nav--opened.modal-second *,
+body.nav--opened.modal-second *:focus {
+  pointer-events: visible !important;
+  touch-action: auto !important;
+  background: #fff;
+}
+
 .header-txt {
   position: absolute;
   z-index: 1;
