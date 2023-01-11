@@ -524,7 +524,7 @@ header {
 		position: relative;
 
 		@include pc {
-			padding-bottom: 50px;
+			padding-bottom: 0px;
 			background: url(../img/lunch/sec3_bg2.jpg);
 		}
 		.wrap {
@@ -533,6 +533,7 @@ header {
 			padding-bottom: 9vw;
 			@include pc {
 				padding-top: 97px;
+				padding-bottom: 111px;
 			}
 			&:after {
 				content: "";
@@ -640,6 +641,8 @@ header {
 				font-size: 5.5vw;
 				width: 25%;
 				text-align: center;
+				color: #441e0a;
+				margin-bottom: 3vw;
 				@include pc {
 					font-size: 24px;
 					width: 123px;
@@ -651,6 +654,12 @@ header {
 				@include pc {
 					line-height: 33px;
 				}
+				span { 
+					font-size: 4vw;
+					@include pc { 
+						font-size: 18px;
+					}
+				}
 			}
 		}
 		.group1-txt2 {
@@ -659,6 +668,468 @@ header {
 			padding: 4vw 0 4vw 5%;
 			@include pc {
 				padding: 0px 0px 0px 45px;
+				letter-spacing: 1.6px;
+			}
+			&:after {
+				content: "";
+				position: absolute;
+				left: 0;
+				top: 0;
+				height: 100%;
+				width: 120%;
+				border: 1px solid #fff;
+				@include pc {
+					top: -45px;
+					height: 147%;
+					width: 200%;
+				}
+			}
+		}
+	}
+	.group2 {
+		position: relative;
+		margin-bottom: 9vw;
+		@include pc { 
+			margin-bottom: 0;
+			padding-bottom: 67px;
+		}
+		h2 {
+			color: #441e0a;
+			background: url(../img/lunch/sec3_bg3.jpg);
+			width: 75%;
+			margin: 0 auto;
+			padding: 9vw 0;
+			@include pc {
+				padding: 0px 0px 0px 0px;
+				width: 481px;
+				height: 253px;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+			}
+			p:nth-child(1) {
+				font-size: 4vw;
+				position: relative;
+				&:after {
+					content: "";
+					position: absolute;
+					left: 50%;
+					transform: translateX(-50%);
+					width: 85%;
+					bottom: -1vw;
+					height: 1px;
+					background: #8f7462;
+					@include pc {
+						bottom: -7px;
+						width: 123%;
+					}
+				}
+				@include pc {
+					font-size: 20px;
+					margin-bottom: 20px;
+				}
+			}
+			p:nth-child(2) {
+				font-size: 6vw;
+				@include pc {
+					font-size: 30px;
+				}
+			}
+		}
+		.group2-img {
+			height: 50vw;
+			margin: 0 auto;
+			@include pc {
+				height: auto;
+				width: 82.8%;
+				margin-bottom: 30px;
+			}
+			img {
+				object-fit: cover;
+				height: 100%;
+				@include pc {
+					height: auto;
+				}
+			}
+		}
+		h3 {
+			width: 60%;
+			margin: 5vw auto 0;
+			@include pc {
+				width: 257px;
+				position: absolute;
+				left: 50%;
+				transform: translateX(-50%);
+				top: 142px;
+				padding: 18px 0 6px;
+			}
+			p {
+				font-size: 5vw;
+				@include pc {
+					font-size: 18px;
+					line-height: 34px;
+				}
+			}
+			span {
+				@include pc {
+					line-height: 33px;
+				}
+			}
+		}
+		.wrap {
+			.title {
+				margin: 5vw 0;
+				@include pc {
+					margin: 0 0 26px 0;
+				}
+			}
+			.menu {
+				@include pc { 
+					margin-bottom: 30px;
+				}
+				.left {
+					margin-bottom: 8vw;
+					@include pc {
+						margin-bottom: 0;
+						width: 47.3%;
+					}
+				}
+				.right { 
+					@include pc { 
+						width: 47.3%;
+					}
+				}
+				h4 {
+					font-weight: 600;
+					font-size: 4vw;
+					@include pc {
+						font-size: 17px;
+						font-weight: 500;
+					}
+				}
+				dl {
+					display: flex;
+					justify-content: space-between;
+					border-bottom: 1px solid #aca69d;
+					line-height: 2;
+					margin-bottom: 3vw;
+					@include pc {
+						margin-bottom: 4px;
+					}
+				}
+			}
+			.group2-txt {
+				color: #441e0a;
+				margin-top: 8vw;
+				margin-left: 12%;
+				position: relative;
+				padding: 3vw 0 3vw 4vw;
+				@include pc {
+					margin: 0px 0px 0px 405px;
+					padding: 8px 0 8px 36px;
+
+				}
+				&:after {
+					content: "";
+					position: absolute;
+					left: 0;
+					top: 0;
+					bottom: 0;
+					width: 120%;
+					border: 1px solid #8f8172;
+					@include pc { 
+						border-width: 2px;
+						width: 220%;
+					}
+				}
+			}
+		}
+	}
+	.group3 { 
+		background: url(../img/lunch/sec3_bg5.jpg) repeat top center;
+		padding-bottom: 8vw;
+		@include pc { 
+			padding-bottom: 86px;
+		}
+		h2 {
+			color: #fff;
+			width: 75%;
+			margin-left: auto;
+			padding: 12vw 0 3vw 9%;
+			position: relative;
+			z-index: 1;
+			@include pc {
+				padding: 71px 0px 0px 62px;
+				width: 529px;
+				height: 230px;
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+				justify-content: center;
+				margin-bottom: 22px;
+			}
+			&:after { 
+				content: '';
+				position: absolute;
+				top: 0vw;
+				left: -3%;
+				width: 160%;
+				height: 100%;
+				background: url(../img/lunch/sec3_bg4.jpg);
+				z-index: -1;
+			}
+			p:nth-child(1) {
+				font-size: 4vw;
+				position: relative;
+				&:after {
+					content: "";
+					position: absolute;
+					left: 0%;
+					width: 285%;
+					bottom: -1vw;
+					height: 1px;
+					background: #a69c93;
+					@include pc {
+						bottom: -2px;
+						width: 2000px;
+					}
+				}
+				@include pc {
+					font-size: 20px;
+					margin-bottom: 20px;
+				}
+			}
+			p:nth-child(2) {
+				font-size: 6vw;
+				@include pc {
+					font-size: 30px;
+				}
+			}
+		}
+		.group3-img {
+			// margin: 0 -5%;
+			@include pc { 
+				margin: 0px 0px 0px 0px;
+				position: absolute;
+				right: 498px;
+				left: -325px;
+				top: 120px;z-index: 1;
+			}
+		 }
+		h3 { 
+			background-color: #fff;
+			width: 50%;
+			margin: 0 auto;
+			text-align: center;
+			margin-top: -6vw;
+			margin-bottom: 6vw;
+			position: relative;
+			z-index: 1;
+			@include pc { 
+				width: 252px;
+				 margin: 0px 0px 0px 0px ; 
+				 background: url(../img/lunch/sec3_bg_opacity.png);
+				 background-color: transparent;
+				 position: absolute;
+				 top: 506px;
+				 left: 228px;
+				 padding: 17px 0 0 0;
+			}
+			p { 
+				font-size: 4vw;
+				@include pc { 
+					font-size: 18px;
+				}
+			}
+			span { 
+				@include pc { 
+					display: block;
+					line-height: 32px;
+				}
+			}
+		}
+		.group3-txt { 
+			color: #fff;
+			@include pc { 
+				width: 470px;
+				margin-left: auto;
+			}
+			p:nth-child(1){ 
+				margin-bottom: 5vw;
+				@include pc { 
+					margin-bottom: 20px;
+				}
+			}
+			p:nth-child(2){
+				margin-bottom: 1vw;
+				@include pc { 
+					font-size: 17px;
+					margin-bottom: -1px;
+				}
+			 }
+			 dl { 
+				display: flex;
+				justify-content: space-between;
+				align-items: flex-end;
+				border-bottom: 1px solid #a2978e;
+				margin-bottom: 4vw;
+				@include pc { 
+					margin-bottom: 12px;
+					line-height: 36px;
+					border: none;
+					position: relative;
+					&:after { 
+						content: '';
+						position: absolute;
+						left: 0;width: 100%;
+						height: 1px;
+						bottom: 4px;
+						background: #a2978e;
+					}
+				}
+			 }
+			
+
+		}
+	}
+	.group4 {
+		position: relative;
+
+		@include pc {
+			padding-bottom: 0px;
+			background: url(../img/lunch/sec3_bg2.jpg);
+		}
+		.wrap {
+			position: relative;
+			padding-top: 9vw;
+			padding-bottom: 2vw;
+			@include pc {
+				padding-top: 97px;
+				padding-bottom: 111px;
+			}
+			&:after {
+				content: "";
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				right: 0;
+				left: 0;
+				z-index: -3;
+				background: url(../img/lunch/sec3_bg2.jpg);
+				@include pc {
+					display: none;
+				}
+			}
+			&::before {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 54%;
+				height: 40vw;
+				background: url(../img/lunch/sec3_bg1.jpg);
+				z-index: -1;
+				@include pc {
+					display: none;
+				}
+			}
+		}
+
+		h2 {
+			color: #fff;
+			margin-bottom: 6vw;
+			@include pc {
+				margin-bottom: 44px;
+			}
+			p:nth-child(1) {
+				color: #e8b58e;
+				font-size: 3.5vw;
+				position: relative;
+				@include pc {
+					margin-bottom: 21px;
+				}
+				&:after {
+					content: "";
+					position: absolute;
+					right: 50%;
+					width: 100%;
+					height: 1px;
+					bottom: 0;
+					background: #cb9c79;
+				}
+				@include pc {
+					font-size: 20px;
+					line-height: 36px;
+					letter-spacing: 1.5px;
+				}
+			}
+			p:nth-child(2) {
+				font-size: 5vw;
+				color: #fff;
+				@include pc {
+					font-size: 30px;
+					line-height: 36px;
+					margin-bottom: 4px;
+				}
+			}
+			p:nth-child(3) {
+				@include pc {
+					font-size: 18px;
+					line-height: 35px;
+					letter-spacing: 1.5px;
+				}
+			}
+		}
+	
+		.group1-menu {
+			margin-top: 6vw;
+			margin-bottom: 6vw;
+			position: relative;
+			@include pc {
+				margin-top: 0;
+				margin-bottom: 106px;
+			}
+	
+			h3 { 
+				color: #fff;
+				margin-bottom: 2vw;
+				@include pc { 
+					margin-bottom: 0;
+				}
+			}
+			.price {
+				font-size: 5.5vw;
+				width: 25%;
+				text-align: center;
+				color: #441e0a;
+				margin-bottom: 6vw;
+				@include pc {
+					font-size: 24px;
+					width: 123px;
+					margin-bottom: 11px;
+				}
+			}
+			.group1-txt1 {
+				color: #fff;
+				@include pc {
+					line-height: 33px;
+				}
+				span { 
+					font-size: 4vw;
+					@include pc { 
+						font-size: 18px;
+					}
+				}
+			}
+		}
+		.group1-txt2 {
+			color: #fff;
+			position: relative;
+			padding: 4vw 0 4vw 5%;
+			@include pc {
+				padding: 0px 0px 0px 45px;
+				letter-spacing: 1.6px;
 			}
 			&:after {
 				content: "";
