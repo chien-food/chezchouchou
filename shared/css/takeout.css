@@ -1,0 +1,187 @@
+body.nav--opened.modal-second *,
+body.nav--opened.modal-second *:focus {
+  pointer-events: visible !important;
+  touch-action: auto !important;
+  background: #fff;
+}
+
+@media only screen and (min-width: 768px) {
+  .wrap {
+    border-left: 1px solid red;
+    border-right: 1px solid red;
+  }
+}
+
+.txt-30 {
+  font-size: 6vw;
+}
+@media only screen and (min-width: 768px) {
+  .txt-30 {
+    font-size: 30px;
+    line-height: 60px;
+  }
+}
+
+header {
+  background: url(../img/takeout/kv.jpg) no-repeat top center/cover;
+  height: 120vw;
+}
+@media only screen and (min-width: 768px) {
+  header {
+    height: 900px;
+  }
+}
+
+#sec1 {
+  padding: 8vw 0;
+  position: relative;
+}
+@media only screen and (min-width: 768px) {
+  #sec1 {
+    padding: 133px 0px 119px 0px;
+  }
+}
+#sec1:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 40%;
+  height: 168vw;
+  width: 100%;
+  z-index: -1;
+  background: url(../img/takeout/sec1_bg.jpg);
+}
+@media only screen and (min-width: 768px) {
+  #sec1:after {
+    right: calc(50% - 86px);
+    height: 462px;
+  }
+}
+#sec1::before {
+  content: "";
+  position: absolute;
+  background: url(../img/takeout/sec1_bg.jpg);
+  bottom: 0;
+  right: 0;
+  width: 55%;
+  height: 84vw;
+  z-index: -1;
+}
+@media only screen and (min-width: 768px) {
+  #sec1::before {
+    left: calc(50% - 71px);
+    width: 100%;
+    height: 612px;
+  }
+}
+#sec1 h2 {
+  color: #4f2a15;
+  font-size: 6vw;
+  margin-bottom: 8vw;
+  position: relative;
+}
+@media only screen and (min-width: 768px) {
+  #sec1 h2 {
+    font-size: 40px;
+    line-height: 70px;
+    letter-spacing: 2.9px;
+    margin: 0px 0px 43px 0px;
+  }
+}
+#sec1 h2:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 24%;
+  height: 1px;
+  width: 200%;
+  background: #947a66;
+}
+@media only screen and (min-width: 768px) {
+  #sec1 h2:after {
+    height: 2px;
+    bottom: -6px;
+  }
+}
+#sec1 .group1 {
+  position: relative;
+}
+@media only screen and (min-width: 768px) {
+  #sec1 .group1 {
+    margin-bottom: 108px;
+  }
+}
+#sec1 .group1 .sec1-slider {
+  margin-bottom: 8vw;
+}
+@media only screen and (min-width: 768px) {
+  #sec1 .group1 .sec1-slider {
+    margin: 0px 0px 0px 0px;
+    position: absolute;
+    top: 8px;
+    left: calc(50% + 21px);
+  }
+}
+#sec1 .group1 .sec1-slider .slick-dots {
+  text-align: left;
+  bottom: -3vw;
+}
+@media only screen and (min-width: 768px) {
+  #sec1 .group1 .sec1-slider .slick-dots {
+    bottom: -29px;
+  }
+}
+#sec1 .group1 .sec1-slider .slick-dots li button {
+  width: 6vw;
+  height: 1vw;
+  background: #99857a;
+}
+@media only screen and (min-width: 768px) {
+  #sec1 .group1 .sec1-slider .slick-dots li button {
+    width: 62px;
+    height: 9px;
+  }
+}
+#sec1 .group1 .sec1-slider .slick-dots .slick-active button {
+  background: #cba590;
+}
+#sec1 .group1 .sec1-txt {
+  margin-bottom: 6vw;
+}
+@media only screen and (min-width: 768px) {
+  #sec1 .group1 .sec1-txt {
+    margin: 0px 0px 0px 0px;
+    width: 449px;
+  }
+}
+#sec1 h3 {
+  color: #4f2a15;
+  font-size: 5vw;
+  margin-bottom: 5vw;
+}
+@media only screen and (min-width: 768px) {
+  #sec1 h3 {
+    font-size: 30px;
+    line-height: 50px;
+    letter-spacing: 3.2px;
+    margin: 0 0 53px 0;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #sec1 .sec1-btn {
+    padding: 0 36px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #sec1 .sec1-btn .btn-link {
+    width: 446px;
+  }
+}
+#sec1 .sec1-btn .sec1-btn1 {
+  margin-bottom: 5vw;
+}
+@media only screen and (min-width: 768px) {
+  #sec1 .sec1-btn .sec1-btn1 {
+    margin: 0px 0px 0px 0px;
+  }
+}/*# sourceMappingURL=takeout.css.map */

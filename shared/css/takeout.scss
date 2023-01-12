@@ -1,0 +1,158 @@
+@import "global";
+body.nav--opened.modal-second *,
+body.nav--opened.modal-second *:focus {
+	pointer-events: visible !important;
+	touch-action: auto !important;
+	background: #fff;
+}
+$takeout-color: #4f2a15;
+.wrap { 
+	@include pc { 
+		border-left: 1px solid red;
+		border-right: 1px solid red;
+	}
+}
+.txt-30 {
+	font-size: 6vw;
+	@include pc {
+		font-size: 30px;
+		line-height: 60px;
+	}
+}
+header {
+	background: url(../img/takeout/kv.jpg) no-repeat top center/cover;
+	height: 120vw;
+	@include pc {
+		height: 900px;
+	}
+}
+#sec1 {
+	padding: 8vw 0;
+	position: relative;
+	@include pc {
+		padding: 133px 0px 119px 0px;
+	}
+	&:after {
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 40%;
+		height: 168vw;
+		width: 100%;
+		z-index: -1;
+		background: url(../img/takeout/sec1_bg.jpg);
+		@include pc {
+			right: calc(50% + -86px);
+			height: 462px;
+		}
+	}
+	&::before {
+		content: "";
+		position: absolute;
+		background: url(../img/takeout/sec1_bg.jpg);
+		bottom: 0;
+		right: 0;
+		width: 55%;
+		height: 84vw;
+		z-index: -1;
+		@include pc { 
+			left: calc(50% + -71px);
+			width: 100%;
+			height: 612px;
+		}
+	}
+	h2 {
+		color: #4f2a15;
+		font-size: 6vw;
+		margin-bottom: 8vw;
+		position: relative;
+		@include pc {
+			font-size: 40px;
+			line-height: 70px;
+			letter-spacing: 2.9px;
+			margin: 0px 0px 43px 0px;
+		}
+		&:after {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			right: 24%;
+			height: 1px;
+			width: 200%;
+			background: #947a66;
+			@include pc {
+				height: 2px;
+				bottom: -6px;
+			}
+		}
+	}
+
+	.group1 {
+		position: relative;
+		@include pc { 
+			margin-bottom: 108px;
+		}
+		.sec1-slider {
+			margin-bottom: 8vw;
+			@include pc {
+				margin: 0px 0px 0px 0px;
+				position: absolute;
+				top: 8px;
+				left: calc(50% + 21px);
+			}
+			.slick-dots {
+				text-align: left;
+				bottom: -3vw;
+				@include pc { 
+					bottom: -29px;
+				}
+				li button {
+					width: 6vw;
+					height: 1vw;
+					background: #99857a;
+					@include pc { 
+						width: 62px;
+						height: 9px;
+					}
+				}
+			}
+			.slick-dots .slick-active button {
+				background: #cba590;
+			}
+		}
+		.sec1-txt {
+			margin-bottom: 6vw;
+			@include pc {
+				margin: 0px 0px 0px 0px;
+				width: 449px;
+			}
+		}
+	}
+	h3 {
+		color: $takeout-color;
+		font-size: 5vw;
+		margin-bottom: 5vw;
+		@include pc {
+			font-size: 30px;
+			line-height: 50px;
+			letter-spacing: 3.2px;
+			margin: 0 0 53px 0;
+		}
+	}
+	.sec1-btn {
+		@include pc { 
+			padding: 0 36px;
+		}
+		.btn-link { 
+			@include pc { 
+				width: 446px;
+			}
+		}
+		.sec1-btn1 {
+			margin-bottom: 5vw;
+			@include pc {
+				margin: 0px 0px 0px 0px;
+			}
+		}
+	}
+}
