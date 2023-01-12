@@ -19,13 +19,6 @@ body.nav--opened.modal-second *:focus {
   background-color: #fff;
 }
 
-@media only screen and (min-width: 768px) {
-  .wrap {
-    border-left: 1px solid red;
-    border-right: 1px solid red;
-  }
-}
-
 .key-js {
   width: 500px;
   height: 500px;
@@ -223,11 +216,6 @@ header {
   }
   #sec1 .sec1-txt p:nth-child(1):after {
     display: none;
-  }
-}
-@media screen and (min-width: 1000px) and (max-width: 1185px) {
-  #sec1 .sec1-img {
-    width: 1000px;
   }
 }
 @media screen and (min-width: 1000px) and (max-width: 1185px) {
@@ -458,6 +446,21 @@ header {
   background-image: url("../img/lunch/sec2_bg3.jpg");
 }
 
+@media only screen and (min-width: 768px) {
+  #sec2 {
+    max-width: 1289px;
+    margin: 92px auto 111px;
+  }
+  #sec2 .sec2-list-contents .sec2-wrap-item {
+    padding-bottom: 50%;
+  }
+  #sec2 .sec2-txt {
+    font-size: 27px;
+  }
+  #sec2 .sec2-icon img {
+    width: 6%;
+  }
+}
 #sec3 .slick-dots {
   text-align: left;
   margin-left: 3vw;
@@ -1802,6 +1805,7 @@ header {
     height: 2px;
     right: calc(50% + 231px);
     width: 200%;
+    bottom: -6px;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -1838,7 +1842,7 @@ header {
     position: absolute;
     left: 330px;
     right: -274px;
-    top: 83px;
+    top: 88px;
   }
 }
 #sec3 .group4 .group1-menu {
@@ -1967,7 +1971,7 @@ header {
     padding: 68px 55px 0px 51px;
     width: 464px;
     height: 400px;
-    top: 0;
+    top: 5px;
     left: -25px;
   }
   #sec4 .sec4-txt h2 {
@@ -2048,7 +2052,7 @@ header {
 
 @media only screen and (min-width: 768px) {
   #sec5 {
-    margin-top: 97px;
+    margin-top: 104px;
     padding-bottom: 183px;
   }
   #sec5 .group h2 {
