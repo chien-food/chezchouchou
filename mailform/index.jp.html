@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>FCMailer v3.5 - 日本語</title>
+		<link type="text/css" href="shared/css/FCMailer.css" rel="stylesheet" />
+		<link type="text/css" href="shared/css/shared.css" rel="stylesheet" />
+	</head>
+	<body>
+		<div id="container">
+			<div id="mail">
+				<div class="fc-form" data-display="slide" data-debug="true" data-language="jp" data-multiple="form" data-root="/" data-email="email" data-keep="false">
+					<!-- <div class="confirm-hide">
+						<h2>連絡</h2>
+						<h3>離素名手列模みたやむ瀬離無へ毛夜ゃせえめよゅそまゅ</h3>
+						<h4>野目差擢阿屋留名ャスヨオホマと保留他に巣素樹こまむねにけゆひた列へこれみ知区阿遊津きくむほみねりんとち差模擢野露派模手無露目巣おンルン保尾なろにとへんコナエカ尾保舳列魔知ふも課留名ぬりぬ鵜等サカノツッッホこむこ名他氏課舳おっせよくうの保魔ふもひめ無個魔他模ヤテエむも譜御遊都無御留模二知列譜へんなっえ絵雲保樹雲模露夜めんさ区区譜こほ巣舳離保や毛巣尾むっけもらきムニユウト毛鵜絵氏知おぬくらかおゅへへょうきめぬ毛他んま等二ね魔屋きり舳雲絵模屋樹尾派留鵜のたゆにえ屋舳絵模さ野御むく手遊そう遊以差保るうろえむ名</h4>
+					</div> -->
+					<div class="confirm-show">
+						<h2>連絡先を確認</h2>
+						<h3>夜野離擢根ユコムメセツニュカハコロー以素素御ムシキホテ巣手離すれま譜き手めもつょ差野ヘチレヘ無せにほゅしそんむもたくっちなゃかつへの区瀬擢雲課知離名アクムアナぬな無遊等魔露ろもゅょろ</h3>
+					</div>
+					<div class="main">
+						<div class="row">
+							<div class="col form-row">
+								<div class="caption"><span data-for="lastname">お名前 姓</span> <span class="mark-require">（必須）</span></div>
+								<div class="input form-value" data-min="1" data-max="20"><input type="text" name="lastname" value="" class="require" /></div>
+								<div class="error">必須項目です</div>
+								<div class="error-length">{min}文字以上{max}文字以下で入力してください</div>
+							</div>
+							<div class="col form-row">
+								<div class="caption"><span data-for="firstname">お名前 名</span></div>
+								<div class="input form-value"><input type="text" name="firstname" value="" /></div>
+							</div>
+						</div>
+						<hr />
+						<div class="row">
+							<div class="col form-row">
+								<div class="caption"><span data-for="furigana-lastname">フリガナ 姓</span> <span class="mark-require">（必須）</span></div>
+								<div class="input form-value"><input type="text" name="furigana-lastname" value="" class="require" /></div>
+								<div class="error">必須項目です</div>
+							</div>
+							<div class="col form-row">
+								<div class="caption"><span data-for="furigana-firstname">フリガナ 名</span> <span class="mark-require">（必須）</span></div>
+								<div class="input form-value"><input type="text" name="furigana-firstname" value="" class="require" /></div>
+								<div class="error">必須項目です</div>
+							</div>
+						</div>
+						<hr />
+						<div class="row">
+							<div class="col form-row">
+								<div class="caption"><span data-for="email">メールアドレス</span> <span class="mark-require">（必須）</span></div>
+								<div class="input form-value"><input type="text" name="email" value="" class="require check-email" /></div>
+								<div class="error">必須項目です</div>
+								<div class="error-email">正しい形式で入力してください</div>
+							</div>
+							<div class="col form-row">
+								<div class="caption"><span data-for="confirm-email">再確認</span> <span class="mark-require">（必須）</span></div>
+								<div class="input form-value" data-match="email"><input type="text" name="confirm-email" value="" class="require check-email" /></div>
+								<div class="error">必須項目です</div>
+								<div class="error-email">正しい形式で入力してください</div>
+								<div class="error-match">メールアドレスが一致しません</div>
+							</div>
+						</div>
+						<hr />
+						<div class="row">
+							<div class="col form-row">
+								<div class="caption"><span data-for="postal_code">郵便番号</span> <span class="mark-require">（必須）</span></div>
+								<div class="input form-value"><input type="text" name="postal_code" value="" class="require" /></div>
+								<div class="error">必須項目です</div>
+							</div>
+							<div class="col form-row">
+								<div class="caption"><span data-for="state">都道府県</span> <span class="mark-require">（必須）</span></div>
+								<div class="input form-value"><input type="text" name="state" value="" class="require" /></div>
+								<div class="error">必須項目です</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col form-row">
+								<div class="caption"><span data-for="address1">市区町村以下</span> <span class="mark-require">（必須）</span></div>
+								<div class="input form-value"><input type="text" name="address1" value="" class="require" /></div>
+								<div class="error">必須項目です</div>
+							</div>
+							<div class="col form-row">
+								<div class="caption"><span data-for="address2">マンション名等 （確認用）</span></div>
+								<div class="input form-value"><input type="text" name="address2" value="" /></div>
+							</div>
+						</div>
+						<hr />
+						<div class="row">
+							<div class="col form-row">
+								<div class="caption"><span data-for="phone">お電話番号</span> <span class="mark-require">（必須）</span></div>
+								<div class="input form-value"><input type="text" name="phone" value="" placeholder="例：0312345678" class="require check-phone" /></div>
+								<div class="error">必須項目です</div>
+								<div class="error-phone">正しい形式で入力してください</div>
+							</div>
+							<div class="col form-row">
+								<div class="caption"><span data-for="fax">FAX番号</span></div>
+								<div class="input form-value"><input type="text" name="fax" value="" placeholder="" /></div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col form-row">
+								<div class="caption"><span data-for="mobile">携帯番号</span> <span class="mark-require">（必須）</span></div>
+								<div class="input form-value" data-before="TEL: "><input type="text" name="mobile" value="" placeholder="例：0987654321" class="require check-phone" /></div>
+								<div class="error">必須項目です</div>
+								<div class="error-phone">正しい形式で入力してください</div>
+							</div>
+							<div class="col form-row">
+								<div class="caption"><span data-for="gender">性別</span> <span class="mark-require">（必須）</span></div>
+								<div class="input form-value">
+									<select name="gender" class="require">
+										<option value="男性">男性</option>
+										<option value="女性">女性</option>
+									</select>
+								</div>
+								<div class="error">必須項目です</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col form-row">
+								<div class="caption"><span data-for="event">用件区分</span></div>
+								<div class="input form-value">
+									<label><input type="radio" name="event" value="お問い合わせ" /> お問い合わせ</label>
+									<label><input type="radio" name="event" value="資料請求" /> 資料請求</label>
+									<label><input type="radio" name="event" value="見積依頼" /> 見積依頼</label>
+									<label><input type="radio" name="event" value="その他" /> その他</label>
+								</div>
+							</div>
+							<div class="col form-row">
+								<div class="caption"><span data-for="method">ご希望の連絡方法</span></div>
+								<div class="input form-value" data-join=", ">
+									<label><input type="checkbox" name="method" value="メール" /> メール</label>
+									<label><input type="checkbox" name="method" value="お電話" /> お電話</label>
+									<label><input type="checkbox" name="method" value="FAX番号" /> FAX番号</label>
+								</div>
+							</div>
+						</div>
+						<div class="row fuild">
+							<div class="col form-row">
+								<div class="caption"><span data-for="messages">お問い合わせ内容</span></div>
+								<div class="input form-value"><textarea name="messages"></textarea></div>
+							</div>
+						</div>
+						<!-- parse yubin -->
+						<hr />
+						<div class="row fuild">
+							<div class="col form-row">
+								<div class="caption"><span data-for="yubin-code yubin-locate" data-join="br" data-before="〒">郵便番号検索 - 日本郵便</span> <span class="mark-require">&ast;</span></div>
+								<div class="input form-value">
+									<div class="yubin-bango" data-name-code="yubin-code" data-name-locate="yubin-locate" data-require="true"></div>
+								</div>
+								<div class="error">This field is required</div>
+							</div>
+						</div>
+						<!-- auto parsed -->
+						<hr />
+						<div class="row fuild">
+							<div class="col form-row">
+								<div class="caption" data-for="parse-select parse-radio parse-checkbox" data-join="br">パーズ</div>
+								<div class="input form-value">
+									<div class="form-parse-text" data-name="parse-select" data-type="select" data-require="true" data-placeholder="プレースホルダ" data-active="2">
+										価格
+										質
+										配送
+										提案
+										対応
+										すぐに取引したい
+									</div>
+									<div class="error">必須項目です</div>
+								</div>
+								<div class="input form-value">
+									<div class="form-parse-text" data-name="parse-radio" data-type="radio" data-active="3">お問い合わせ
+										資料請求
+										見積依頼
+										その他
+									</div>
+								</div>
+								<div class="input form-value" data-join=" • ">
+									<div class="form-parse-text" data-name="parse-checkbox" data-type="checkbox" data-active="2 3" data-require="true"> メール
+										お電話
+										FAX番号
+									</div>
+									<div class="error">必須項目です</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col form-row">
+								<div class="caption" data-for="parse-date">解析日</div>
+								<div class="input form-value">
+									<div class="form-parse-date" data-name="parse-date" data-date-start="monday" data-date-format="Y/m/d" data-date-weeks="false" data-date-min="2017/11/01" data-date-max="2017/12/31" data-date-off="sunday tuesday wednesday" data-date-closed="2017/12/22 2017/12/23" data-date-opened="2017/12/26" data-date-active="2017/11/10" data-require="true" data-inline="false"></div>
+									<div class="error">必須項目です</div>
+								</div>
+							</div>
+							<div class="col form-row">
+								<div class="caption" data-for="parse-time">解析時間</div>
+								<div class="input form-value">
+									<div class="form-parse-time" data-name="parse-time" data-time-min="08:00" data-time-max="20:00" data-time-step="15" data-time-active="08:30" data-require="true" data-inline="false"></div>
+									<div class="error">必須項目です</div>
+								</div>
+							</div>
+						</div>
+						<div class="row fuild">
+							<div class="col form-row">
+								<div class="caption" data-for="parse-datetime">日時解析</div>
+								<div class="input form-value">
+									<div class="form-parse-datetime" data-name="parse-datetime" data-date-start="monday" data-date-format="Y/m/d" data-date-weeks="false" data-date-min="2017/11/01" data-date-max="2017/12/31" data-date-off="sunday tuesday" data-date-closed="2017/12/24 2017/12/25" data-date-opened="2017/12/25" data-date-active="2017/11/10" data-time-format="H:i" data-time-min="08:00" data-time-max="20:00" data-time-step="60" data-time-active="11:00" data-require="true" data-inline="false"></div>
+									<div class="error">必須項目です</div>
+								</div>
+							</div>
+						</div>
+						<!-- choice-date -->
+						<hr />
+						<div class="row fuild">
+							<div class="col form-row">
+								<div class="caption"><span data-for="choice-date">選択日付</span></div>
+								<div class="input form-value">
+									<div class="choice-date" data-name="choice-date" data-placeholder="選択してください" data-active="" data-start="2" data-holiday="sunday monday" data-max="3" data-require="true"></div>
+								</div>
+								<div class="error">This field is required</div>
+							</div>
+						</div>
+						<!-- attachment -->
+						<hr />
+						<div class="row fuild">
+							<div class="col form-row">
+								<div class="caption"><span data-for="attachment-single">単一の添付ファイル</span></div>
+								<div class="input form-value">
+									<input type="file" name="attachment-single" placeholder="ファイルを選ぶ..." class="require" />
+								</div>
+								<div class="error">必須項目です</div>
+							</div>
+						</div>
+						<div class="row fuild">
+							<div class="col form-row">
+								<div class="caption"><span data-for="attachment-multiple">複数の添付ファイル</span></div>
+								<div class="input form-value" data-min="2" data-max="5">
+									<input type="file" name="attachment-multiple[]" placeholder="ファイルを選ぶ..." multiple="multiple" />
+								</div>
+								<div class="error">必須項目です</div>
+								<div class="error-length">{min}ファイル以上{max}ファイル以下でご選択ください</div>
+							</div>
+						</div>
+						<!-- submit -->
+						<div class="row fuild">
+							<div class="col submit submit-confirm">
+								<button type="submit" class="form-submit">送信</button>
+								<button type="button" class="form-back">戻る</button>
+							</div>
+							<div class="col submit submit-form">
+								<button type="submit" class="form-submit">内容確認</button>
+								<button type="reset" class="form-back">リセット</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="shared/js/jquery.min.js"></script>
+		<script type="text/javascript" src="shared/js/FCMailer.js"></script>
+	</body>
+</html>

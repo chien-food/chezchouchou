@@ -1,0 +1,71 @@
+#-------------------------------------------------
+#  _____ ____ __  __       _ _
+# |  ___/ ___|  \/  | __ _(_) | ___ _ __
+# | |_ | |   | |\/| |/ _` | | |/ _ \ '__|
+# |  _|| |___| |  | | (_| | | |  __/ |
+# |_|   \____|_|  |_|\__,_|_|_|\___|_|
+#
+#-------------------------------------------------
+#
+# FCMailer - v3.6
+#
+# FoodConnection
+# http://foodconnection.jp/
+# http://foodconnection.vn/
+#
+#-------------------------------------------------
+
+Options -Indexes
+
+
+
+DirectoryIndex index.php index.html
+
+
+
+<FilesMatch "\.(ini|sqlite|xml)$">
+	Order allow,deny
+	Deny from all
+	Satisfy All
+</FilesMatch>
+
+
+
+RewriteEngine On
+#RewriteBase /
+
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^ index.php [L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.php?error=404 [L]
+
+
+
+ErrorDocument 400 /index.php?code=400
+ErrorDocument 401 /index.php?code=401
+ErrorDocument 403 /index.php?code=403
+ErrorDocument 404 /index.php?code=404
+ErrorDocument 500 /index.php?code=500
+ErrorDocument 502 /index.php?code=502
+ErrorDocument 504 /index.php?code=504
+
+
+
+
+#####################################
+#                                   #
+# Resource Limits                   #
+#                                   #
+#####################################
+
+#php_value max_input_time 60
+#php_value max_execution_time 30
+#php_value max_file_uploads 100
+#php_value upload_max_filesize 10M
+#php_value memory_limit 256M
+
+#php_value sendmail_from "FCMailer"
+#php_value sendmail_path "../sendmail -t -i"

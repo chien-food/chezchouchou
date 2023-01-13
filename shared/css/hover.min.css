@@ -1520,7 +1520,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: #a05026;
+  background: #a15228;
   border-radius: 100%;
   -webkit-transform: scale(0);
   transform: scale(0);
@@ -1532,7 +1532,7 @@
   transition-timing-function: ease-out
 }
 .hvr-radial-out:active, .hvr-radial-out:focus, .hvr-radial-out:hover {
-  color: #fff
+  color: #fff;
 }
 .hvr-radial-out:active:before, .hvr-radial-out:focus:before, .hvr-radial-out:hover:before {
   -webkit-transform: scale(2);

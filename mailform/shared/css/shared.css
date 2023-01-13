@@ -1,0 +1,344 @@
+/*
+ * FCMailer - 2017
+ *
+ * StyleName: shared.css
+ * Version: 3.5
+ *
+ * FoodConnection
+ * http://foodconnection.jp/
+ * http://foodconnection.vn/
+ *
+ */
+
+* {
+	font-size: 12px;
+	font-family: arial, tahoma, verdana, sans-serif, serif;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+	background: #101010;
+	width: 5px;
+	height: 5px;
+}
+::-webkit-scrollbar-thumb {
+	background: #303030;
+}
+::-webkit-scrollbar-track {
+	background: #151515;
+}
+
+:-ms-input-placeholder {
+	color: #252525;
+}
+:-moz-placeholder {
+	color: #252525;
+}
+::-moz-placeholder {
+	color: #252525;
+}
+::-webkit-input-placeholder {
+	color: #252525;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	color: #808080;
+	background: #101010;
+}
+input,
+select,
+textarea,
+button {
+	padding: 5px 10px;
+	background: #404040;
+	color: #909090;
+	width: 100%;
+	border: none;
+	outline: none;
+	box-shadow:
+		inset 0 0 0 1px #303030,
+		inset 0 0 0 2px #202020;
+	-moz-box-shadow:
+		inset 0 0 0 1px #303030,
+		inset 0 0 0 2px #202020;
+	-webkit-box-shadow:
+		inset 0 0 0 1px #303030,
+		inset 0 0 0 2px #202020;
+}
+input[type=radio],
+input[type=checkbox] {
+	padding: 0;
+	width: auto;
+	position: relative;
+	top: 2px;
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+}
+textarea {
+	min-height: 150px;
+	resize: none;
+}
+button {
+	cursor: pointer;
+	padding: 10px 30px;
+	display: inline-block;
+	color: #FEFEFE;
+	font-size: 125%;
+	background: #795548;
+	width: auto;
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+}
+button + button {
+	margin-left: 20px;
+}
+button:hover {
+	background: #694A3E;
+}
+label {
+	display: block;
+}
+#mail {
+	margin: 1em auto;
+	padding: 25px;
+	font-size: 105%;
+	background: #202020;
+	width: 95%;
+	max-width: 1000px;
+	box-shadow:
+		inset 0 0 0 1px #303030,
+		inset 0 0 0 2px #101010;
+	-moz-box-shadow:
+		inset 0 0 0 1px #303030,
+		inset 0 0 0 2px #101010;
+	-webkit-box-shadow:
+		inset 0 0 0 1px #303030,
+		inset 0 0 0 2px #101010;
+}
+#mail h2 {
+	margin: 10px;
+	padding: 0;
+	color: #CFCFCF;
+	font-size: 200%;
+	font-weight: 600;
+	text-align: center;
+	text-transform: uppercase;
+}
+#mail h3 {
+	margin: 10px;
+	padding: 0;
+	color: #909090;
+	font-size: 125%;
+	font-weight: 600;
+	text-align: center;
+}
+#mail h4 {
+	margin: 10px;
+	padding: 0;
+	color: #606060;
+	font-size: 110%;
+	font-weight: 300;
+	font-style: italic;
+}
+#mail hr {
+	margin: auto;
+	background: #363636;
+	height: 1px;
+	border: none;
+}
+#mail .row {
+	display: table;
+	width: 100%;
+}
+#mail .row > .col {
+	display: table-cell;
+	padding: 15px 0;
+	width: 50%;
+}
+#mail .mark-require {
+	color: #FF4141;
+	font-size: small;
+	line-height: 0;
+}
+#mail .caption {
+	padding: 3px 10px;
+}
+#mail .input {
+	padding: 5px 10px;
+}
+#mail .submit {
+	text-align: center;
+}
+
+/*
+ * Custom mailform
+ *
+ */
+
+#mail [class^=error] {
+	left: 10px;
+	bottom: 2px;
+}
+#mail .form-value + .form-value {
+	margin-top: 10px;
+}
+#mail .form-value > [class^='error'] {
+	bottom: -12px;
+}
+
+#mail .yubin-bango {
+}
+#mail .yubin-postal-code {
+}
+#mail .yubin-postal-mark {
+	padding: 5px;
+	line-height: 1;
+}
+#mail .yubin-postal-input {
+	padding: 5px;
+}
+#mail .yubin-locate {
+	padding: 5px;
+}
+
+#mail .input > .form-value,
+#mail .form-parse-date > .form-value {
+	display: inline-block;
+}
+#mail .form-attachment .attachment-preview {
+	background: #252525;
+	border: 1px dashed #363636;
+	box-shadow:
+		0 0 0 1px #181818,
+		inset 0 0 0 1px #181818;
+	-moz-box-shadow:
+		0 0 0 1px #181818,
+		inset 0 0 0 1px #181818;
+	-webkit-box-shadow:
+		0 0 0 1px #181818,
+		inset 0 0 0 1px #181818;
+}
+#mail .form-attachment .attachment-browse {
+	color: #FEFEFE;
+	background: #606060;
+	max-width: 120px;
+	box-shadow:
+		inset 0 0 0 1px #202020,
+		inset 0 0 0 2px #909090;
+	-moz-box-shadow:
+		inset 0 0 0 1px #202020,
+		inset 0 0 0 2px #909090;
+	-webkit-box-shadow:
+		inset 0 0 0 1px #202020,
+		inset 0 0 0 2px #909090;
+	transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-webkit-transition: all .3s ease;
+}
+#mail .form-attachment .attachment-browse:hover {
+	background: #404040;
+}
+#mail .form-attachment .attachment-caption input {
+	margin: 5px 0;
+	padding: 5px 10px;
+	background: #404040;
+	color: #909090;
+	width: 100%;
+	border: none;
+	outline: none;
+	box-shadow:
+		inset 0 0 0 1px #303030,
+		inset 0 0 0 2px #202020;
+	-moz-box-shadow:
+		inset 0 0 0 1px #303030,
+		inset 0 0 0 2px #202020;
+	-webkit-box-shadow:
+		inset 0 0 0 1px #303030,
+		inset 0 0 0 2px #202020;
+}
+#mail .form-attachment .attachment-list {
+	background: #252525;
+	min-height: 75px;
+	border: 1px dashed #363636;
+	box-shadow:
+		0 0 0 1px #181818,
+		inset 0 0 0 1px #181818;
+	-moz-box-shadow:
+		0 0 0 1px #181818,
+		inset 0 0 0 1px #181818;
+	-webkit-box-shadow:
+		0 0 0 1px #181818,
+		inset 0 0 0 1px #181818;
+}
+#mail .form-attachment .attachment-item {
+	background: #252525;
+	border: 1px dotted #363636;
+	box-shadow:
+		0 0 0 1px #181818,
+		inset 0 0 0 1px #181818;
+	-moz-box-shadow:
+		0 0 0 1px #181818,
+		inset 0 0 0 1px #181818;
+	-webkit-box-shadow:
+		0 0 0 1px #181818,
+		inset 0 0 0 1px #181818;
+}
+#mail .form-attachment .attachment-item:nth-of-type(even) {
+	background: #212121;
+}
+#mail .form-attachment .attachment-remove {
+	background: #303030;
+	border: 1px solid #363636;
+	box-shadow:
+		0 0 0 1px #181818,
+		inset 0 0 0 1px #181818;
+	-moz-box-shadow:
+		0 0 0 1px #181818,
+		inset 0 0 0 1px #181818;
+	-webkit-box-shadow:
+		0 0 0 1px #181818,
+		inset 0 0 0 1px #181818;
+}
+#mail .form-attachment.multiple .attachment-remove {
+}
+#mail .form-attachment .attachment-remove:before {
+	color: #909090;
+}
+#mail .form-attachment .attachment-remove:hover {
+	background: #282828;
+}
+#mail .fc-confirm .confirm-value {
+	padding: 5px 10px;
+	background: #404040;
+	color: #909090;
+	width: 100%;
+	border: none;
+	outline: none;
+	box-shadow:
+		inset 0 0 0 1px #303030,
+		inset 0 0 0 2px #202020;
+	-moz-box-shadow:
+		inset 0 0 0 1px #303030,
+		inset 0 0 0 2px #202020;
+	-webkit-box-shadow:
+		inset 0 0 0 1px #303030,
+		inset 0 0 0 2px #202020;
+}
+#mail .fc-confirm button {
+	background: #606060;
+}
+#mail .fc-confirm button:hover {
+	background: #858585;
+}
+#mail .fc-confirm button[type=submit] {
+	background: #607D8B;
+}
+#mail .fc-confirm button[type=submit]:hover {
+	background: #7B96A3;
+}
