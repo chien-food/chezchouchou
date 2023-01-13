@@ -841,16 +841,27 @@ header {
   font-size: 4.6vw;
   margin-bottom: 8vw;
 }
-#mail-form .form .row::before {
+#mail-form .form .row1::before {
   content: '';
   position: absolute;
   top: -2vw;
   bottom: -5vw;
   left: 0;
   right: 0;
+  border-top: 1px solid #9c8d7c;
+  border-bottom: 1px solid #9c8d7c;
+}
+#mail-form .form .row::before {
+  content: '';
+  position: absolute;
+  top: -2.6vw;
+  bottom: -4vw;
+  left: 0;
+  right: 0;
   /* border-top: 1px solid #9c8d7c; */
   border-bottom: 1px solid #9c8d7c;
 }
+
 #mail-form .form .row .caption {
   justify-content: space-between;
   margin-bottom: 0.5vw;
@@ -858,13 +869,12 @@ header {
 #mail-form .form .row .caption .dis-flex{
   align-items: center;
   justify-content: flex-start;
-  /* width: 48%; */
+  padding-left: 11px;
 }
 #mail-form .form .row .input.form-value {}
 #mail-form .form .row p {}
 #mail-form .form .row .dis-flex i {
-  /* width: 5vw; */
-  margin-right: 10px;
+  margin-right: 1px;
 }
 #mail-form .form .row1 p i {
     width: 8%;
@@ -873,14 +883,15 @@ header {
 }
 #mail-form .form .row p span {
     width: 100%;
-    /* display: block; */
-    /* letter-spacing: -5px; */
 }
 #mail-form .form .row p img {}
 #mail-form .form .row .mark-require {
   background-color: #a05127;
   color: #fff;
-  padding: 0vw 4%;
+  padding: 0vw 3%;
+  display: flex;
+  font-size: 3.5vw;
+  align-items: center;
 }
 #mail-form .form .row input {
     border: none;
@@ -889,18 +900,50 @@ header {
 }
 
 @media only screen and (min-width:768px) {
-#mail-form {}
-
-  #mail-form h2 { 
-    font-size: 28px;
-  }
-  #mail-form .form {}
-#mail-form .form .row {
-  font-size: 19px;
+#mail-form {
+    padding: 58px 0 0 0;
 }
 
-#mail-form .form .row .caption {}
-#mail-form .form .row .input.form-value {}
+  #mail-form h2 {
+    font-size: 28px;
+    margin-bottom: 53px;
+  }
+  #mail-form .form {
+    /* padding-right: 48px; */
+}
+#mail-form .form .row {
+  font-size: 19px;
+  margin: 0 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0 16px;
+}
+#mail-form .form .row1::before {
+  top: 0;;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+#mail-form .form .row::before {
+  top: 0;
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  border-width: 2px;
+}
+
+#mail-form .form .row .caption {
+    width: 408px;
+    align-items: center;
+    margin-bottom: 0;
+    margin-top: 0px;
+    position: relative;
+    top: 2px;
+}
+#mail-form .form .row .input.form-value {
+    margin-right: 48px;
+}
 #mail-form .form .row p {}
 #mail-form .form .row p i {
   width: auto;
@@ -908,7 +951,19 @@ header {
 }
 #mail-form .form .row p span {}
 #mail-form .form .row p img {}
-#mail-form .form .row .mark-require {}
-#mail-form .form .row input {}
+#mail-form .form .row .mark-require {
+  font-size: 14px;
+  padding: 0 0 0 0;
+  width: 50px;
+  height: 26px;
+  justify-content: center;
+  display: flex;
+}
+#mail-form .form .row input {
+    padding: 0 0 0 0;
+    width: 531px;
+    height: 34px;
+    padding: 0 0 0 13px;
+}
  
 }
