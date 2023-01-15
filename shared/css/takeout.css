@@ -249,7 +249,8 @@ header {
   position: relative;
   margin-bottom: 4vw;
 }
-#sec2 .sec2-group .sec2-img img { 
+
+#sec2 .sec2-group .sec2-img img {
   width: 100%;
   object-fit: cover;
 }
@@ -310,7 +311,8 @@ header {
     transform: translateY(-37px);
     transition: 0.3s;
   }
-  #sec2 .sec2-group .sec2-img .content:hover { 
+
+  #sec2 .sec2-group .sec2-img .content:hover {
     opacity: 0.8;
   }
 
@@ -462,7 +464,8 @@ header {
 .group2-list .group2-item {
   margin-bottom: 10vw;
 }
-.group2-list .group2-item .group2-img img { 
+
+.group2-list .group2-item .group2-img img {
   width: 100%;
   object-fit: cover;
 }
@@ -757,9 +760,11 @@ header {
   width: 80%;
   margin: 0 auto;
 }
+
 #sec6 .wrap .group p {
   margin-bottom: 4vw;
 }
+
 #sec6 .wrap .group .sec-btn {
   width: 75%;
   margin: 0 auto;
@@ -769,27 +774,34 @@ header {
   #sec6 {
     padding: 83px 0 43px 0;
   }
+
   #sec6 .wrap h2 {
     font-size: 40px;
     margin-bottom: 49px;
   }
+
   #sec6 .wrap h2 i {
     margin-bottom: 8px;
   }
+
   #sec6 .wrap h2 p {
     font-size: 40px;
     line-height: 70px;
     letter-spacing: 4.7px;
   }
+
   #sec6 .wrap h2 img {
     width: auto;
   }
+
   #sec6 .wrap .group .item {
     width: 48.5%;
   }
+
   #sec6 .wrap .group .right.item {
     margin-top: 0;
   }
+
   #sec6 .wrap .group h3 {
     font-size: 23px;
   }
@@ -799,13 +811,16 @@ header {
     margin-left: 64px;
     margin-top: 22px;
   }
+
   #sec6 .wrap .group p {
     line-height: 36px;
     margin-bottom: 15px;
   }
+
   #sec6 .wrap .group .p1 {
     line-height: 30px;
   }
+
   #sec6 .wrap .group h3 {
     font-size: 23px;
     padding: 9px 0;
@@ -823,147 +838,3 @@ header {
 
 }
 
-
-#mail-form {
-  background: url(../img/takeout/form_bg.jpg);
-  margin: 0 3%;
-  padding: 8vw 0;
-}
-#mail-form h2 {
-  color: #342513;
-  text-align: center;
-  font-size: 4.5vw;
-  margin-bottom: 6vw;
-}
-#mail-form .form {}
-#mail-form .form .row {
-  position: relative;
-  font-size: 4.6vw;
-  margin-bottom: 8vw;
-}
-#mail-form .form .row1::before {
-  content: '';
-  position: absolute;
-  top: -2vw;
-  bottom: -5vw;
-  left: 0;
-  right: 0;
-  border-top: 1px solid #9c8d7c;
-  border-bottom: 1px solid #9c8d7c;
-}
-#mail-form .form .row::before {
-  content: '';
-  position: absolute;
-  top: -2.6vw;
-  bottom: -4vw;
-  left: 0;
-  right: 0;
-  /* border-top: 1px solid #9c8d7c; */
-  border-bottom: 1px solid #9c8d7c;
-}
-
-#mail-form .form .row .caption {
-  justify-content: space-between;
-  margin-bottom: 0.5vw;
-}
-#mail-form .form .row .caption .dis-flex{
-  align-items: center;
-  justify-content: flex-start;
-  padding-left: 11px;
-}
-#mail-form .form .row .input.form-value {}
-#mail-form .form .row p {}
-#mail-form .form .row .dis-flex i {
-  margin-right: 1px;
-}
-#mail-form .form .row1 p i {
-    width: 8%;
-    margin-right: 2%;
-    display: inline-block;
-}
-#mail-form .form .row p span {
-    width: 100%;
-}
-#mail-form .form .row p img {}
-#mail-form .form .row .mark-require {
-  background-color: #a05127;
-  color: #fff;
-  padding: 0vw 3%;
-  display: flex;
-  font-size: 3.5vw;
-  align-items: center;
-}
-#mail-form .form .row input {
-    border: none;
-    padding: 2vw;
-    width: 100%;
-}
-
-@media only screen and (min-width:768px) {
-#mail-form {
-    padding: 58px 0 0 0;
-}
-
-  #mail-form h2 {
-    font-size: 28px;
-    margin-bottom: 53px;
-  }
-  #mail-form .form {
-    /* padding-right: 48px; */
-}
-#mail-form .form .row {
-  font-size: 19px;
-  margin: 0 0 0 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 0 16px;
-}
-#mail-form .form .row1::before {
-  top: 0;;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-#mail-form .form .row::before {
-  top: 0;
-  bottom: -5px;
-  left: 0;
-  right: 0;
-  border-width: 2px;
-}
-
-#mail-form .form .row .caption {
-    width: 408px;
-    align-items: center;
-    margin-bottom: 0;
-    margin-top: 0px;
-    position: relative;
-    top: 2px;
-}
-#mail-form .form .row .input.form-value {
-    margin-right: 48px;
-}
-#mail-form .form .row p {}
-#mail-form .form .row p i {
-  width: auto;
-   margin: 0px 0px 0px 0px ; 
-}
-#mail-form .form .row p span {}
-#mail-form .form .row p img {}
-#mail-form .form .row .mark-require {
-  font-size: 14px;
-  padding: 0 0 0 0;
-  width: 50px;
-  height: 26px;
-  justify-content: center;
-  display: flex;
-}
-#mail-form .form .row input {
-    padding: 0 0 0 0;
-    width: 531px;
-    height: 34px;
-    padding: 0 0 0 13px;
-}
- 
-}

@@ -45,9 +45,12 @@
   <link rel="stylesheet" href="shared/css/hover.min.css">
   <link rel="stylesheet" href="shared/css/common.css">
   <link rel="stylesheet" href="shared/css/slick.min.css">
+  <link rel="stylesheet" href="./shared/css/FCMailer.css">
   <link rel="stylesheet" href="shared/css/remodal.css">
   <link rel="stylesheet" href="shared/css/shared.css">
   <link rel="stylesheet" href="shared/css/takeout.css">
+  <link rel="stylesheet" href="shared/css/mail-form.css">
+
 
   <!-- font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -192,7 +195,7 @@
         <h2 class="txt-center">ご贈答用品として、のし対応も承っております。<br> ご希望の方は店舗までお問い合わせください。</h2>
         <div class="sec2-group dis-flex-pc">
           <div class="sec2-img"><img src="./shared/img/takeout/sec2_img1.jpg" alt="通販用オードブル">
-            <a href="#sec3" class="content"><span>オードブル・惣菜</span><i><img src="./shared/img/takeout/sec2_arrow.png" alt="arrow"></i></a> 
+            <a href="#sec3" class="content"><span>オードブル・惣菜</span><i><img src="./shared/img/takeout/sec2_arrow.png" alt="arrow"></i></a>
           </div>
           <div class="sec2-img"><img src="./shared/img/takeout/sec2_img2.jpg" alt="調味料banner">
             <a href="#sec4" class="content"><span>調味料</span><i><img src="./shared/img/takeout/sec2_arrow.png" alt="arrow"></i></a>
@@ -729,8 +732,24 @@
           </div>
         </div>
       </div>
+      <!-- <div id="sec7">
+        <div class="main wrap">
+          <div class="row">
+            <div class="col form-row">
+              <div class="caption"><span data-for="lastname">お名前 姓</span> <span class="mark-require">（必須）</span></div>
+              <div class="input form-value" data-min="1" data-max="20"><input type="text" name="lastname" value="" class="require" /></div>
+              <div class="error">必須項目です</div>
+              <div class="error-length">{min}文字以上{max}文字以下で入力してください</div>
+            </div>
+            <div class="col form-row">
+              <div class="caption"><span data-for="firstname">お名前 名</span></div>
+              <div class="input form-value"><input type="text" name="firstname" value="" /></div>
+            </div>
+          </div>
+        </div>
+      </div> -->
       <div id="mail-form">
-<div class="wrap">
+        <div class="wrap">
           <h2>テイクアウトをご希望の方はこちらからご注文ください。</h2>
           <div class="form">
             <div class="row row1">
@@ -741,7 +760,7 @@
                 </div>
               </div>
               <div class="input form-value">
-                <input type="text"  placeholder="株式会社XX" value="">
+                <input type="text" placeholder="株式会社XX" value="">
               </div>
             </div>
             <div class="row">
@@ -753,7 +772,7 @@
                 <span class="mark-require">必須</span>
               </div>
               <div class="input form-value">
-                <input type="text"  placeholder="山田太郎" value="">
+                <input type="text" placeholder="山田太郎" class="require" value="">
               </div>
             </div>
             <div class="row">
@@ -765,7 +784,7 @@
                 <span class="mark-require">必須</span>
               </div>
               <div class="input form-value">
-                <input type="text"  placeholder="ヤマダタロウ" value="">
+                <input type="text" placeholder="ヤマダタロウ" class="require" value="">
               </div>
             </div>
             <div class="row">
@@ -777,7 +796,7 @@
                 <span class="mark-require">必須</span>
               </div>
               <div class="input form-value">
-                <input type="text"  placeholder="info@xx.com" value="">
+                <input type="text" placeholder="info@xx.com" class="require" value="">
               </div>
             </div>
             <div class="row">
@@ -789,11 +808,366 @@
                 <span class="mark-require">必須</span>
               </div>
               <div class="input form-value">
-                <input type="text"  placeholder="info@xx.com" value="">
+                <input type="text" placeholder="info@xx.com" class="require" value="">
               </div>
             </div>
+            <div class="row">
+              <div class="caption dis-flex">
+                <div class="dis-flex">
+                  <i><img src="./shared/img/takeout/form_icon.png" alt="icon"></i>
+                  <p>郵便番号</p>
+                </div>
+                <span class="mark-require">必須</span>
+              </div>
+              <div class="input form-value dis-flex">
+                〒<input class="input6" type="text" placeholder="000-0000" value="">
+              </div>
+            </div>
+            <div class="row">
+              <div class="caption dis-flex">
+                <div class="dis-flex">
+                  <i><img src="./shared/img/takeout/form_icon.png" alt="icon"></i>
+                  <p>お届け先住所</p>
+                </div>
+                <span class="mark-require">必須</span>
+              </div>
+              <div class="input form-value dis-flex">
+                <input type="text" class="require" placeholder="愛知県小牧市中央4-161サンヴィレッジS・TⅡ" value="">
+              </div>
+            </div>
+            <div class="row">
+              <div class="caption dis-flex">
+                <div class="dis-flex">
+                  <i><img src="./shared/img/takeout/form_icon.png" alt="icon"></i>
+                  <p>お電話番号</p>
+                </div>
+                <span class="mark-require">必須</span>
+              </div>
+              <div class="input form-value dis-flex">
+                <input type="text" class="require" placeholder="000-0000-0000" value="">
+              </div>
+            </div>
+            <div class="row row9">
+              <div class="caption dis-flex">
+                <div class="dis-flex">
+                  <i><img src="./shared/img/takeout/form_icon.png" alt="icon"></i>
+                  <p>注文内容<br><small>※単品料理のご注文は、「単品料理」を選択の上、備考欄に商品名をご記入ください。</small></p>
+                </div>
+                <span class="mark-require">必須</span>
+              </div>
+              <div class="right">
+                <div class="input form-value dis-flex">
+                  <div class="form-parse-text"><select name="parse-select1" class="require">
+                      <option value="" selected="selected">▼注文内容を選択してください</option>
+                      <option value="オードブルの盛り合わせ（1人前 3,300円）">オードブルの盛り合わせ（1人前 3,300円）</option>
+                      <option value="オードブルの盛り合わせ（2人前 6,600円）">オードブルの盛り合わせ（2人前 6,600円）</option>
+                      <option value="シェフにおまかせ！おうちごはん（1人前 4,800円）">シェフにおまかせ！おうちごはん（1人前 4,800円）</option>
+                      <option value="シェフにおまかせ！おうちごはん（1人前 5,500円）">シェフにおまかせ！おうちごはん（1人前 5,500円）</option>
+                      <option value="シェフにおまかせ！おうちごはん（1人前 7,000円）">シェフにおまかせ！おうちごはん（1人前 7,000円）</option>
+                      <option value="お祝いセット（12,000円）">お祝いセット（12,000円）</option>
+                      <option value="お祝いセット（17,000円）">お祝いセット（17,000円）</option>
+                      <option value="お祝いセット（22,000円）">お祝いセット（22,000円）</option>
+                      <option value="単品料理">単品料理</option>
+                      <option value="キヨエ オリーブ100％オイル（200ml 2,100円）">キヨエ オリーブ100％オイル（200ml 2,100円）</option>
+                      <option value="ほうろく伝承油（460ml 2,380円）">ほうろく伝承油（460ml 2,380円）</option>
+                      <option value="ほうろく荒搾り油（460ml 2,600円）">ほうろく荒搾り油（460ml 2,600円）</option>
+                      <option value="天日塩（750g 1,080円）">天日塩（750g 1,080円）</option>
+                      <option value="オリジナル配合ダシ（100g 650円）">オリジナル配合ダシ（100g 650円）</option>
+                      <option value="KURATA PEPPER（黒35g、白20g850円）">KURATA PEPPER（黒35g、白20g850円）</option>
+                      <option value="KURATA PEPPER（完熟20g970円）">KURATA PEPPER（完熟20g970円）</option>
+                    </select></div>
+                  <input type="text" class="require" placeholder="00" value="">
+                  <span>個</span>
+                </div>
+                <div class="input form-value dis-flex">
+                  <div class="form-parse-text"><select name="parse-select1" class="require">
+                      <option value="" selected="selected">▼注文内容を選択してください</option>
+                      <option value="オードブルの盛り合わせ（1人前 3,300円）">オードブルの盛り合わせ（1人前 3,300円）</option>
+                      <option value="オードブルの盛り合わせ（2人前 6,600円）">オードブルの盛り合わせ（2人前 6,600円）</option>
+                      <option value="シェフにおまかせ！おうちごはん（1人前 4,800円）">シェフにおまかせ！おうちごはん（1人前 4,800円）</option>
+                      <option value="シェフにおまかせ！おうちごはん（1人前 5,500円）">シェフにおまかせ！おうちごはん（1人前 5,500円）</option>
+                      <option value="シェフにおまかせ！おうちごはん（1人前 7,000円）">シェフにおまかせ！おうちごはん（1人前 7,000円）</option>
+                      <option value="お祝いセット（12,000円）">お祝いセット（12,000円）</option>
+                      <option value="お祝いセット（17,000円）">お祝いセット（17,000円）</option>
+                      <option value="お祝いセット（22,000円）">お祝いセット（22,000円）</option>
+                      <option value="単品料理">単品料理</option>
+                      <option value="キヨエ オリーブ100％オイル（200ml 2,100円）">キヨエ オリーブ100％オイル（200ml 2,100円）</option>
+                      <option value="ほうろく伝承油（460ml 2,380円）">ほうろく伝承油（460ml 2,380円）</option>
+                      <option value="ほうろく荒搾り油（460ml 2,600円）">ほうろく荒搾り油（460ml 2,600円）</option>
+                      <option value="天日塩（750g 1,080円）">天日塩（750g 1,080円）</option>
+                      <option value="オリジナル配合ダシ（100g 650円）">オリジナル配合ダシ（100g 650円）</option>
+                      <option value="KURATA PEPPER（黒35g、白20g850円）">KURATA PEPPER（黒35g、白20g850円）</option>
+                      <option value="KURATA PEPPER（完熟20g970円）">KURATA PEPPER（完熟20g970円）</option>
+                    </select></div>
+                  <input type="text" class="require" placeholder="00" value="">
+                  <span>個</span>
+                </div>
+                <div class="input form-value dis-flex">
+                  <div class="form-parse-text"><select name="parse-select1" class="require">
+                      <option value="" selected="selected">▼注文内容を選択してください</option>
+                      <option value="オードブルの盛り合わせ（1人前 3,300円）">オードブルの盛り合わせ（1人前 3,300円）</option>
+                      <option value="オードブルの盛り合わせ（2人前 6,600円）">オードブルの盛り合わせ（2人前 6,600円）</option>
+                      <option value="シェフにおまかせ！おうちごはん（1人前 4,800円）">シェフにおまかせ！おうちごはん（1人前 4,800円）</option>
+                      <option value="シェフにおまかせ！おうちごはん（1人前 5,500円）">シェフにおまかせ！おうちごはん（1人前 5,500円）</option>
+                      <option value="シェフにおまかせ！おうちごはん（1人前 7,000円）">シェフにおまかせ！おうちごはん（1人前 7,000円）</option>
+                      <option value="お祝いセット（12,000円）">お祝いセット（12,000円）</option>
+                      <option value="お祝いセット（17,000円）">お祝いセット（17,000円）</option>
+                      <option value="お祝いセット（22,000円）">お祝いセット（22,000円）</option>
+                      <option value="単品料理">単品料理</option>
+                      <option value="キヨエ オリーブ100％オイル（200ml 2,100円）">キヨエ オリーブ100％オイル（200ml 2,100円）</option>
+                      <option value="ほうろく伝承油（460ml 2,380円）">ほうろく伝承油（460ml 2,380円）</option>
+                      <option value="ほうろく荒搾り油（460ml 2,600円）">ほうろく荒搾り油（460ml 2,600円）</option>
+                      <option value="天日塩（750g 1,080円）">天日塩（750g 1,080円）</option>
+                      <option value="オリジナル配合ダシ（100g 650円）">オリジナル配合ダシ（100g 650円）</option>
+                      <option value="KURATA PEPPER（黒35g、白20g850円）">KURATA PEPPER（黒35g、白20g850円）</option>
+                      <option value="KURATA PEPPER（完熟20g970円）">KURATA PEPPER（完熟20g970円）</option>
+                    </select></div>
+                  <input type="text" class="require" placeholder="00" value="">
+                  <span>個</span>
+                </div>
+                <div class="input form-value dis-flex">
+                  <div class="form-parse-text"><select name="parse-select1" class="require">
+                      <option value="" selected="selected">▼注文内容を選択してください</option>
+                      <option value="オードブルの盛り合わせ（1人前 3,300円）">オードブルの盛り合わせ（1人前 3,300円）</option>
+                      <option value="オードブルの盛り合わせ（2人前 6,600円）">オードブルの盛り合わせ（2人前 6,600円）</option>
+                      <option value="シェフにおまかせ！おうちごはん（1人前 4,800円）">シェフにおまかせ！おうちごはん（1人前 4,800円）</option>
+                      <option value="シェフにおまかせ！おうちごはん（1人前 5,500円）">シェフにおまかせ！おうちごはん（1人前 5,500円）</option>
+                      <option value="シェフにおまかせ！おうちごはん（1人前 7,000円）">シェフにおまかせ！おうちごはん（1人前 7,000円）</option>
+                      <option value="お祝いセット（12,000円）">お祝いセット（12,000円）</option>
+                      <option value="お祝いセット（17,000円）">お祝いセット（17,000円）</option>
+                      <option value="お祝いセット（22,000円）">お祝いセット（22,000円）</option>
+                      <option value="単品料理">単品料理</option>
+                      <option value="キヨエ オリーブ100％オイル（200ml 2,100円）">キヨエ オリーブ100％オイル（200ml 2,100円）</option>
+                      <option value="ほうろく伝承油（460ml 2,380円）">ほうろく伝承油（460ml 2,380円）</option>
+                      <option value="ほうろく荒搾り油（460ml 2,600円）">ほうろく荒搾り油（460ml 2,600円）</option>
+                      <option value="天日塩（750g 1,080円）">天日塩（750g 1,080円）</option>
+                      <option value="オリジナル配合ダシ（100g 650円）">オリジナル配合ダシ（100g 650円）</option>
+                      <option value="KURATA PEPPER（黒35g、白20g850円）">KURATA PEPPER（黒35g、白20g850円）</option>
+                      <option value="KURATA PEPPER（完熟20g970円）">KURATA PEPPER（完熟20g970円）</option>
+                    </select></div>
+                  <input type="text" class="require" placeholder="00" value="">
+                  <span>個</span>
+                </div>
+                <div class="input form-value dis-flex">
+                  <div class="form-parse-text"><select name="parse-select1" class="require">
+                      <option value="" selected="selected">▼注文内容を選択してください</option>
+                      <option value="オードブルの盛り合わせ（1人前 3,300円）">オードブルの盛り合わせ（1人前 3,300円）</option>
+                      <option value="オードブルの盛り合わせ（2人前 6,600円）">オードブルの盛り合わせ（2人前 6,600円）</option>
+                      <option value="シェフにおまかせ！おうちごはん（1人前 4,800円）">シェフにおまかせ！おうちごはん（1人前 4,800円）</option>
+                      <option value="シェフにおまかせ！おうちごはん（1人前 5,500円）">シェフにおまかせ！おうちごはん（1人前 5,500円）</option>
+                      <option value="シェフにおまかせ！おうちごはん（1人前 7,000円）">シェフにおまかせ！おうちごはん（1人前 7,000円）</option>
+                      <option value="お祝いセット（12,000円）">お祝いセット（12,000円）</option>
+                      <option value="お祝いセット（17,000円）">お祝いセット（17,000円）</option>
+                      <option value="お祝いセット（22,000円）">お祝いセット（22,000円）</option>
+                      <option value="単品料理">単品料理</option>
+                      <option value="キヨエ オリーブ100％オイル（200ml 2,100円）">キヨエ オリーブ100％オイル（200ml 2,100円）</option>
+                      <option value="ほうろく伝承油（460ml 2,380円）">ほうろく伝承油（460ml 2,380円）</option>
+                      <option value="ほうろく荒搾り油（460ml 2,600円）">ほうろく荒搾り油（460ml 2,600円）</option>
+                      <option value="天日塩（750g 1,080円）">天日塩（750g 1,080円）</option>
+                      <option value="オリジナル配合ダシ（100g 650円）">オリジナル配合ダシ（100g 650円）</option>
+                      <option value="KURATA PEPPER（黒35g、白20g850円）">KURATA PEPPER（黒35g、白20g850円）</option>
+                      <option value="KURATA PEPPER（完熟20g970円）">KURATA PEPPER（完熟20g970円）</option>
+                    </select></div>
+                  <input type="text" class="require" placeholder="00" value="">
+                  <span>個</span>
+                </div>
+              </div>
+
+            </div>
+            <div class="row row10">
+              <div class="caption dis-flex">
+                <div class="dis-flex">
+                  <i><img src="./shared/img/takeout/form_icon.png" alt="icon"></i>
+                  <p>お電話番号</p>
+                </div>
+                <span class="mark-require">必須</span>
+              </div>
+              <div class="right">
+                <div class="input form-value dis-flex-pc">
+                  <div class="choice-date"><select name="choice-date1" class="require">
+                      <option value="" readonly="readonly" selected="selected">▼日付を選択してください</option>
+                      <optgroup label="2023年01月">
+                        <option value="2023-01-18" class="cd-wed">2023年01月18日(水)</option>
+                        <option value="2023-01-19" class="cd-thu">2023年01月19日(木)</option>
+                        <option value="2023-01-20" class="cd-fri">2023年01月20日(金)</option>
+                        <option value="2023-01-21" class="cd-sat">2023年01月21日(土)</option>
+                        <option value="2023-01-22" class="cd-sun">2023年01月22日(日)</option>
+                        <option value="2023-01-23" class="cd-mon" disabled="disabled">2023年01月23日(月)</option>
+                        <option value="2023-01-24" class="cd-tue">2023年01月24日(火)</option>
+                        <option value="2023-01-25" class="cd-wed">2023年01月25日(水)</option>
+                        <option value="2023-01-26" class="cd-thu">2023年01月26日(木)</option>
+                        <option value="2023-01-27" class="cd-fri">2023年01月27日(金)</option>
+                        <option value="2023-01-28" class="cd-sat">2023年01月28日(土)</option>
+                        <option value="2023-01-29" class="cd-sun">2023年01月29日(日)</option>
+                        <option value="2023-01-30" class="cd-mon" disabled="disabled">2023年01月30日(月)</option>
+                        <option value="2023-01-31" class="cd-tue">2023年01月31日(火)</option>
+                      </optgroup>
+                      <optgroup label="2023年02月">
+                        <option value="2023-02-01" class="cd-wed">2023年02月01日(水)</option>
+                        <option value="2023-02-02" class="cd-thu">2023年02月02日(木)</option>
+                        <option value="2023-02-03" class="cd-fri">2023年02月03日(金)</option>
+                        <option value="2023-02-04" class="cd-sat">2023年02月04日(土)</option>
+                        <option value="2023-02-05" class="cd-sun">2023年02月05日(日)</option>
+                        <option value="2023-02-06" class="cd-mon" disabled="disabled">2023年02月06日(月)</option>
+                        <option value="2023-02-07" class="cd-tue">2023年02月07日(火)</option>
+                        <option value="2023-02-08" class="cd-wed">2023年02月08日(水)</option>
+                        <option value="2023-02-09" class="cd-thu">2023年02月09日(木)</option>
+                        <option value="2023-02-10" class="cd-fri">2023年02月10日(金)</option>
+                        <option value="2023-02-11" class="cd-sat">2023年02月11日(土)</option>
+                        <option value="2023-02-12" class="cd-sun">2023年02月12日(日)</option>
+                        <option value="2023-02-13" class="cd-mon" disabled="disabled">2023年02月13日(月)</option>
+                        <option value="2023-02-14" class="cd-tue">2023年02月14日(火)</option>
+                        <option value="2023-02-15" class="cd-wed">2023年02月15日(水)</option>
+                        <option value="2023-02-16" class="cd-thu">2023年02月16日(木)</option>
+                        <option value="2023-02-17" class="cd-fri">2023年02月17日(金)</option>
+                        <option value="2023-02-18" class="cd-sat">2023年02月18日(土)</option>
+                        <option value="2023-02-19" class="cd-sun">2023年02月19日(日)</option>
+                        <option value="2023-02-20" class="cd-mon" disabled="disabled">2023年02月20日(月)</option>
+                        <option value="2023-02-21" class="cd-tue">2023年02月21日(火)</option>
+                        <option value="2023-02-22" class="cd-wed">2023年02月22日(水)</option>
+                        <option value="2023-02-23" class="cd-thu">2023年02月23日(木)</option>
+                        <option value="2023-02-24" class="cd-fri">2023年02月24日(金)</option>
+                        <option value="2023-02-25" class="cd-sat">2023年02月25日(土)</option>
+                        <option value="2023-02-26" class="cd-sun">2023年02月26日(日)</option>
+                        <option value="2023-02-27" class="cd-mon" disabled="disabled">2023年02月27日(月)</option>
+                        <option value="2023-02-28" class="cd-tue">2023年02月28日(火)</option>
+                      </optgroup>
+                      <optgroup label="2023年03月">
+                        <option value="2023-03-01" class="cd-wed">2023年03月01日(水)</option>
+                        <option value="2023-03-02" class="cd-thu">2023年03月02日(木)</option>
+                        <option value="2023-03-03" class="cd-fri">2023年03月03日(金)</option>
+                        <option value="2023-03-04" class="cd-sat">2023年03月04日(土)</option>
+                        <option value="2023-03-05" class="cd-sun">2023年03月05日(日)</option>
+                        <option value="2023-03-06" class="cd-mon" disabled="disabled">2023年03月06日(月)</option>
+                        <option value="2023-03-07" class="cd-tue">2023年03月07日(火)</option>
+                        <option value="2023-03-08" class="cd-wed">2023年03月08日(水)</option>
+                        <option value="2023-03-09" class="cd-thu">2023年03月09日(木)</option>
+                        <option value="2023-03-10" class="cd-fri">2023年03月10日(金)</option>
+                        <option value="2023-03-11" class="cd-sat">2023年03月11日(土)</option>
+                        <option value="2023-03-12" class="cd-sun">2023年03月12日(日)</option>
+                        <option value="2023-03-13" class="cd-mon" disabled="disabled">2023年03月13日(月)</option>
+                        <option value="2023-03-14" class="cd-tue">2023年03月14日(火)</option>
+                        <option value="2023-03-15" class="cd-wed">2023年03月15日(水)</option>
+                        <option value="2023-03-16" class="cd-thu">2023年03月16日(木)</option>
+                        <option value="2023-03-17" class="cd-fri">2023年03月17日(金)</option>
+                        <option value="2023-03-18" class="cd-sat">2023年03月18日(土)</option>
+                        <option value="2023-03-19" class="cd-sun">2023年03月19日(日)</option>
+                        <option value="2023-03-20" class="cd-mon" disabled="disabled">2023年03月20日(月)</option>
+                        <option value="2023-03-21" class="cd-tue">2023年03月21日(火)</option>
+                        <option value="2023-03-22" class="cd-wed">2023年03月22日(水)</option>
+                        <option value="2023-03-23" class="cd-thu">2023年03月23日(木)</option>
+                        <option value="2023-03-24" class="cd-fri">2023年03月24日(金)</option>
+                        <option value="2023-03-25" class="cd-sat">2023年03月25日(土)</option>
+                        <option value="2023-03-26" class="cd-sun">2023年03月26日(日)</option>
+                        <option value="2023-03-27" class="cd-mon" disabled="disabled">2023年03月27日(月)</option>
+                        <option value="2023-03-28" class="cd-tue">2023年03月28日(火)</option>
+                        <option value="2023-03-29" class="cd-wed">2023年03月29日(水)</option>
+                        <option value="2023-03-30" class="cd-thu">2023年03月30日(木)</option>
+                        <option value="2023-03-31" class="cd-fri">2023年03月31日(金)</option>
+                      </optgroup>
+                    </select></div>
+                  <div class="form-parse-text"><select name="choice-date2" class="require">
+                      <option value="" selected="selected">▼時間を選択してください</option>
+                      <option value="11:30">11:30</option>
+                      <option value="12:00">12:00</option>
+                      <option value="12:30">12:30</option>
+                      <option value="13:00">13:00</option>
+                      <option value="13:30">13:30</option>
+                      <option value="14:00">14:00</option>
+                      <option value="14:30">14:30</option>
+                      <option value="15:00">15:00</option>
+                      <option value="15:30">15:30</option>
+                      <option value="16:00">16:00</option>
+                      <option value="16:30">16:30</option>
+                      <option value="17:00">17:00</option>
+                      <option value="17:30">17:30</option>
+                      <option value="18:00">18:00</option>
+                      <option value="18:30">18:30</option>
+                      <option value="19:00">19:00</option>
+                      <option value="19:30">19:30</option>
+                      <option value="20:00">20:00</option>
+                      <option value="20:30">20:30</option>
+                      <option value="21:00">21:00</option>
+                      <option value="21:30">21:30</option>
+                      <option value="22:00">22:00</option>
+                    </select></div>
+                </div>
+                <p class="note">※宅配便の場合のお届け時間は、希望に添えない場合もございます。</p>
+              </div>
+
+            </div>
+            <div class="row row11">
+              <div class="caption dis-flex">
+                <div class="dis-flex">
+                  <i><img src="./shared/img/takeout/form_icon.png" alt="icon"></i>
+                  <p>受け取り方法</p>
+                </div>
+                <span class="mark-require">必須</span>
+              </div>
+              <div class="right">
+                <div class="input form-value">
+                  <input type="radio" name="event" value="店頭受け取り">
+                  <label> 店頭受け取り</label>
+                </div>
+                <div class="input form-value">
+                  <input type="radio" name="event" value="宅配便">
+                  <label> 宅配便</label>
+                </div>
+              </div>
+
+            </div>
+            <div class="row row11">
+              <div class="caption dis-flex">
+                <div class="dis-flex">
+                  <i><img src="./shared/img/takeout/form_icon.png" alt="icon"></i>
+                  <p>受け取り方法</p>
+                </div>
+                <span class="mark-require">必須</span>
+              </div>
+              <div class="right">
+                <div class="input form-value">
+                  <input type="radio" name="event" value=" 店頭支払い">
+                  <label> 店頭支払い</label>
+                </div>
+                <div class="input form-value">
+                  <input type="radio" name="event" value="代金引換">
+                  <label> 代金引換</label>
+                </div>
+                <div class="input form-value">
+                  <input type="radio" name="event" value="銀行振り込み">
+                  <label> 銀行振り込み</label>
+                </div>
+              </div>
+            </div>
+            <div class="row row13">
+              <div class="caption dis-flex">
+                <div class="dis-flex">
+                  <i><img src="./shared/img/takeout/form_icon.png" alt="icon"></i>
+                  <p>備考<br><small>
+                      ※単品料理をご注文の際はこちらに商品名と個数を記入してください。<br>
+                      ※セットや盛り合わせをご注文の方で、苦手なものアレルギーがある場合はこちらに記入してください。<br>
+                      ※ご予算に応じてご案内いたしますのでご希望予算を注文フォーム備考欄に記入下さい。
+                    </small></p>
+                </div>
+                <span class="mark-require">必須</span>
+              </div>
+              <div class="input form-value">
+                <textarea name="messages" placeholder="その他、ご要望がありましたらご記入ください。" class="require"></textarea>
+              </div>
+            </div>
+            <div class="row row14">
+
+              <input type="checkbox" name="method" value="メール">
+              <label>
+                <a href="#"><span>プライバシーポリシーとキャンセルポリシー</span>について同意する</a>
+              </label>
+            </div>
+            <!-- submit -->
+            <div id="submit">
+              <button type="submit" class="btn-link hvr-radial-out">確認</button>
+            </div>
           </div>
-</div>
+        </div>
       </div>
       </div>
     </section>
@@ -870,6 +1244,7 @@
   <script src="shared/js/jquery.min.js"></script>
   <script type="text/javascript" src="shared/js/remodal.js"></script>
   <script src="shared/js/common.js"></script>
+  <script src="./shared/js/FCMailer.js"></script>
   <script src="shared/js/slick.js"></script>
   <!-- <script src="./shared/js/infiniteslidev2.js"></script> -->
   <script src="shared/js/shared.js"></script>
