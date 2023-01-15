@@ -6,22 +6,22 @@
 		color: #342513;
 		text-align: center;
 		font-size: 4.8vw;
-		margin-bottom: 6vw; 
+		margin-bottom: 6vw;
 	}
 	.form {
-        select { 
-            appearance: none;
-            border: none;
-            outline: none;
-            color: #592514;
-            height: 100%;
-            width: 100%;
-        }
+		select {
+			appearance: none;
+			border: none;
+			outline: none;
+			color: #592514;
+			height: 100%;
+			width: 100%;
+		}
 		.row {
 			position: relative;
 			margin-bottom: 0;
-				border-top: 1px solid #9c8d7c;
-            padding: 11px 0;	
+			border-top: 1px solid #9c8d7c;
+			padding: 11px 0;
 			.caption {
 				justify-content: space-between;
 				align-items: flex-end;
@@ -38,7 +38,7 @@
 			}
 			p {
 				max-width: 85%;
-                font-size: 15px;
+				font-size: 15px;
 				span {
 					width: 100%;
 				}
@@ -56,14 +56,13 @@
 				padding: 0 8px;
 				display: flex;
 				align-items: center;
-                margin-bottom: 2px;
+				margin-bottom: 2px;
 			}
 			input {
 				border: none;
 				outline: none;
 				padding: 8px;
 				width: 100%;
-			
 			}
 		}
 		.row1 {
@@ -79,54 +78,51 @@
 			.mark-require {
 				width: 15%;
 			}
-            .caption .dis-flex > p { 
-                width: 90%;
-                max-width: unset;
-            }
-            .form-value { 
-                .form-parse-text { 
-                    width: 70%;
-                    select {
-                 
-                        padding: 8px;
-                        margin-bottom: 8px;
-                        
-                     }
-                }
-                input { 
-                    width: 20%;
-                    margin: 0 10px 8px 11px;
-                    line-height: 1.1;
-                    padding-left: 14px;
-                    &::placeholder { 
-                        font-size: 15px;
-                    }
-                }
-                > span { 
-                    margin-bottom: 5px;
-                    color: #592514;
-                }
-            }
-       
-            
+			.caption .dis-flex > p {
+				width: 90%;
+				max-width: unset;
+			}
+			.form-value {
+				.form-parse-text {
+					width: 70%;
+					select {
+						padding: 8px;
+						margin-bottom: 8px;
+					}
+				}
+				input {
+					width: 20%;
+					margin: 0 10px 8px 11px;
+					line-height: 1.1;
+					padding-left: 14px;
+					&::placeholder {
+						font-size: 15px;
+					}
+				}
+				> span {
+					margin-bottom: 5px;
+					color: #592514;
+				}
+			}
 		}
-        .row.row10 { 
-            select { 
-                padding: 8px;margin-bottom: 8px;
-            }
-            .note { 
-                max-width: unset;
-            }
-        }
-        .row.row11 { 
-            input { 
-                width: 20px;
-                height: 20px;
-                margin-right: 6px;
-            }
-        }
-		.row.row13 { 
-			textarea { 
+		.row.row10 {
+			select {
+				padding: 8px;
+				margin-bottom: 8px;
+			}
+			.note {
+				max-width: unset;
+			}
+		}
+		.row.row11 {
+			input {
+				width: 20px;
+				height: 20px;
+				margin-right: 6px;
+			}
+		}
+		.row.row13 {
+			textarea {
 				height: 300px;
 				width: 100%;
 				border: none;
@@ -134,32 +130,34 @@
 				padding: 12px;
 			}
 		}
-		.row.row14 { 
-			input { 
+		.row.row14 {
+			input {
 				width: auto;
 				width: 20px;
 				height: 20px;
 			}
-			label { 
-				>a>span { 
+			label {
+				> a > span {
 					border-bottom: 1px solid #49443e;
 				}
 			}
 		}
-		#submit { 
-			button { 
+		#submit {
+			button {
 				width: 60%;
 				cursor: pointer;
+				margin-top: 5vw;
 			}
 		}
 	}
 }
-@media only screen and (min-width:768px) {
+@media only screen and (min-width: 768px) {
 	#mail-form {
 		padding: 58px 0 68px 0;
 		margin: 0 auto 78px;
 		max-width: 1212px;
-		select, label { 
+		select,
+		label {
 			font-size: 16px;
 		}
 		h2 {
@@ -171,7 +169,7 @@
 				font-size: 19px;
 				margin: 0 0 0 0;
 				display: flex;
-				justify-content: space-between; 
+				justify-content: space-between;
 				align-items: center;
 				padding: 19px 0;
 				&::before {
@@ -185,21 +183,20 @@
 				.caption {
 					width: 408px;
 					align-items: center;
-					margin-bottom: 0;
-					margin-top: 0px;
+					margin: 0 11px 0 0;
 					padding-left: 11px;
-                    position: relative;
-                    top: 3px;
-                 
+					position: relative;
+					top: 3px;
+
 					.dis-flex {
 						i {
 							margin-top: 8px;
-                            width: auto;
+							width: auto;
 						}
-						>p { 
+						> p {
 							font-size: 19px;
 							line-height: 32px;
-							>small { 
+							> small {
 								font-size: 16px;
 								line-height: 1;
 							}
@@ -208,9 +205,6 @@
 				}
 				.form-value {
 					margin-right: 48px;
-					&:last-child { 
-						margin-right: 0;
-					}
 					.input6 {
 						width: 501px;
 						margin-left: 10px;
@@ -250,93 +244,110 @@
 				}
 			}
 			.row.row9 {
-                align-items: start;
+				align-items: start;
 				.mark-require {
 					width: 50px;
 				}
-                .caption { 
-                    align-items: start;
-                }
-                .form-value { 
-                    margin-bottom: 6px;
-                    .form-parse-text { 
-                        width: 426px;
-                        height: 34px;
-                        select { 
-                            width: 100%;
-                            height: 100%;
-                           
-                        }
-                    }
-                    input { 
-                        width: 64px;
-                        margin-bottom: 0;
-                    }
-                    >span { 
-                        margin-bottom: 0;
-                    }
-                }
+				.caption {
+					align-items: start;
+				}
+				.form-value {
+					margin-bottom: 6px;
+					.form-parse-text {
+						width: 426px;
+						height: 34px;
+						select {
+							width: 100%;
+							height: 100%;
+						}
+					}
+					input {
+						width: 64px;
+						margin-bottom: 0;
+					}
+					> span {
+						margin-bottom: 0;
+					}
+				}
 			}
-            .row.row10 { 
-                align-items: start;
-                .right { 
-                    width: 578px;
-                    .choice-date, .form-parse-text { 
-                        width: 260px;
-                    }
-                }
-                .note { 
-                    width: 531px;
-                    font-size: 16px;
-                }
-            }
-            .row.row11 { 
-                justify-content: start;
-               
-                .right { 
-                    margin-left: 10px;
-                    .form-value { 
-                        display: inline-block;
-                        position: relative;
-                   
-                    }
-                    .form-value:nth-child(1){ 
-                        width: 134px;
-                        &:after { 
-                            content: '';
-                            position: absolute;
-                            right: -23px;
-                            top: 0;
-                            width: 2px;
-                            height: 100%;
-                            background: #342513;
-
-                        }
-                    }
-                }
-            }
-			.row.row13 { 
+			.row.row10 {
 				align-items: start;
-				textarea { 
+				.right {
+					width: 578px;
+					.choice-date,
+					.form-parse-text {
+						width: 260px;
+					}
+				}
+				.note {
+					width: 531px;
+					font-size: 16px;
+				}
+				.choice-date {
+					margin-right: 11px;
+				}
+			}
+			.row.row11 {
+				justify-content: start;
+
+				.right {
+					margin-left: 10px;
+					.form-value {
+						display: inline-block;
+						position: relative;
+					}
+					.form-value:nth-child(1) {
+						width: 134px;
+						&:after {
+							content: "";
+							position: absolute;
+							right: -23px;
+							top: 0;
+							width: 2px;
+							height: 100%;
+							background: #342513;
+						}
+					}
+					.form-value:nth-child(3) {
+						margin-right: 6px;
+					}
+				}
+			}
+			.row.row13 {
+				align-items: start;
+				textarea {
 					width: 531px;
 					height: 300px;
 				}
-				.caption { 
+				.caption {
 					align-items: start;
 				}
 			}
-			.row.row14 { 
+			.row.row14 {
 				justify-content: center;
-				input { 
+				input {
 					margin-right: 9px;
 				}
 			}
-			#submit { 
+			#submit {
 				margin-top: 26px;
-				button { 
-					width: 315px;height: 62px;
+				button {
+					width: 315px;
+					height: 62px;
+					margin-top: 30px;
 				}
 			}
 		}
+	}
+}
+@media only screen and (min-width: 768px) {
+	.error,
+	.error-length,
+	.error-email,
+	.error-phone,
+	.error-match {
+		font-size: 16px;
+		margin-right: -48px;
+		position: unset;
 	}
 }

@@ -133,6 +133,7 @@
 #mail-form .form #submit button {
   width: 60%;
   cursor: pointer;
+  margin-top: 5vw;
 }
 
 @media only screen and (min-width: 768px) {
@@ -141,7 +142,8 @@
     margin: 0 auto 78px;
     max-width: 1212px;
   }
-  #mail-form select, #mail-form label {
+  #mail-form select,
+#mail-form label {
     font-size: 16px;
   }
   #mail-form h2 {
@@ -167,8 +169,7 @@
   #mail-form .form .row .caption {
     width: 408px;
     align-items: center;
-    margin-bottom: 0;
-    margin-top: 0px;
+    margin: 0 11px 0 0;
     padding-left: 11px;
     position: relative;
     top: 3px;
@@ -187,9 +188,6 @@
   }
   #mail-form .form .row .form-value {
     margin-right: 48px;
-  }
-  #mail-form .form .row .form-value:last-child {
-    margin-right: 0;
   }
   #mail-form .form .row .form-value .input6 {
     width: 501px;
@@ -264,12 +262,16 @@
   #mail-form .form .row.row10 .right {
     width: 578px;
   }
-  #mail-form .form .row.row10 .right .choice-date, #mail-form .form .row.row10 .right .form-parse-text {
+  #mail-form .form .row.row10 .right .choice-date,
+#mail-form .form .row.row10 .right .form-parse-text {
     width: 260px;
   }
   #mail-form .form .row.row10 .note {
     width: 531px;
     font-size: 16px;
+  }
+  #mail-form .form .row.row10 .choice-date {
+    margin-right: 11px;
   }
   #mail-form .form .row.row11 {
     justify-content: start;
@@ -293,6 +295,9 @@
     height: 100%;
     background: #342513;
   }
+  #mail-form .form .row.row11 .right .form-value:nth-child(3) {
+    margin-right: 6px;
+  }
   #mail-form .form .row.row13 {
     align-items: start;
   }
@@ -315,5 +320,17 @@
   #mail-form .form #submit button {
     width: 315px;
     height: 62px;
+    margin-top: 30px;
   }
-}/*# sourceMappingURL=mail-form.css.map */
+}
+@media only screen and (min-width: 768px) {
+  .error,
+.error-length,
+.error-email,
+.error-phone,
+.error-match {
+    font-size: 16px;
+    margin-right: -48px;
+    position: unset;
+  }
+}
